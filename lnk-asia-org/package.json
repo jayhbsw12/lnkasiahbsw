@@ -1,0 +1,16 @@
+{
+  "name": "ai-dashboard-website",
+  "version": "1.0.0",
+  "description": "AI Powered Dashboard for Online Store",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve -s . -l 3000",
+    "build": "echo 'Build complete'"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.0"
+  }
+}

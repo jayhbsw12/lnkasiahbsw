@@ -1,0 +1,1409 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  --primary-color: #352f75;
+  --secondary-color: #7b37a9;
+  --accent-color: #7b61ff;
+  --text-primary: #000000;
+  --text-secondary: #726e80;
+  --text-muted: #9c9c9c;
+  --background-primary: #ffffff;
+  --background-secondary: #f8f9fb;
+  --border-color: #cfd4dc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--default-font-family);
+  background: var(--background-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.main-container {
+  position: relative;
+  width: 1920px;
+  height: 3395px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease;
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1920px) {
+  .main-container {
+    width: 100%;
+    max-width: 1920px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+.frame {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .div {
+  background-color: #ffffff;
+  width: 1920px;
+  height: 3395px;
+  position: relative;
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 1920px;
+  height: 1759px;
+  top: 0;
+  left: 0;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 1920px;
+  height: 1709px;
+  top: 0;
+  left: 0;
+}
+
+.frame .alendei-wrapper {
+  height: 692px;
+  top: 1014px;
+  left: 168px;
+  overflow: hidden;
+  position: absolute;
+  width: 490px;
+}
+
+.frame .alendei {
+  height: 692px;
+}
+
+.frame .link {
+  position: relative;
+  width: 490px;
+  height: 692px;
+  border-radius: 21.53px;
+  overflow: hidden;
+  background: url(https://c.animaapp.com/mcnbfkm1VWNIOE/img/link.png) 50% 50% /
+    cover,
+    linear-gradient(
+      0deg,
+      rgba(240, 242, 244, 1) 0%,
+      rgba(240, 242, 244, 1) 100%
+    );
+}
+
+.frame .heading-machine {
+  position: absolute;
+  width: 371px;
+  height: 39px;
+  top: 53px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 39.2px;
+  white-space: nowrap;
+}
+
+.frame .reach-your-customer {
+  position: absolute;
+  width: 345px;
+  height: 78px;
+  top: 145px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #f0f2f4;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 29.1px;
+}
+
+.frame .container {
+  position: absolute;
+  width: 160px;
+  height: 44px;
+  top: 648px;
+  left: 297px;
+  overflow: hidden;
+}
+
+.frame .overlap-group-2 {
+  position: relative;
+  width: 157px;
+  height: 49px;
+}
+
+.frame .div-wrapper {
+  position: absolute;
+  width: 157px;
+  height: 46px;
+  top: 0;
+  left: 0;
+}
+
+.frame .img-wrapper {
+  position: relative;
+  height: 46px;
+}
+
+.frame .img {
+  width: 157px;
+  height: 43px;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.frame .div-wrapper-2 {
+  position: absolute;
+  width: 26px;
+  height: 23px;
+  top: 21px;
+  left: 67px;
+  overflow: hidden;
+  transform: rotate(-42.89deg);
+}
+
+.frame .img-wrapper-2 {
+  position: relative;
+  width: 25px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.frame .img-2 {
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  top: -4px;
+  left: -3px;
+  transform: rotate(42.89deg);
+}
+
+.frame .vigyanlabs-wrapper {
+  height: 365px;
+  top: 1017px;
+  left: 717px;
+  overflow: hidden;
+  position: absolute;
+  width: 490px;
+}
+
+.frame .vigyanlabs {
+  height: 310px;
+}
+
+.frame .link-2 {
+  height: 310px;
+  border-radius: 25.25px;
+  background: url(https://c.animaapp.com/mcnbfkm1VWNIOE/img/link-1.png) 50% 50%
+    / cover,
+    linear-gradient(
+      0deg,
+      rgba(240, 242, 244, 1) 0%,
+      rgba(240, 242, 244, 1) 100%
+    );
+  position: relative;
+  width: 490px;
+  overflow: hidden;
+}
+
+.frame .heading-AI {
+  position: absolute;
+  width: 210px;
+  height: 45px;
+  top: 154px;
+  left: 238px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #0a0a0c;
+  font-size: 30px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 46.0px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 311px;
+  height: 57px;
+  top: 224px;
+  left: 168px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #4a4949;
+  font-size: 18px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 34.1px;
+}
+
+.frame .overlap-group-wrapper {
+  position: absolute;
+  width: 184px;
+  height: 45px;
+  top: 0;
+  left: 268px;
+  overflow: hidden;
+}
+
+.frame .overlap-group-3 {
+  position: relative;
+  height: 56px;
+  top: -8px;
+}
+
+.frame .div-wrapper-3 {
+  width: 184px;
+  height: 54px;
+  top: 2px;
+  position: absolute;
+  left: 0;
+}
+
+.frame .img-wrapper-3 {
+  position: relative;
+  height: 54px;
+}
+
+.frame .img-3 {
+  width: 184px;
+  height: 45px;
+  top: 6px;
+  position: absolute;
+  left: 0;
+}
+
+.frame .div-wrapper-4 {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  top: 6px;
+  left: 79px;
+  overflow: hidden;
+  transform: rotate(-40.16deg);
+}
+
+.frame .img-wrapper-4 {
+  width: 29px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame .img-4 {
+  position: absolute;
+  width: 38px;
+  height: 26px;
+  top: 1px;
+  left: -8px;
+  transform: rotate(40.16deg);
+}
+
+.frame .ddi-soc-wrapper {
+  height: 695px;
+  top: 1014px;
+  left: 1258px;
+  overflow: hidden;
+  position: absolute;
+  width: 490px;
+}
+
+.frame .ddi-soc {
+  height: 695px;
+}
+
+.frame .link-3 {
+  height: 695px;
+  border-radius: 21.53px;
+  background: url(https://c.animaapp.com/mcnbfkm1VWNIOE/img/link-3.png) 50% 50%
+    / cover,
+    linear-gradient(
+      0deg,
+      rgba(240, 242, 244, 1) 0%,
+      rgba(240, 242, 244, 1) 100%
+    );
+  position: relative;
+  width: 490px;
+  overflow: hidden;
+}
+
+.frame .heading-image {
+  position: absolute;
+  width: 348px;
+  height: 39px;
+  top: 493px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 39.2px;
+  white-space: nowrap;
+}
+
+.frame .unified-management {
+  position: absolute;
+  width: 352px;
+  height: 48px;
+  top: 604px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #f0f2f4;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 29.1px;
+}
+
+.frame .container-2 {
+  position: absolute;
+  width: 157px;
+  height: 43px;
+  top: -1px;
+  left: 32px;
+}
+
+.frame .overlap-group-4 {
+  position: relative;
+  height: 49px;
+  top: -6px;
+}
+
+.frame .div-wrapper-5 {
+  width: 157px;
+  height: 46px;
+  top: 2px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
+
+.frame .img-5 {
+  width: 157px;
+  height: 42px;
+  top: 4px;
+  position: absolute;
+  left: 0;
+}
+
+.frame .div-wrapper-6 {
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  top: 6px;
+  left: 66px;
+  overflow: hidden;
+  transform: rotate(-45deg);
+}
+
+.frame .img-wrapper-5 {
+  height: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.frame .img-6 {
+  position: absolute;
+  width: 33px;
+  height: 26px;
+  top: 0;
+  left: -6px;
+  transform: rotate(45deg);
+}
+
+.frame .big-background {
+  position: absolute;
+  width: 1920px;
+  height: 1256px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.frame .header {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 55px;
+  position: absolute;
+  top: 98px;
+  left: 242px;
+}
+
+.frame .discover-how-fintech {
+  position: relative;
+  width: 808px;
+  height: 260px;
+  margin-top: -1.00px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 15px;
+}
+
+.frame .chex {
+  position: absolute;
+  width: 1915px;
+  height: 795px;
+  top: 1px;
+  left: 2px;
+}
+
+.frame .overlap-2 {
+  position: relative;
+  height: 795px;
+}
+
+.frame .component {
+  width: 164px;
+  left: 174px;
+  position: absolute;
+  height: 128px;
+  top: 385px;
+}
+
+.frame .ative-users {
+  position: relative;
+  width: 122px;
+  height: 128px;
+}
+
+.frame .text-wrapper-2 {
+  position: absolute;
+  width: 70px;
+  height: 64px;
+  top: 0;
+  left: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  width: 118px;
+  height: 64px;
+  top: 64px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .fintch-monthly-wrapper {
+  width: 201px;
+  left: 555px;
+  position: absolute;
+  height: 128px;
+  top: 385px;
+}
+
+.frame .fintch-monthly {
+  position: relative;
+  width: 100px;
+  height: 128px;
+  left: 57px;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  width: 96px;
+  height: 64px;
+  top: 64px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  width: 65px;
+  height: 64px;
+  top: 0;
+  left: 16px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .company-partner-wrapper {
+  width: 195px;
+  left: 1125px;
+  position: absolute;
+  height: 128px;
+  top: 385px;
+}
+
+.frame .company-partner {
+  position: relative;
+  width: 166px;
+  height: 128px;
+  left: 11px;
+}
+
+.frame .text-wrapper-6 {
+  position: absolute;
+  width: 158px;
+  height: 64px;
+  top: 64px;
+  left: 2px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-7 {
+  position: absolute;
+  width: 162px;
+  height: 64px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .app-downloaded-wrapper {
+  width: 196px;
+  left: 1571px;
+  position: absolute;
+  height: 128px;
+  top: 385px;
+}
+
+.frame .app-downloaded {
+  position: relative;
+  width: 178px;
+  height: 128px;
+  left: 8px;
+}
+
+.frame .text-wrapper-8 {
+  position: absolute;
+  width: 174px;
+  height: 64px;
+  top: 64px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-9 {
+  position: absolute;
+  width: 126px;
+  height: 64px;
+  top: 0;
+  left: 24px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .chex-2 {
+  position: absolute;
+  width: 1915px;
+  height: 795px;
+  top: 0;
+  left: 0;
+}
+
+.frame .protean-cloud-wrapper {
+  height: 377px;
+  top: 1382px;
+  left: 717px;
+  position: absolute;
+  width: 490px;
+}
+
+.frame .protean-cloud {
+  height: 325px;
+}
+
+.frame .link-4 {
+  height: 325px;
+  border-radius: 21.53px;
+  background: url(https://c.animaapp.com/mcnbfkm1VWNIOE/img/link-2.png) 50% 50%
+    / cover,
+    linear-gradient(
+      0deg,
+      rgba(240, 242, 244, 1) 0%,
+      rgba(240, 242, 244, 1) 100%
+    );
+  position: relative;
+  width: 490px;
+  overflow: hidden;
+}
+
+.frame .heading-computer {
+  position: absolute;
+  width: 223px;
+  height: 39px;
+  top: 53px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 39.2px;
+  white-space: nowrap;
+}
+
+.frame .nurtured-with-green {
+  position: absolute;
+  width: 337px;
+  height: 48px;
+  top: 155px;
+  left: 54px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #f0f2f4;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 29.1px;
+}
+
+.frame .container-3 {
+  position: absolute;
+  width: 160px;
+  height: 43px;
+  top: 282px;
+  left: 297px;
+  overflow: hidden;
+}
+
+.frame .overlap-group-5 {
+  position: relative;
+  width: 157px;
+  height: 50px;
+  top: -1px;
+}
+
+.frame .img-7 {
+  width: 157px;
+  height: 43px;
+  top: 1px;
+  position: absolute;
+  left: 0;
+}
+
+.frame .div-wrapper-7 {
+  position: absolute;
+  width: 26px;
+  height: 23px;
+  top: 22px;
+  left: 67px;
+  overflow: hidden;
+  transform: rotate(-42.49deg);
+}
+
+.frame .img-8 {
+  position: absolute;
+  width: 34px;
+  height: 26px;
+  top: -4px;
+  left: -3px;
+  transform: rotate(42.49deg);
+}
+
+.frame .group {
+  position: absolute;
+  width: 1607px;
+  height: 916px;
+  top: 1881px;
+  left: 167px;
+}
+
+.frame .heading-how-we {
+  position: absolute;
+  width: 531px;
+  height: 67px;
+  top: 0;
+  left: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 47, 117, 1) 0%,
+    rgba(123, 55, 169, 1) 52%,
+    rgba(57, 166, 221, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Roboto", Helvetica;
+  font-weight: 600;
+  color: transparent;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 63.6px;
+  white-space: nowrap;
+}
+
+.frame .overlap-3 {
+  position: absolute;
+  width: 509px;
+  height: 405px;
+  top: 84px;
+  left: 0;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 509px;
+  height: 395px;
+  top: 10px;
+  left: 0;
+  background-color: #aedcb9;
+  border-radius: 25px;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 191px;
+  height: 44px;
+  top: 0;
+  left: 254px;
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  width: 447px;
+  height: 192px;
+  top: 188px;
+  left: 29px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.frame .text-wrapper-10 {
+  position: absolute;
+  width: 251px;
+  height: 40px;
+  top: 55px;
+  left: 29px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .p {
+  position: absolute;
+  width: 434px;
+  height: 50px;
+  top: 102px;
+  left: 29px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .group-2 {
+  position: absolute;
+  width: 399px;
+  height: 145px;
+  top: 212px;
+  left: 54px;
+}
+
+.frame .text-wrapper-11 {
+  position: absolute;
+  width: 212px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .overlap-group-6 {
+  position: absolute;
+  width: 112px;
+  height: 34px;
+  top: 46px;
+  left: 0;
+}
+
+.frame .text-wrapper-12 {
+  position: absolute;
+  width: 80px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .vector-2 {
+  position: absolute;
+  width: 34px;
+  height: 32px;
+  top: 2px;
+  left: 78px;
+}
+
+.frame .text-wrapper-13 {
+  position: absolute;
+  width: 393px;
+  height: 50px;
+  top: 95px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .overlap-4 {
+  position: absolute;
+  width: 509px;
+  height: 405px;
+  top: 511px;
+  left: 830px;
+}
+
+.frame .rectangle-3 {
+  position: absolute;
+  width: 509px;
+  height: 399px;
+  top: 6px;
+  left: 0;
+  background-color: #aedcb9;
+  border-radius: 25px;
+}
+
+.frame .vector-3 {
+  position: absolute;
+  width: 191px;
+  height: 44px;
+  top: 0;
+  left: 252px;
+}
+
+.frame .rectangle-4 {
+  position: absolute;
+  width: 447px;
+  height: 192px;
+  top: 192px;
+  left: 26px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.frame .focus-on-core {
+  position: absolute;
+  width: 429px;
+  height: 69px;
+  top: 42px;
+  left: 26px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.frame .delegating-IT {
+  position: absolute;
+  width: 458px;
+  height: 50px;
+  top: 115px;
+  left: 30px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .text-wrapper-14 {
+  position: absolute;
+  width: 393px;
+  height: 50px;
+  top: 302px;
+  left: 46px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .group-3 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  top: 220px;
+  left: 46px;
+  background-image: url(https://c.animaapp.com/mcnbfkm1VWNIOE/img/target-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .overlap-5 {
+  position: absolute;
+  width: 509px;
+  height: 408px;
+  top: 508px;
+  left: 298px;
+}
+
+.frame .rectangle-5 {
+  position: absolute;
+  width: 509px;
+  height: 399px;
+  top: 9px;
+  left: 0;
+  background-color: #cec6ed;
+  border-radius: 25px;
+}
+
+.frame .rectangle-6 {
+  position: absolute;
+  width: 447px;
+  height: 192px;
+  top: 195px;
+  left: 31px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.frame .text-wrapper-15 {
+  top: 310px;
+  left: 65px;
+  font-size: 18px;
+  position: absolute;
+  width: 393px;
+  height: 50px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .text-wrapper-16 {
+  position: absolute;
+  width: 152px;
+  height: 40px;
+  top: 45px;
+  left: 40px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-17 {
+  position: absolute;
+  width: 438px;
+  height: 50px;
+  top: 123px;
+  left: 40px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .group-4 {
+  position: absolute;
+  width: 69px;
+  height: 62px;
+  top: 223px;
+  left: 65px;
+}
+
+.frame .overlap-6 {
+  position: absolute;
+  width: 508px;
+  height: 401px;
+  top: 88px;
+  left: 538px;
+}
+
+.frame .rectangle-7 {
+  position: absolute;
+  width: 508px;
+  height: 397px;
+  top: 4px;
+  left: 0;
+  background-color: #b9caf8;
+  border-radius: 25px;
+}
+
+.frame .vector-4 {
+  position: absolute;
+  width: 191px;
+  height: 45px;
+  top: 0;
+  left: 253px;
+}
+
+.frame .rectangle-8 {
+  position: absolute;
+  width: 442px;
+  height: 192px;
+  top: 184px;
+  left: 37px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.frame .reduce-downtime {
+  position: absolute;
+  width: 202px;
+  height: 40px;
+  top: 51px;
+  left: 37px;
+}
+
+.frame .text-wrapper-18 {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-19 {
+  position: absolute;
+  width: 434px;
+  height: 50px;
+  top: 103px;
+  left: 37px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .text-wrapper-20 {
+  position: absolute;
+  width: 212px;
+  height: 32px;
+  top: 231px;
+  left: 127px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .text-wrapper-21 {
+  top: 292px;
+  left: 61px;
+  font-size: 16px;
+  position: absolute;
+  width: 393px;
+  height: 50px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .feature {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  top: 218px;
+  left: 59px;
+  background-image: url(https://c.animaapp.com/mcnbfkm1VWNIOE/img/save-money-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.frame .overlap-7 {
+  position: absolute;
+  width: 506px;
+  height: 401px;
+  top: 88px;
+  left: 1075px;
+}
+
+.frame .rectangle-9 {
+  position: absolute;
+  width: 506px;
+  height: 397px;
+  top: 4px;
+  left: 0;
+  background-color: #cec6ed;
+  border-radius: 25px;
+}
+
+.frame .vector-5 {
+  position: absolute;
+  width: 190px;
+  height: 43px;
+  top: 0;
+  left: 250px;
+}
+
+.frame .reduce-downtime-2 {
+  position: absolute;
+  width: 319px;
+  height: 34px;
+  top: 51px;
+  left: 32px;
+}
+
+.frame .text-wrapper-22 {
+  position: absolute;
+  width: 317px;
+  height: 34px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .letting-your-IT {
+  position: absolute;
+  width: 456px;
+  height: 60px;
+  top: 98px;
+  left: 32px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.frame .rectangle-10 {
+  position: absolute;
+  width: 442px;
+  height: 192px;
+  top: 184px;
+  left: 32px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.frame .group-5 {
+  position: absolute;
+  width: 109px;
+  height: 32px;
+  top: 205px;
+  left: 196px;
+}
+
+.frame .text-wrapper-23 {
+  position: absolute;
+  width: 107px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .image {
+  position: absolute;
+  width: 205px;
+  height: 114px;
+  top: 246px;
+  left: 147px;
+}

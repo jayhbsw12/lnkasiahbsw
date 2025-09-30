@@ -1,0 +1,127 @@
+.stats-section {
+  position: absolute;
+  top: 385px;
+  left: 0;
+  width: 100%;
+  z-index: 66;
+}
+
+.stat-item {
+  position: absolute;
+  height: 128px;
+}
+
+.stat-continents {
+  width: 164px;
+  left: 174px;
+}
+
+.stat-projects {
+  width: 201px;
+  left: 555px;
+}
+
+.stat-data {
+  width: 195px;
+  left: 1125px;
+}
+
+.stat-users {
+  width: 196px;
+  left: 1571px;
+}
+
+.stat-content {
+  position: relative;
+  height: 128px;
+  font-size: 0px;
+  overflow: visible auto;
+}
+
+.stat-continents .stat-content {
+  width: 118px;
+  margin: 0 0 0 0;
+}
+
+.stat-projects .stat-content {
+  width: 96px;
+  margin: 0 0 0 57px;
+}
+
+.stat-data .stat-content {
+  width: 162px;
+  margin: 0 0 0 11px;
+}
+
+.stat-users .stat-content {
+  width: 174px;
+  margin: 0 0 0 8px;
+}
+
+.stat-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 64px;
+  color: #000000;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.stat-continents .stat-number {
+  width: 70px;
+  margin: 0 0 0 24px;
+}
+
+.stat-projects .stat-number {
+  width: 65px;
+  margin: 0 0 0 16px;
+}
+
+.stat-data .stat-number {
+  width: 162px;
+  margin: 0 0 0 0;
+}
+
+.stat-users .stat-number {
+  width: 126px;
+  margin: 0 0 0 24px;
+}
+
+.stat-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 64px;
+  color: #000000;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.stat-continents .stat-label {
+  width: 118px;
+  margin: 0 0 0 0;
+}
+
+.stat-projects .stat-label {
+  width: 96px;
+  margin: 0 0 0 0;
+}
+
+.stat-data .stat-label {
+  width: 158px;
+  margin: 0 0 0 2px;
+}
+
+.stat-users .stat-label {
+  width: 174px;
+  margin: 0 0 0 0;
+}
