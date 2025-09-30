@@ -108,7 +108,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
-        <img src="../lnk-asia/assets/images/rims.jpg" alt="Why LNK Asia" class="why-img"> <!-- Replace with your image -->
+        <img src="./assets/images/rims.jpg" alt="Why LNK Asia" class="why-img"> <!-- Replace with your image -->
       </div>
       <div class="col-md-6">
         <div class="why-text">
@@ -129,7 +129,7 @@
   <div class="container">
     
     <div class="why-choose-bg">
-    <!-- <img src="../lnk-asia/assets/images/cutting-edge-technology.svg" class="why-choose-shape"> -->
+    <img src="../lnk-asia/assets/images/cutting-edge-technology.svg" class="why-choose-shape">
     <p class="text-primary small mb-1">Why choose us</p>
     <h2 class="section-heading mb-5">Key features of our <span class="highlight">AI solutions</span></h2>
 
@@ -137,7 +137,7 @@
       <!-- Feature 1 -->
       <div class="col-md-4">
         <div class="feature-card h-100 text-start">
-          <div class="feature-icon"><img src="../lnk-asia/assets/images/cutting-edge-technology.svg"></div>
+          <div class="feature-icon"><img src="./assets/images/cutting-edge-technology.svg"></div>
           <h5 class="fw-bold">Cutting-edge technology</h5>
           <p>We leverage the latest advancements in AI to deliver innovative solutions that keep you ahead of the competition.</p>
         </div>
@@ -146,7 +146,7 @@
       <!-- Feature 2 -->
       <div class="col-md-4">
         <div class="feature-card h-100 text-start">
-          <div class="feature-icon"><img src="../lnk-asia/assets/images/tailored-AI-solution.svg"></div>
+          <div class="feature-icon"><img src="./assets/images/tailored-AI-solution.svg"></div>
           <h5 class="fw-bold">Tailored AI solutions</h5>
           <p>Our AI strategies are customized to meet the unique needs of your business, ensuring optimal results and seamless integration.</p>
         </div>
@@ -155,7 +155,7 @@
       <!-- Feature 3 -->
       <div class="col-md-4">
         <div class="feature-card h-100 text-start">
-          <div class="feature-icon"><img src="../lnk-asia/assets/images/expert-AI-team.svg"></div>
+          <div class="feature-icon"><img src="./assets/images/expert-AI-team.svg"></div>
           <h5 class="fw-bold">Expert AI team</h5>
           <p>Industry-leading AI experts with deep technical knowledge and practical experience in implementing AI across industries.</p>
         </div>
@@ -164,7 +164,7 @@
       <!-- Feature 4 -->
       <div class="col-md-4">
         <div class="feature-card h-100 text-start">
-          <div class="feature-icon"><img src="../lnk-asia/assets/images/Ethical Al practices.svg"></div>
+          <div class="feature-icon"><img src="./assets/images/Ethical Al practices.svg"></div>
           <h5 class="fw-bold">Ethical AI practices</h5>
           <p>We are committed to responsible AI development, ensuring our solutions are transparent and fair.</p>
         </div>
@@ -173,7 +173,7 @@
       <!-- Feature 5 -->
       <div class="col-md-4">
         <div class="feature-card h-100 text-start">
-          <div class="feature-icon"><img src="../lnk-asia/assets/images/Data-driven insights.svg"></div>
+          <div class="feature-icon"><img src="./assets/images/Data-driven insights.svg"></div>
           <h5 class="fw-bold">Data-driven insights</h5>
           <p>We turn complex data into actionable insights, helping you make informed decisions that drive business success.</p>
         </div>
@@ -182,7 +182,7 @@
       <!-- Feature 6 -->
       <div class="col-md-4">
         <div class="feature-card h-100 text-start">
-          <div class="feature-icon"><img src="../lnk-asia/assets/images/Scalable architecture.svg"></div>
+          <div class="feature-icon"><img src="./assets/images/Scalable architecture.svg"></div>
           <h5 class="fw-bold">Scalable architecture</h5>
           <p>Our AI solutions are designed to scale with your business, accommodating growth effortlessly.</p>
         </div>
