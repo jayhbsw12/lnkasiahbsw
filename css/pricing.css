@@ -5,6 +5,11 @@
   background-clip: text;
 }
 
+.pricing-left-container .square-box {
+  display: flex;
+  gap: 10px;
+}
+
 .hero-banner {
   padding: 120px 0px;
   background-image: url(../assets/images/background_hero.webp);
@@ -21,19 +26,74 @@
   width: 100%;
   height: auto;
 
-  padding: 100px 0px;
+  padding: 100px 0px 100px 0px;
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
 }
 
 .pricing-container {
   max-width: 1500px;
   width: 100%;
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
 }
 
-.pricing-left-container,
+.pricing-left-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .pricing-right-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subsection-title {
+  color: #352f75;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.subsection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subsection-list-item {
+  align-items: start;
+}
+.pricing-cards-container {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  /* border: 2px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.pricing-card {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid green; */
+  background: rgb(231, 231, 231);
+  border: 1px solid #6156dd;
+  padding: 40px;
+  border-radius: 20px;
 }
