@@ -1,0 +1,39 @@
+.heading-gradient {
+  background: linear-gradient(90deg, #352f75, #7b37a9, #39a6dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-banner {
+  padding: 120px 0px;
+  background-image: url(../assets/images/background_hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.pricing-section {
+  border: 1px solid blue;
+  width: 100%;
+  height: auto;
+
+  padding: 100px 0px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-container {
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.pricing-left-container,
+.pricing-right-container {
+}
