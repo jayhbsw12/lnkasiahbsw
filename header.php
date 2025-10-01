@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/testimonials.css">
 <link rel="stylesheet" href="css/features-colored.css">
-<link rel="stylesheet" href="css/navbar.scss">
+<!-- <link rel="stylesheet" href="css/navbar.scss"> -->
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/service-page.css">
@@ -69,7 +69,7 @@
             <li class="nav-item"><a class="nav-link<?= $currentPage === 'SuccessStories' ? ' active' : '' ?>"
                 href="success-stories.php">Success
                 Stories</a></li>
-            <li class="nav-item"><a class="nav-link<?= $currentPage === 'Pricing' ? ' active' : '' ?>"
+            <li class="nav-item"><a class=""
                 href="pricing.php">Pricing</a>
             </li>
           </ul>
@@ -80,7 +80,7 @@
               <a href="#" class="seg-link is-current">Sign-in</a>
               <a href="#" class="seg-link">Free Trial</a>
             </div>
-            <a href="contact.php  " class="btn btn-gradient btn-pill">Contact Us</a>
+            <a href="contact.php" class="btn btn-gradient btn-pill">Contact Us</a>
           </div>
         </div>
       </div>
