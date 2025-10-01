@@ -64,7 +64,7 @@
             </li>
 
             <li class="nav-item"><a class="nav-link<?= $currentPage === 'partners' ? ' active' : '' ?>"
-                href="#">Partners</a>
+                href="./partners.php">Partners</a>
             </li>
             <li class="nav-item"><a class="nav-link<?= $currentPage === 'SuccessStories' ? ' active' : '' ?>"
                 href="success-stories.php">Success
@@ -80,7 +80,7 @@
               <a href="#" class="seg-link is-current">Sign-in</a>
               <a href="#" class="seg-link">Free Trial</a>
             </div>
-            <a href="contact.php" class="btn btn-gradient btn-pill">Contact Us</a>
+            <a href="contact.php  " class="btn btn-gradient btn-pill">Contact Us</a>
           </div>
         </div>
       </div>
