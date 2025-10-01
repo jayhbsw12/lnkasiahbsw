@@ -270,6 +270,41 @@ img.hero-bottom-shape {
   }
 }
 
- .iti--separate-dial-code{
-width: 100%;
+.iti--separate-dial-code {
+  width: 100%;
+}
+
+/* ==== intl-tel-input fixes (do not remove) ==== */
+/* Ensure the plugin can render and receive clicks */
+.iti {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.iti__flag-container {
+  z-index: 5;
+  cursor: pointer;
+}
+.iti__country-list {
+  z-index: 99999;
+} /* dropdown above headers/overlays */
+
+/* If your input padding conflicts, enforce a safe left padding when dial code is separate */
+.iti--separate-dial-code input[type="tel"],
+.iti--separate-dial-code input.inp {
+  padding-left: 96px !important; /* room for flag + dial code area */
+}
+
+/* Kill any legacy prefix wrapper styles that might overlay the control */
+.inp-prefix,
+.inp-prefix .prefix {
+  pointer-events: auto !important;
+  position: static !important;
+}
+
+/* Make sure nothing higher up hides the dropdown */
+.contact-form,
+.form-grid,
+.fg {
+  overflow: visible; /* avoid clipping the country list */
 }

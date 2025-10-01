@@ -18,16 +18,26 @@ use PHPMailer\PHPMailer\Exception;
 
 // Inputs (sanitised lightly)
 $clean = fn($k, $f = FILTER_SANITIZE_SPECIAL_CHARS) => trim(filter_input(INPUT_POST, $k, $f) ?? '');
-$name     = $clean('name');
-$emailRaw = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$email    = filter_var($emailRaw, FILTER_VALIDATE_EMAIL) ? $emailRaw : '';
-$phone    = preg_replace('/\D+/', '', $clean('contact')); // digits only
-$company  = $clean('company');
-$country  = $clean('country');
-$subjectI = $clean('subject');
-$message  = trim($_POST['message'] ?? '');
+$name      = $clean('name');
+$emailRaw  = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+$email     = filter_var($emailRaw, FILTER_VALIDATE_EMAIL) ? $emailRaw : '';
+$company   = $clean('company');
+$subjectIn = $clean('subject');
+$message   = trim($_POST['message'] ?? '');
 
-if ($name === '' || $email === '' || $phone === '' || $company === '' || $country === '' || $subjectI === '' || $message === '') {
+// From intl-tel-input hidden fields:
+$phone_full    = $clean('phone_full');    // +911234567890
+$phone_country = $clean('phone_country'); // India
+$phone_dial    = $clean('phone_dial');    // +91
+
+// Fallback if hidden fields missing
+if ($phone_full === '') {
+  $fallback = $clean('contact');
+  if ($fallback !== '') $phone_full = $fallback;
+}
+
+// Minimal validation
+if ($name === '' || $email === '' || $company === '' || $subjectIn === '' || $message === '' || $phone_full === '') {
   header('Location: contact.php?error=' . urlencode('Please fill all required fields.'));
   exit;
 }
@@ -35,14 +45,14 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   header('Location: contact.php?error=' . urlencode('Please enter a valid email address.'));
   exit;
 }
-if (strlen($phone) < 7) {
+if (strlen(preg_replace('/\D+/', '', $phone_full)) < 7) {
   header('Location: contact.php?error=' . urlencode('Please enter a valid phone number.'));
   exit;
 }
 
 // Build email body
 $e = fn($s) => htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8');
-$subject = $subjectI !== '' ? $subjectI : 'New Contact Form Submission';
+$subject = $subjectIn !== '' ? $subjectIn : 'New Contact Form Submission';
 
 $body = '
 <!doctype html>
@@ -52,16 +62,20 @@ $body = '
     <h2 style="margin:0 0 16px;color:#245ba8;">New Contact Form Submission</h2>
     <p><strong>Name:</strong> '.$e($name).'</p>
     <p><strong>Email:</strong> '.$e($email).'</p>
-    <p><strong>Phone:</strong> '.$e($phone).'</p>
-    <p><strong>Company:</strong> '.$e($company).'</p>
-    <p><strong>Country:</strong> '.$e($country).'</p>
-    <p><strong>Subject:</strong> '.$e($subjectI).'</p>
+    <p><strong>Phone:</strong> '.$e($phone_full).'</p>'.
+    ($phone_country !== '' ? '<p><strong>Phone Country:</strong> '.$e($phone_country).'</p>' : '').
+    ($phone_dial !== '' ? '<p><strong>Dial Code:</strong> '.$e($phone_dial).'</p>' : '').
+    '<p><strong>Company:</strong> '.$e($company).'</p>
+    <p><strong>Subject:</strong> '.$e($subjectIn).'</p>
     <p><strong>Message:</strong><br>'.nl2br($e($message)).'</p>
   </div>
 </body></html>';
 
 $alt  = "New Contact Form Submission\n";
-$alt .= "Name: $name\nEmail: $email\nPhone: $phone\nCompany: $company\nCountry: $country\nSubject: $subjectI\n\nMessage:\n$message\n";
+$alt .= "Name: $name\nEmail: $email\nPhone: $phone_full\n";
+if ($phone_country !== '') $alt .= "Phone Country: $phone_country\n";
+if ($phone_dial !== '')    $alt .= "Dial Code: $phone_dial\n";
+$alt .= "Company: $company\nSubject: $subjectIn\n\nMessage:\n$message\n";
 
 // Send via PHPMailer (fill in your credentials)
 $mail = new PHPMailer(true);
@@ -69,13 +83,13 @@ try {
   $mail->isSMTP();
   $mail->Host       = 'smtp.gmail.com';
   $mail->SMTPAuth   = true;
-  $mail->Username   = 'jaymodihbsoftweb@gmail.com'; // <- your Gmail
-  $mail->Password   = 'vusdsanpzgmztovr';            // <- your Gmail App Password
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or ENCRYPTION_SMTPS with Port 465
+  $mail->Username   = 'jaymodihbsoftweb@gmail.com';
+  $mail->Password   = 'vusd sanp zgmz tovr';
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or ENCRYPTION_SMTPS with 465
   $mail->Port       = 587;
 
-  $mail->setFrom('jaymodihbsoftweb@gmail.com', 'Website Contact'); // from address/name
-  $mail->addAddress('jaymodihbsoftweb@gmail.com', 'LNK Asia');        // recipient
+  $mail->setFrom('jaymodihbsoftweb@gmail.com', 'Website Contact');
+  $mail->addAddress('jaymodihbsoftweb@gmail.com', 'LNK Asia');
   if ($email) $mail->addReplyTo($email, ($name ?: 'Website User'));
 
   $mail->isHTML(true);
@@ -84,13 +98,10 @@ try {
   $mail->AltBody = $alt;
 
   $mail->send();
-
-  // ✅ success -> thank-you page
-  header('Location: thankyou.php');
+  header('Location: thankyou.php'); // ✅ success
   exit;
 
 } catch (Exception $ex) {
-  // ❌ failure -> back with toast error
   header('Location: contact.php?error=' . urlencode('We couldn’t send your message. Please try again.'));
   exit;
 }
