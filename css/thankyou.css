@@ -1,0 +1,17 @@
+.hero-banner {
+  padding: 100px 0px;
+  background-image: url(../assets/images/background_hero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  position: relative;
+}
+.thank-you-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}

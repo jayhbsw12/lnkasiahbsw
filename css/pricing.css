@@ -22,11 +22,11 @@
 }
 
 .pricing-section {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 100%;
   height: auto;
 
-  padding: 100px 0px 100px 0px;
+  padding: 150px 0px 0px 0px;
 
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@
   max-width: 1500px;
   width: 100%;
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   display: flex;
   flex-direction: row;
@@ -88,7 +88,15 @@
   gap: 20px;
 }
 
+.pricing-card hr{
+  margin: 0;
+}
+
 .pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
   width: 100%;
   height: auto;
   /* border: 1px solid green; */
@@ -96,4 +104,8 @@
   border: 1px solid #6156dd;
   padding: 40px;
   border-radius: 20px;
+}
+
+.pricing-card button{
+  margin-top: 40px;
 }
