@@ -147,7 +147,7 @@
         </div>
         <div style="text-align: center">The Standard and Custom plans include all apps for a single fee: <br> With no
             hidden costs, no limit on features or data: enjoy real transparency! <br> (*) The discount is valid for 12
-            months, for initial users ordered.(**) Cost for Odoo.sh hosting not
+            months, for initial users ordered.(**)Cost for Odoo.sh hosting not
             included.</div>
     </section>
 
@@ -161,7 +161,7 @@
                     <img src="assets/images/square.svg">
                     <span>ERP - ODOO Enterprise</span>
                 </span>
-                <h2> <span class="heading-gradient">Customization</span></h2>
+                <h2><span class="heading-gradient">Customization</span></h2>
                 <p>
                     We offer personalized Odoo consultations that carve a path toward your success. we are Odoo Ready
                     partner. <br>
@@ -176,4 +176,103 @@
             </div>
         </div>
     </section>
+
+    <section class="pricing-section">
+        <div class="pricing-container" style="display: flex; flex-direction: column; align-items: center;">
+            <h2><span class="heading-gradient">Technology Consulting</span></h2>
+            <div class="pricing-cards-container">
+                <div class="pricing-card">
+                    <h3 style="color:#352F75">Weekly</h3>
+                    <!-- <span>Free Forever</span> -->
+                    <hr>
+                    <div style="display: flex; justify-content: start;">
+                        <strong>Rs</strong>
+                        <span style="font-size:40px; font-weight: 500; color: #352F75;">400.00</span>
+                        <strong>/Week</strong>
+                    </div>
+                    <hr>
+                    <!-- <strong>All Apps</strong> -->
+                    <div class="subsection-list">
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Scope analyze & primary Documentation</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Remote meetings</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Availability 8x5</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Remote & Email support</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>*100% Advance payment</span>
+                        </div>
+                    </div>
+                    <div class="card-button-container">
+                        <button class="cta-btn">
+                            <span class="cta-text">Contact Us</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <h3 style="color:#352F75">One App Free</h3>
+                    <span>User/Month</span>
+                    <hr>
+                    <div style="display: flex; justify-content: start;">
+                        <strong>Rs</strong>
+                        <span style="font-size:40px; font-weight: 500; color: #352F75;">580</span>
+                        <strong style="font-size:20px; text-decoration: line-through; text-decoration-color: red;">/725
+                            Rs*</strong>
+                    </div>
+                    <hr>
+                    <strong>All Apps</strong>
+                    <div class="subsection-list">
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Odoo Online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <h3 style="color:#352F75">One App Free</h3>
+                    <span>User/Month</span>
+                    <hr>
+                    <div style="display: flex; justify-content: start;">
+                        <strong>Rs</strong>
+                        <span style="font-size:40px; font-weight: 500; color: #352F75;">890</span><strong
+                            style="font-size:20px; text-decoration: line-through; text-decoration-color: red;">/1150
+                            Rs*</strong>
+                    </div>
+                    <hr>
+                    <strong>All Apps</strong>
+                    <div class="subsection-list">
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Odoo Online / Odoo.sh ‘ ‘ / On-Premise</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Odoo Studio</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Multi-Company</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>External API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
+<?php include("footer.php"); ?>
