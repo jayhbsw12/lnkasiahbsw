@@ -13,7 +13,7 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container">
+        <div class="partner-container" style="height: 650px;">
             <div class="partner-column-left">
                 <div>
                     <h2 class="heading-gradient">Vigyanlabs</h2>
@@ -135,7 +135,7 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container-3">
+        <div class="partner-container-3" style="height: 728px;">
             <div class="partner-column-left">
                 <div>
                     <h2 class="heading-gradient">Simplify & Secure Your Network with Smart DDI Technology</h2>

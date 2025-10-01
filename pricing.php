@@ -1,3 +1,7 @@
+<?php include("header-top.php"); ?>
+<?php $currentPage = 'pricing';   // set to 'index', 'about', 'services', 'contact' per page ?>
+<title>LNK Asia</title>
+<meta name="description" content="">
 <?php include("header.php"); ?>
 
 <body>
@@ -221,55 +225,99 @@
                     </div>
                 </div>
                 <div class="pricing-card">
-                    <h3 style="color:#352F75">One App Free</h3>
-                    <span>User/Month</span>
+                    <h3 style="color:#352F75">Monthly</h3>
+                    <!-- <span>Free Forever</span> -->
                     <hr>
                     <div style="display: flex; justify-content: start;">
                         <strong>Rs</strong>
-                        <span style="font-size:40px; font-weight: 500; color: #352F75;">580</span>
-                        <strong style="font-size:20px; text-decoration: line-through; text-decoration-color: red;">/725
-                            Rs*</strong>
+                        <span style="font-size:40px; font-weight: 500; color: #352F75;">3520.00</span>
+                        <strong>/Week</strong>
                     </div>
                     <hr>
-                    <strong>All Apps</strong>
-                    <div class="subsection-list">
+                    <!-- <strong>All Apps</strong> -->
+                    <div class="subsection-list" style="margin-bottom: 10px">
                         <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
-                            <span>Odoo Online</span>
+                            <span>Scope analyze & primary Documentation</span>
                         </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Remote meetings</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Availability 8x5</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>Remote & Email support</span>
+                        </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>*100% Advance payment</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="subsection-list" style="margin-bottom: 10px">
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>* 50% Advance, 50% Upon completion of month</span>
+                        </div>
+                    </div>
+                    <div class="card-button-container">
+                        <button class="cta-btn">
+                            <span class="cta-text">Contact Us</span>
+                        </button>
                     </div>
                 </div>
                 <div class="pricing-card">
-                    <h3 style="color:#352F75">One App Free</h3>
-                    <span>User/Month</span>
+                    <h3 style="color:#352F75">Project Basis</h3>
+                    <!-- <span>Free Forever</span> -->
                     <hr>
-                    <div style="display: flex; justify-content: start;">
-                        <strong>Rs</strong>
-                        <span style="font-size:40px; font-weight: 500; color: #352F75;">890</span><strong
-                            style="font-size:20px; text-decoration: line-through; text-decoration-color: red;">/1150
-                            Rs*</strong>
+                    <div style="">
+                        <!-- <strong></strong> -->
+                        <span style="font-size:30px; font-weight: 500; color: #352F75;">Get In Touch</span>
+                        <!-- <strong></strong> -->
                     </div>
                     <hr>
-                    <strong>All Apps</strong>
-                    <div class="subsection-list">
+                    <!-- <strong>All Apps</strong> -->
+                    <div class="subsection-list" style="margin-bottom: 10px">
                         <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
-                            <span>Odoo Online / Odoo.sh ‘ ‘ / On-Premise</span>
+                            <span>Scope analyze & primary Documentation</span>
                         </div>
                         <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
-                            <span>Odoo Studio</span>
+                            <span>Remote meetings</span>
                         </div>
                         <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
-                            <span>Multi-Company</span>
+                            <span>Availability 8x5</span>
                         </div>
                         <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
-                            <span>External API</span>
+                            <span>Remote & Email support</span>
                         </div>
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>*100% Advance payment</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="subsection-list" style="margin-bottom: 10px">
+                        <div class="subsection-list-item">
+                            <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
+                            <span>* 30% Advance, 60% Upon Document / Solution  submission, 10% Upon Project
+                                Implementation</span>
+                        </div>
+                    </div>
+                    <div class="card-button-container">
+                        <button class="cta-btn">
+                            <span class="cta-text">Contact Us</span>
+                        </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

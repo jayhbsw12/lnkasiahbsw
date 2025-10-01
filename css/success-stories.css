@@ -1,0 +1,103 @@
+.heading-gradient {
+  background: linear-gradient(90deg, #352f75, #7b37a9, #39a6dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-contact {
+  justify-items: center !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.archive-section {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid blue; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0px;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.archive-holder {
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #352f75;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 0px 0px 75px;
+}
+
+.left-archive-holder,
+.right-archive-holder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid green; */
+  flex-direction: column;
+}
+
+.left-archive-upper-holder,
+.left-archive-lower-holder {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid orange; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+/* .subtitle-normal{
+    width: auto;    
+    height: auto;
+    border: 2px solid red;
+    padding: 8px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+} */
+/* pill with gradient border + white inside */
+.subtitle-normal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 20px; /* inner spacing */
+  border-radius: 9999px; /* fully rounded */
+  border: 2px solid transparent; /* lets the gradient paint the stroke */
+
+  /* 1) white fill on the padding-box
+     2) gradient for the border on the border-box */
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #352f75, #7b37a9, #39a6dd) border-box;
+
+  color: #111; /* text colour */
+}
+
+.cta-btn {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.left-archive-holder {
+  justify-content: space-around;
+}

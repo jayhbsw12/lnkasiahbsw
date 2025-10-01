@@ -22,10 +22,9 @@
 <link rel="stylesheet" href="css/service-page.css">
 <link rel="stylesheet" href="css/partners.css">
 <link rel="stylesheet" href="css/pricing.css">
-
-
-
-
+<link rel="stylesheet" href="css/thankyou.css">
+<link rel="stylesheet" href="css/success-stories.css">
+<link rel="stylesheet" href="css/single-story.css">
 </head>
 
 <body>
@@ -48,8 +47,10 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <?php $currentPage = $currentPage ?? ''; ?>
           <ul class="navbar-nav ms-lg-4 mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link<?= $currentPage === 'index' ? ' active' : '' ?>" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link<?= $currentPage === 'about' ? ' active' : '' ?>" href="#">About Us</a>
+            <li class="nav-item"><a href="index.php" 
+                class="nav-link<?= $currentPage === 'index' ? ' active' : '' ?>">Home</a></li>
+            <li class="nav-item"><a class="nav-link<?= $currentPage === 'about' ? ' active' : '' ?>"
+                href="about-us.php">About Us</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -62,11 +63,14 @@
               </ul>
             </li>
 
-            <li class="nav-item"><a class="nav-link<?= $currentPage === 'partners' ? ' active' : '' ?>" href="#">Partners</a>
+            <li class="nav-item"><a class="nav-link<?= $currentPage === 'partners' ? ' active' : '' ?>"
+                href="#">Partners</a>
             </li>
-            <li class="nav-item"><a class="nav-link<?= $currentPage === 'SuccessStories' ? ' active' : '' ?>" href="#">Success
+            <li class="nav-item"><a class="nav-link<?= $currentPage === 'SuccessStories' ? ' active' : '' ?>"
+                href="success-stories.php">Success
                 Stories</a></li>
-            <li class="nav-item"><a class="nav-link<?= $currentPage === 'Pricing' ? ' active' : '' ?>" href="#">Pricing</a>
+            <li class="nav-item"><a class="nav-link<?= $currentPage === 'Pricing' ? ' active' : '' ?>"
+                href="pricing.php">Pricing</a>
             </li>
           </ul>
 
@@ -76,7 +80,7 @@
               <a href="#" class="seg-link is-current">Sign-in</a>
               <a href="#" class="seg-link">Free Trial</a>
             </div>
-            <a href="#" class="btn btn-gradient btn-pill">Contact Us</a>
+            <a href="contact.php" class="btn btn-gradient btn-pill">Contact Us</a>
           </div>
         </div>
       </div>
