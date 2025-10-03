@@ -13,7 +13,7 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container" style="height: 650px;">
+        <div class="partner-container" style="">
             <div class="partner-column-left">
                 <div>
                     <h2 class="heading-gradient">Vigyanlabs</h2>
