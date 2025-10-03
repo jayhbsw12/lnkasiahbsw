@@ -85,7 +85,7 @@ try {
   $mail->SMTPAuth   = true;
   $mail->AuthType   = 'LOGIN'; // often safest with M365 SMTP AUTH
   $mail->Username   = 'contactus@lnkasia.com';
-  $mail->Password   = 'REPLACE_WITH_REAL_PASSWORD'; // avoid app passwords if possible
+  $mail->Password   = 'rvglgsbqxslgsxws'; // avoid app passwords if possible
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = 587;
 
