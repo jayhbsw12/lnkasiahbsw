@@ -354,3 +354,18 @@ img.linkedin-icon {
   }
 
 }
+
+
+@media (max-width: 767px) {
+
+.card {
+  background-image: url(../assets/images/card-bg.png);
+}
+
+
+
+
+
+
+
+}

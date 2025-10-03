@@ -28,19 +28,24 @@
 }
 
 .archive-holder {
-  max-width: 1500px;
-  width: 100%;
-  height: auto;
-  border: 2px solid #352f75;
-  border-radius: 30px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 0px 0px 75px;
+    max-width: 1500px;
+    width: 100%;
+    height: auto;
+    background-image: url(../assets/images/stories/stories-section-bg.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 0px 0px 75px;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .left-archive-holder,
 .right-archive-holder {
@@ -100,4 +105,27 @@
 
 .left-archive-holder {
   justify-content: space-around;
+}
+
+@media(max-width:991px){
+  .archive-holder {
+        max-width: 1500px;
+        width: 100%;
+        height: auto;
+        border: 2px solid #352f75;
+        border-radius: 30px;
+        padding: 30px;
+        flex-direction: column-reverse;
+    }
+.archive-section{
+  padding: 50px 20px 0px 20px;
+  gap: 30px;
+}
+.right-archive-holder img {
+    width: 100%;
+}
+h2.heading-gradient {
+    margin: 20px 0px;
+    line-height: 1.3;
+}
 }

@@ -194,13 +194,19 @@ img.hero-bottom-shape {
 
 .card-1 {
   background-image: url(../assets/images/left-card.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .card-2 {
   background-image: url(../assets/images/top-card.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card-3 {
   background-image: url(../assets/images/right-card.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card__icon {
@@ -304,7 +310,7 @@ img.hero-bottom-shape {
     position: absolute;
     bottom: -3px;
     width: 53%;
-  right: 21%;
+  right: 22%;
 }
   .contact-cards__grid {
     grid-template-columns: 1fr;
