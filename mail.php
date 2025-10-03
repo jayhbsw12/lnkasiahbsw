@@ -16,7 +16,7 @@ require __DIR__ . '/PHPMailer/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Inputs (sanitised lightly)
+// --- Inputs (sanitised lightly)
 $clean = fn($k, $f = FILTER_SANITIZE_SPECIAL_CHARS) => trim(filter_input(INPUT_POST, $k, $f) ?? '');
 $name      = $clean('name');
 $emailRaw  = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
@@ -77,31 +77,47 @@ if ($phone_country !== '') $alt .= "Phone Country: $phone_country\n";
 if ($phone_dial !== '')    $alt .= "Dial Code: $phone_dial\n";
 $alt .= "Company: $company\nSubject: $subjectIn\n\nMessage:\n$message\n";
 
-// Send via PHPMailer (fill in your credentials)
+// --- Send via PHPMailer
 $mail = new PHPMailer(true);
 try {
   $mail->isSMTP();
-  $mail->Host       = 'smtp.gmail.com';
+  $mail->Host       = 'smtp.office365.com';
   $mail->SMTPAuth   = true;
-  $mail->Username   = 'jaymodihbsoftweb@gmail.com';
-  $mail->Password   = 'vusd sanp zgmz tovr';
-  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or ENCRYPTION_SMTPS with 465
+  $mail->AuthType   = 'LOGIN'; // often safest with M365 SMTP AUTH
+  $mail->Username   = 'contactus@lnkasia.com';
+  $mail->Password   = 'REPLACE_WITH_REAL_PASSWORD'; // avoid app passwords if possible
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = 587;
 
-  $mail->setFrom('jaymodihbsoftweb@gmail.com', 'Website Contact');
-  $mail->addAddress('jaymodihbsoftweb@gmail.com', 'LNK Asia');
-  if ($email) $mail->addReplyTo($email, ($name ?: 'Website User'));
+  $mail->CharSet    = 'UTF-8';
+  $mail->Encoding   = 'base64';
+
+  // From must be the authenticated mailbox (or its alias)
+  $mail->setFrom('contactus@lnkasia.com', 'Website Contact');
+
+  // For testing -> send to you
+  $mail->addAddress('jaymodihbsoftweb@gmail.com', 'Jay Modi');
+
+  // Let replies go to the site visitor
+  if ($email) {
+    $mail->addReplyTo($email, ($name !== '' ? $name : 'Website User'));
+  }
 
   $mail->isHTML(true);
   $mail->Subject = $subject;
   $mail->Body    = $body;
   $mail->AltBody = $alt;
 
+  // Optional: stricter TLS (default is fine)
+  // $mail->SMTPOptions = ['ssl' => ['verify_peer' => true, 'verify_peer_name' => true, 'allow_self_signed' => false]];
+
   $mail->send();
-  header('Location: thankyou.php'); // ✅ success
+  header('Location: thankyou.php');
   exit;
 
 } catch (Exception $ex) {
+  // Quick debug hook: uncomment to log PHPMailer errors
+  // error_log('Mailer Error: ' . $mail->ErrorInfo);
   header('Location: contact.php?error=' . urlencode('We couldn’t send your message. Please try again.'));
   exit;
 }

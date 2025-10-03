@@ -1,57 +1,109 @@
-  /* ===== Navbar base ===== */
-    .navbar{padding:.6rem 0;background:#fff}
-    .brand-mark{width:90px;object-fit:contain}
-    .brand-text{font-size:.95rem;line-height:1;margin-left:.4rem;color:#1e73be;font-weight:700}
-    .nav-link{color:#5d5f6d;font-weight:500;padding:.5rem 1.5rem!important}
-    .nav-link:hover,.nav-link:focus,.nav-link.active{color:#7b61ff !important}
-    .sticky-nav{position:sticky;top:0;z-index:1030;box-shadow: 0 4px 5px rgb(16 24 40 / 4%)}
-    .nav-item .dropdown-toggle::after{margin-left:.35rem}
-
-    /* ===== Right actions ===== */
-    .action-group{display:flex;align-items:center;gap:1.75rem;}
-
-    /* Segmented control container (Sign-in + Free Trial) */
-    .segmented{
-    display: inline-flex;
-    align-items: center;
-    gap: 50px;
-    border: 1.5px solid #bdb7ff;
-    border-radius: 10px;
-    padding: 15px 37px;
-    background: #fff;
-    box-shadow: 0 2px 6px rgba(32, 35, 89, .06);
-    }
-a.btn.btn-gradient.btn-pill {
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 30px;
-    border-radius: 15px;
+/* ===== Navbar base ===== */
+.navbar {
+  padding: 0.6rem 0;
+  background: #fff;
 }
-    .seg-link{
-      display:inline-block;
-      border-radius:10px;                   /* keep inner links rounded */
-      font-size: 18px;
-      text-decoration:none;
-      font-weight:500;
-      line-height:1;
-      color:#7b4dff;                         /* purple for non-current */
-      white-space:nowrap;
-    }
-    .seg-link.is-current{                    /* match screenshot: Sign-in looks darker */
-      color:#141a24;
-      
-    }
-    .seg-link:focus-visible{
-      outline:2px solid #cfcaff;outline-offset:2px;
-    }
+.brand-mark {
+  width: 90px;
+  object-fit: contain;
+}
+.brand-text {
+  font-size: 0.95rem;
+  line-height: 1;
+  margin-left: 0.4rem;
+  color: #1e73be;
+  font-weight: 700;
+}
+.nav-link {
+  color: #5d5f6d;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem !important;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: #7b61ff !important;
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  box-shadow: 0 4px 5px rgb(16 24 40 / 4%);
+}
+.nav-item .dropdown-toggle::after {
+  margin-left: 0.35rem;
+}
 
-    /* Standalone gradient CTA */
-    .btn-pill{border-radius:10px;padding:.65rem 1.15rem;font-weight:700}
-    .btn-gradient{
-      background:linear-gradient(90deg,#7b4dff 0%,#31d1c0 100%);
-      color:#fff;border:0;
-      box-shadow:0 2px 6px rgba(0,0,0,.12) inset, 0 1px 2px rgba(0,0,0,.06);
-    }
-    .btn-gradient:hover{filter:brightness(.96);color:#fff}
+/* ===== Right actions ===== */
+.action-group {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
 
-  
+/* Segmented control container (Sign-in + Free Trial) */
+.segmented {
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  border: 1.5px solid #bdb7ff;
+  border-radius: 10px;
+  padding: 15px 37px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(32, 35, 89, 0.06);
+}
+a.btn.btn-gradient.btn-pill {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+.seg-link {
+  display: inline-block;
+  border-radius: 10px; /* keep inner links rounded */
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1;
+  color: #7b4dff; /* purple for non-current */
+  white-space: nowrap;
+}
+.seg-link.is-current {
+  /* match screenshot: Sign-in looks darker */
+  color: #141a24;
+}
+.seg-link:focus-visible {
+  outline: 2px solid #cfcaff;
+  outline-offset: 2px;
+}
+
+/* Standalone gradient CTA */
+.btn-pill {
+  border-radius: 10px;
+  padding: 0.65rem 1.15rem;
+  font-weight: 700;
+}
+.btn-gradient {
+  background: linear-gradient(90deg, #7b4dff 0%, #31d1c0 100%);
+  color: #fff;
+  border: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) inset, 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.btn-gradient:hover {
+  filter: brightness(0.96);
+  color: #fff;
+}
+
+.nav-item {
+  padding: 8px 24px;
+}
+li.nav-item a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #555555;
+}
+
+.navbar-nav .dropdown{
+  padding: 0;
+}
