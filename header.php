@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <?php $currentPage = $currentPage ?? ''; ?>
           <ul class="navbar-nav ms-lg-4 mb-2 mb-lg-0">
-            <li class="nav-item"><a href="index.php" 
+            <li class="nav-item"><a href="index.php"
                 class="nav-link<?= $currentPage === 'index' ? ' active' : '' ?>">Home</a></li>
             <li class="nav-item"><a class="nav-link<?= $currentPage === 'about' ? ' active' : '' ?>"
                 href="about-us.php">About Us</a>
@@ -69,8 +69,7 @@
             <li class="nav-item"><a class="nav-link<?= $currentPage === 'SuccessStories' ? ' active' : '' ?>"
                 href="success-stories.php">Success
                 Stories</a></li>
-            <li class="nav-item"><a class=""
-                href="pricing.php">Pricing</a>
+            <li class="nav-item"><a class="nav-link" href="pricing.php">Pricing</a>
             </li>
           </ul>
 
