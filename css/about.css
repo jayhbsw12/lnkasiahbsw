@@ -374,8 +374,7 @@ img.linkedin-icon {
     radial-gradient(circle var(--n) at 0 50%, transparent 98%, #000 99%) left / 50% 100% no-repeat,
     radial-gradient(circle var(--n) at 100% 50%, transparent 98%, #000 99%) right / 50% 100% no-repeat;
 }
-}
-=======
+
   .card {
     background-image: url(../assets/images/card-bg.png);
   }
