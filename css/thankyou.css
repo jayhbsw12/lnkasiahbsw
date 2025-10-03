@@ -1,10 +1,9 @@
 .hero-banner {
-  padding: 100px 0px;
+  padding: 100px 30px;
   background-image: url(../assets/images/background_hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
   align-content: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +22,4 @@
   .hero-banner{
     padding: 100px 20px;
   }
-}
-  width: 100%;
-  height: auto;
 }
