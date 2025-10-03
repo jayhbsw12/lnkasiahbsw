@@ -31,7 +31,7 @@
 
 <section class="technocraft">
   <div class="container">
-    <div class="row align-items-start mb-4">
+    <div class="row align-items-start mb-4 col-lg-6">
       <div class="col-md-6">
         <h2 class="section-title-about">
           We <span class="highlight-techsol">LNK ASIA TECHSOL</span> AND
@@ -57,11 +57,11 @@
 
     <div class="row g-4">
       <!-- Mission -->
-      <div class="col-md-3">
+      <div class="col-md-3 col-lg-6">
         <div class="tab-card text-center h-100">
           <div class="icon"><i class="fas fa-bullseye"></i></div>
           <div class="icon-flex">
-            <img src="../lnk-asia/assets/images/mission.svg" alt="mission">
+            <img src="assets/images/mission.svg" alt="mission">
             <h5>Mission</h5>
           </div>
           <p class="icon-p">Our mission is to create sustainable value for our customers, by bringing innovative ideas
@@ -70,11 +70,11 @@
       </div>
 
       <!-- Vision -->
-      <div class="col-md-3">
+      <div class="col-md-3 col-lg-6">
         <div class="tab-card text-center h-100 active">
           <div class="icon"><i class="fas fa-lightbulb"></i></div>
           <div class="icon-flex">
-            <img src="../lnk-asia/assets/images/vision.svg" alt="vision">
+            <img src="assets/images/vision.svg" alt="vision">
             <h5>Vision</h5>
           </div>
           <p class="icon-p">Our vision is to reduce cost with enhanced data security, effectively respond to dynamic
@@ -87,7 +87,7 @@
         <div class="tab-card text-center h-100">
           <div class="icon"><i class="fas fa-handshake"></i></div>
           <div class="icon-flex">
-            <img src="../lnk-asia/assets/images/core-values.svg" alt="core values">
+            <img src="assets/images/core-values.svg" alt="core values">
             <h5>Core Values</h5>
           </div>
           <p class="icon-p">Our core values are Commitment, Reliability, Loyalty, Transparency.</p>
@@ -99,7 +99,7 @@
         <div class="tab-card text-center h-100">
           <div class="icon"><i class="fas fa-chart-line"></i></div>
           <div class="icon-flex">
-            <img src="../lnk-asia/assets/images/goals.svg" alt="goal">
+            <img src="assets/images/goals.svg" alt="goal">
             <h5>Goal</h5>
           </div>
           <p class="icon-p">Our goal is to achieve the most profitability, competitiveness, and sustainability through
@@ -119,7 +119,7 @@
       </div>
       <div class="col-md-6">
         <div class="why-text">
-          <h3>Why <span class="highlight-techsol">LNK ASIA</span> ?</h3>
+          <h2 class="section-heading">Why <span class="highlight-techsol">LNK ASIA</span> ?</h2>
           <p>By bringing innovative ideas and technologies to address customer's needs. We focus on customer delight and
             exceeding customer expectations is our belief.</p>
           <p>Our customer-centric approach ensures that we deliver solutions that meet your unique needs and exceed your
@@ -138,8 +138,8 @@
   <div class="container">
 
     <div class="why-choose-bg">
-      <img src="../lnk-asia/assets/images/cutting-edge-technology.svg" class="why-choose-shape">
-      <p class="text-primary small mb-1">Why choose us</p>
+      <img src="assets/images/why-choose-shape-top.png" class="why-choose-shape">
+      <span class="mb-1" style="display: flex;gap: 10px; align-items: baseline; font-size: 18px"> <img src="assets/images/square.svg"> Why choose us</span>
       <h2 class="section-heading mb-5">Key features of our <span class="highlight">AI solutions</span></h2>
 
       <div class="row g-4">
@@ -213,101 +213,81 @@
   <h2 class="flip-box-heading">Meet Our <span class="highlight-techsol"> Leaders </span></h2>
 </div>
 
-<section class="flip-grid">
-
-  <article class="flip-card">
-    <div class="flip-inner" tabindex="0" aria-label="More info">
-      <div class="flip-face flip-front">
-        <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
-        <img src="assets\images\Parag soni.png" alt="Parag Soni">
-      </div>
-      <div class="flip-face flip-back">
-        <div class="back-text">
-
-          <p>He brings over two decades of industry experience. He is also the expert in ERP, Cloud and strategic
-            alliances.</p>
-          <br>
-          <p>His passion for excellence and his years of experience in the software industry have been instrumental in
-            our success</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h4 style="margin-top:15px;">Parag Soni</h4>
-      <p>ERP Expert</p>
-    </div>
-  </article>
-
-
-  <article class="flip-card">
-    <div class="flip-inner" tabindex="0" aria-label="More info">
-      <div class="flip-face flip-front">
-        <img src="../lnk-asia/assets/images/LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
-        <img src="../lnk-asia/assets/images/Pallav Parekh.png" alt="Pallav Parekh">
-      </div>
-      <div class="flip-face flip-back">
-        <div class="back-text">
-
-          <p>He brings over two decades of telecom and consulting experience. His expertise brings value addition to
-            project and new acquisitions.</p>
-          <br>
-          <p>He brings his extensive experience to our team, providing valuable insights and driving our financial
-            success.</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h4 style="margin-top:15px;">Pallav Parekh</h4>
-      <p>ERP Expert</p>
-    </div>
-  </article>
-
-
-  <article class="flip-card">
-    <div class="flip-inner" tabindex="0" aria-label="More info">
-      <div class="flip-face flip-front">
-        <img src="../lnk-asia/assets/images/LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
-        <img src="../lnk-asia/assets/images/Dhaval Patel.png" alt="Dhaval Patel">
-      </div>
-      <div class="flip-face flip-back">
-        <div class="back-text">
-
-          <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
-            expectations and deliver exceptional results.</p>
-          <br>
-          <p>His background in IT and system management makes him a pro at company operations. He also handles the
-            advisory team.</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h4 style="margin-top:15px;">Dhaval Patel</h4>
-      <p>ERP Expert</p>
-    </div>
-  </article>
-</section>
 
 <section class="container text-center">
   <div class="flip-card-container">
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
+    <div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
 
-          <img src="assets\images\Parag soni.png" alt="Avatar" style="width:350px;height:350px;">
+            <img src="assets\images\Parag soni.png" alt="Avatar" style="width:350px;height:350px;">
+          </div>
+          <div class="flip-card-back">
+            <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
+                href="https://linkedin.com"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
         </div>
-        <div class="flip-card-back">
-          <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
-              href="https://linkedin.com"></a>
-          <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
-            expectations and deliver exceptional results.</p>
-          
-          <p>His background in IT and system management makes him a pro at company operations. He also handles the
-            advisory team.</p>
-        </div>
+
       </div>
       <div class="flip-details">
         <h4>Parag Soni</h4>
+        <span>ERP Expert</span>
+      </div>
+    </div>
+    <div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
+
+            <img src="assets\images\Pallav Parekh.png" alt="Avatar" style="width:350px;height:350px;">
+          </div>
+          <div class="flip-card-back">
+            <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
+                href="https://linkedin.com"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="flip-details">
+        <h4>Pallav Parekh</h4>
+        <span>ERP Expert</span>
+      </div>
+    </div>
+    <div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
+
+            <img src="assets\images\Dhaval Patel.png" alt="Avatar" style="width:350px;height:350px;">
+          </div>
+          <div class="flip-card-back">
+            <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
+                href="https://linkedin.com"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="flip-details">
+        <h4>Dhaval Patel</h4>
         <span>ERP Expert</span>
       </div>
     </div>
