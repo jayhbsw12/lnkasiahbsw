@@ -57,7 +57,7 @@
 
     <div class="row g-4">
       <!-- Mission -->
-      <div class="col-md-3 col-lg-6">
+      <div class="col-md-3">
         <div class="tab-card text-center h-100">
           <div class="icon"><i class="fas fa-bullseye"></i></div>
           <div class="icon-flex">
@@ -70,7 +70,7 @@
       </div>
 
       <!-- Vision -->
-      <div class="col-md-3 col-lg-6">
+      <div class="col-md-3">
         <div class="tab-card text-center h-100 active">
           <div class="icon"><i class="fas fa-lightbulb"></i></div>
           <div class="icon-flex">

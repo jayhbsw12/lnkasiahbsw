@@ -297,7 +297,6 @@ img.linkedin-icon {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 16px;
-
 }
 
 .flip-card:hover .flip-card-inner {
@@ -334,23 +333,28 @@ img.linkedin-icon {
   padding: 40px;
 }
 
-.flip-details{
+.flip-details {
   margin-top: 15px;
   margin-bottom: 8px;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-.flip-details h4{
+.flip-details h4 {
   font-weight: 600;
 }
 
 /* ----------------------------------------responsive---------------------------------------- */
 
 @media screen and (max-width: 900px) {
-  .flip-card-container{
+  .flip-card-container {
     flex-direction: column;
     gap: 20px;
   }
+}
 
+@media (max-width: 767px) {
+  .card {
+    background-image: url(../assets/images/card-bg.png);
+  }
 }
