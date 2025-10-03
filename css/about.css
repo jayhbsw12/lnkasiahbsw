@@ -362,9 +362,21 @@ img.linkedin-icon {
   background-image: url(../assets/images/card-bg.png);
 } */
 
+.card{
+  --n:26px;                     /* notch size */
+  border-radius:18px;
+  padding:24px;
+  background:#f7f7fb;
+  border:1px solid rgba(0,0,0,.15);
 
-
-
+  /* cut-outs on left & right */
+  -webkit-mask:
+    radial-gradient(circle var(--n) at 0 50%, transparent 98%, #000 99%) left / 50% 100% no-repeat,
+    radial-gradient(circle var(--n) at 100% 50%, transparent 98%, #000 99%) right / 50% 100% no-repeat;
+          mask:
+    radial-gradient(circle var(--n) at 0 50%, transparent 98%, #000 99%) left / 50% 100% no-repeat,
+    radial-gradient(circle var(--n) at 100% 50%, transparent 98%, #000 99%) right / 50% 100% no-repeat;
+}
 
 
 
