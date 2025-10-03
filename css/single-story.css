@@ -16,7 +16,7 @@
 .single-archive-holder {
   width: 100%;
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   max-width: 1100px;
   display: flex;
   flex-direction: column;
