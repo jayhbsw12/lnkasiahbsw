@@ -278,6 +278,7 @@ img.linkedin-icon {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 80px;
 }
 
 .flip-card {
@@ -318,6 +319,11 @@ img.linkedin-icon {
   color: black;
 }
 
+/* .flip-card-front img:nth-child(2){
+  max-width: 300px;
+  max-height: 300px;
+} */
+
 .flip-card-back {
   background-color: #352f75;
   color: white;
@@ -337,4 +343,14 @@ img.linkedin-icon {
 }
 .flip-details h4{
   font-weight: 600;
+}
+
+/* ----------------------------------------responsive---------------------------------------- */
+
+@media screen and (max-width: 900px) {
+  .flip-card-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+
 }
