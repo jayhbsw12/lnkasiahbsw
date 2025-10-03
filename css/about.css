@@ -26,13 +26,11 @@
   padding: 20px;
   background: linear-gradient(to right, #f5f7fa, #fff);
   position: relative;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .tab-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .tab-card::before {
@@ -260,10 +258,33 @@ img.linkedin-icon {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  .flip-card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .flip-grid {
     grid-template-columns: 1fr;
   }
+  .why-choose-bg {
+    background: #f0f2f4;
+    padding: 70px 20px;
+    position: relative;
+}
+.section-heading {
+    font-size: 30px;
+    font-weight: 500;
+}
+.why-section{
+  padding: 0px;
+}
+.why-img {
+    max-width: 100%;
+    border-radius: 15px;
+}
 }
 
 /* Reduced motion preference */
@@ -346,14 +367,15 @@ img.linkedin-icon {
 
 /* ----------------------------------------responsive---------------------------------------- */
 
-@media screen and (max-width: 900px) {
-  .flip-card-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
 
 @media (max-width: 767px) {
+  .flip-card-container{
+  display: grid;
+  grid-template-columns: 1fr;      /* mobile: 1 column */
+  gap: 40px;                       /* adjust as needed */
+  justify-items: center;           /* center each card block */
+}
+
   .card {
     background-image: url(../assets/images/card-bg.png);
   }
