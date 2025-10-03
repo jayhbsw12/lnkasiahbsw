@@ -54,11 +54,6 @@ img.hero-bottom-shape {
 }
 
 /* On tablets/phones, let the text wrap naturally (ignore <br>) */
-@media (max-width: 992px) {
-  .contact-content br {
-    display: none;
-  }
-}
 
 /* layout helper */
 .container {
@@ -167,25 +162,6 @@ img.hero-bottom-shape {
   border: 0;
 }
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 1024px) {
-  .contact-map-row__grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-  .map-wrap {
-    height: 380px;
-  }
-}
-@media (max-width: 640px) {
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-  .btn-gradient {
-    width: 160px;
-  }
-}
-
 /* Layout helper (safe to reuse) */
 .container {
   width: min(1200px, 92%);
@@ -249,27 +225,6 @@ img.hero-bottom-shape {
   /* font: 700 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial; */
 }
 
-/* Responsiveness */
-@media (max-width: 1100px) {
-  .contact-cards__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media (max-width: 640px) {
-  .contact-cards__grid {
-    grid-template-columns: 1fr;
-  }
-  .card {
-    padding: 18px;
-  }
-  .card__title {
-    font-size: 17px;
-  }
-  .card__text {
-    font-size: 14px;
-  }
-}
-
 .iti--separate-dial-code {
   width: 100%;
 }
@@ -307,4 +262,60 @@ img.hero-bottom-shape {
 .form-grid,
 .fg {
   overflow: visible; /* avoid clipping the country list */
+}
+
+/* Responsiveness */
+@media (max-width: 1100px) {
+  .contact-cards__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .contact-map-row__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .map-wrap {
+    height: 380px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-content br {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+    .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .btn-gradient {
+    width: 160px;
+  }
+  .hero-contact h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+img.hero-bottom-shape {
+    position: absolute;
+    bottom: -3px;
+    width: 53%;
+  right: 21%;
+}
+  .contact-cards__grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 18px;
+  }
+  .card__title {
+    font-size: 17px;
+  }
+  .card__text {
+    font-size: 14px;
+  }
 }
