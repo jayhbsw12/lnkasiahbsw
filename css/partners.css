@@ -16,8 +16,8 @@
   /* border: 2px solid red; */
 }
 
-.hero-contact h1{
-    font-weight: 400;
+.hero-contact h1 {
+  font-weight: 400;
 }
 
 body {
@@ -162,8 +162,8 @@ body {
   display: flex;
   align-items: center;
 }
-.partner-holder img{
-    width: 145px;
+.partner-holder img {
+  width: 145px;
 }
 
 /* .partner-holder {

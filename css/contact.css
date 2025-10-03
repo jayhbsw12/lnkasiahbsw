@@ -22,7 +22,7 @@
 img.hero-bottom-shape {
   position: absolute;
   bottom: -3px;
-  left: 42%;
+  /* left: 42%; */
 }
 .hero-contact h1 {
   font-size: 70px;
