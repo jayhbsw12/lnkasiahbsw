@@ -31,7 +31,7 @@
 
 <section class="technocraft">
   <div class="container">
-    <div class="row align-items-start mb-4 col-lg-6">
+    <div class="row align-items-start mb-4">
       <div class="col-md-6">
         <h2 class="section-title-about">
           We <span class="highlight-techsol">LNK ASIA TECHSOL</span> AND
