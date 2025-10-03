@@ -28,7 +28,7 @@
 }
 
 .archive-holder {
-  max-width: 1500px;
+    max-width: 1500px;
     width: 100%;
     height: auto;
     background-image: url(../assets/images/stories/stories-section-bg.png);

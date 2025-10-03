@@ -194,13 +194,19 @@ img.hero-bottom-shape {
 
 .card-1 {
   background-image: url(../assets/images/left-card.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .card-2 {
   background-image: url(../assets/images/top-card.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card-3 {
   background-image: url(../assets/images/right-card.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .card__icon {
