@@ -8164,7 +8164,8 @@ li.nav-item a {
  }
 
  .align-middle {
-     vertical-align: middle !important
+     vertical-align: middle !important;
+     align-items: center;
  }
 
  .align-bottom {
