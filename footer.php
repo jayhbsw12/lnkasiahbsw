@@ -3,8 +3,8 @@
   <div class="container newsletter-container">
     <div class="row align-items-center g-4">
       <div class="col-md-6 news-left newsletter-left">
-        <img src="https://static.codia.ai/custom_image/2025-07-04/063005/left-section-background.png" alt="Left Background"
-         class="newsletter-left-bg">
+        <img src="https://static.codia.ai/custom_image/2025-07-04/063005/left-section-background.png"
+          alt="Left Background" class="newsletter-left-bg">
         <h3 class="newsletter-title">
           Empower your inbox with<br>
           <span class="gradient-text">AI insights</span>
@@ -20,8 +20,8 @@
         </form>
       </div>
       <div class="col-md-6 text-center">
-        <img src="https://static.codia.ai/custom_image/2025-07-04/063005/right-section-image.png"
-             alt="Right Image" class="img-fluid newsletter-right-image">
+        <img src="https://static.codia.ai/custom_image/2025-07-04/063005/right-section-image.png" alt="Right Image"
+          class="img-fluid newsletter-right-image">
         <img src="assets/images/footer-vector.svg" class="footer-vector">
       </div>
     </div>
@@ -67,23 +67,29 @@
         </div>
         <p class="social_title-footer">Connect with us:</p>
         <div class="social-icons">
-          <a href="#" class="social-icon"><img src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-1.svg" alt="Social Icon 1"></a>
-          <a href="#" class="social-icon"><img src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-2.png" alt="Social Icon 2"></a>
-          <a href="#" class="social-icon"><img src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-3.svg" alt="Social Icon 3"></a>
-          <a href="#" class="social-icon"><img src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-4.png" alt="Social Icon 4"></a>
-          <a href="#" class="social-icon"><img src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-5.svg" alt="Social Icon 5"></a>
+          <a href="#" class="social-icon"><img
+              src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-1.svg" alt="Social Icon 1"></a>
+          <a href="#" class="social-icon"><img
+              src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-2.png" alt="Social Icon 2"></a>
+          <a href="#" class="social-icon"><img
+              src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-3.svg" alt="Social Icon 3"></a>
+          <a href="#" class="social-icon"><img
+              src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-4.png" alt="Social Icon 4"></a>
+          <a href="#" class="social-icon"><img
+              src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-5.svg" alt="Social Icon 5"></a>
         </div>
         <h6 class="footer-text-bottom">Made with ❤️ by <a href="https://hbsoftweb.com/">HB Softweb Pvt. Ltd.</a></h6>
-         <img src="assets/images/footer-vector-bottom.svg" class="footer-vector-bottom">
+        <img src="assets/images/footer-vector-bottom.svg" class="footer-vector-bottom">
       </div>
     </div>
   </div>
 </footer>
-  </main>
-  
+</main>
+
 <!-- Include the JS for intl-tel-input -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-  <script src="js/home.js"></script>
-  <script src="js/testimonial.js"></script>
- </body>
+<script src="js/home.js"></script>
+<script src="js/testimonial.js"></script>
+</body>
+
 </html>

@@ -140,7 +140,8 @@
 
     <div class="why-choose-bg">
       <img src="assets/images/why-choose-shape-top.png" class="why-choose-shape">
-      <span class="mb-1" style="display: flex;gap: 10px; align-items: baseline; font-size: 18px"> <img src="assets/images/square.svg"> Why choose us</span>
+      <span class="mb-1" style="display: flex;gap: 10px; align-items: baseline; font-size: 18px"> <img
+          src="assets/images/square.svg"> Why choose us</span>
       <h2 class="section-heading mb-5">Key features of our <span class="highlight">AI solutions</span></h2>
 
       <div class="row g-4">
@@ -218,7 +219,7 @@
 
 
 <!-- Flip Boxes -->
-<div class="container text-center flip-box-container">
+<div class=" text-center flip-box-container">
   <h5>Awesome Member</h5>
   <h2 class="flip-box-heading">Meet Our <span class="highlight-techsol"> Leaders </span></h2>
 </div>
