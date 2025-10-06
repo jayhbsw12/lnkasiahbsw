@@ -1932,6 +1932,11 @@ img.grid-shape-2 {
   overflow: hidden;
 }
 
+@media(max-width:767px){
+  .counter-title {
+    margin-bottom: 0px !important;
+}
+}
 
   /* Small tweaks for very small screens */
   @media (max-width: 360px){

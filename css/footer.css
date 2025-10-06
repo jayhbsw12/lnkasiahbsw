@@ -490,7 +490,7 @@ p.social_title-footer {
 }
 
 /* Hero Section */
-.hero-section-footer {
+/* .hero-section-footer {
   position: relative;
   width: 1820px;
   height: 800px;
@@ -592,4 +592,136 @@ p.social_title-footer {
   white-space: nowrap;
   z-index: 7;
   text-align: center;
+} */
+
+.hero-section-footer {
+  position: relative;
+  height: 500px; /* Adjust height for the section */
+  margin: 50px 50px;
+  overflow: hidden;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.hero-background-footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png'); /* Your uploaded image */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-overlay-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 30, 52, 0.5); /* Adjust opacity */
+  z-index: 2;
+}
+
+.hero-content-footer {
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-title-footer {
+  font-family: Roboto, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  white-space: normal;
+}
+
+.hero-description-footer {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.hero-cta-button-footer {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  padding: 15px 35px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.hero-cta-button-footer:hover {
+  transform: translateY(-2px);
+}
+
+.hero-cta-button-footer span {
+  display: block;
+  text-align: center;
+}
+
+/* Responsive design for tablets and below */
+@media (max-width: 1024px) {
+  .hero-title-footer {
+    font-size: 32px;
+  }
+
+  .hero-description-footer {
+    font-size: 18px;
+  }
+
+  .hero-cta-button-footer {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .hero-title-footer {
+    font-size: 28px;
+  }
+
+  .hero-description-footer {
+    font-size: 16px;
+  }
+
+  .hero-cta-button-footer {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+}
+
+/* Responsive design for very small mobile screens */
+@media (max-width: 480px) {
+  .hero-section-footer {
+    height: 400px;
+    margin: 20px;
+  }
+
+  .hero-title-footer {
+    font-size: 24px;
+  }
+
+  .hero-description-footer {
+    font-size: 14px;
+  }
+
+  .hero-cta-button-footer {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+
+

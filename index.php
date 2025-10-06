@@ -651,7 +651,7 @@
       </div>
     </section>
 
-    <section class="hero-section-footer">
+    <!-- <section class="hero-section-footer">
       <div class="hero-background-footer" bis_skin_checked="1">
         <img src="https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png" alt="Hero Background" class="hero-bg-image-footer">
         <div class="hero-overlay" bis_skin_checked="1"></div>
@@ -665,7 +665,24 @@
           <span>Contact Us</span>
         </button>
       </div>
-    </section>
+    </section> -->
+
+ <section class="hero-section-footer">
+  <div class="hero-background-footer">
+    <div class="hero-overlay-footer"></div>
+  </div>
+  <div class="hero-content-footer">
+    <h2 class="hero-title-footer">Creating Technology For a Better Tomorrow</h2>
+    <p class="hero-description-footer">
+      We offer full-cycle technology solutions that streamline your digital transformation journey.
+    </p>
+    <button class="hero-cta-button-footer">
+      <span>Contact Us</span>
+    </button>
+  </div>
+</section>
+
+
 
 
 <?php include("footer.php"); ?>
