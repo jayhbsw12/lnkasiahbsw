@@ -119,7 +119,7 @@ h6.footer-text {
   transition: background-color 0.2s ease;
 }
 .container.newsletter-container {
-  max-width: 1800px;
+  max-width: 1625px;
 }
 .newsletter-submit:hover {
   background: #408aeb;
@@ -597,9 +597,9 @@ p.social_title-footer {
 .hero-section-footer {
   position: relative;
   height: 500px; /* Adjust height for the section */
-  margin: 50px 50px;
+  margin: 150px 0px 0px 0px;
   overflow: hidden;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,6 +613,9 @@ p.social_title-footer {
   background-size: cover;
   background-position: center;
   z-index: 1;
+
+  max-width: 1625px;
+  border-radius: 20px;
 }
 
 .hero-overlay-footer {
@@ -724,4 +727,8 @@ p.social_title-footer {
 }
 
 
-
+@media (max-width: 972px){
+  .newsletter-right-image{
+    right: -35%;
+  }
+}

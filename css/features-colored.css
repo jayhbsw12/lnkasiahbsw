@@ -1,7 +1,7 @@
 .benefits-section {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 
@@ -84,7 +84,7 @@
 .services-section {
   width: 100%;
   /* padding: 40px 10px; */
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-align: center;
 }
 

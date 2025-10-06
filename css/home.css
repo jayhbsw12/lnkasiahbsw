@@ -329,7 +329,7 @@ span.placeholder-text {
   width: 100%;
   overflow: hidden;
   z-index: 20;
-  padding: 80px 0px;
+  padding: 150px 0px 0px 0px;
 }
 
 .partners-content {
@@ -447,7 +447,7 @@ span.placeholder-text {
   position: relative;
   width: 100%;
   background: #ffffff;
-  padding: 0 130.667px 132px;
+  /* padding: 0 130.667px 132px; */
   overflow: hidden;
 }
 
@@ -512,7 +512,7 @@ span.placeholder-text {
   position: relative;
   width: 100%;
   background: var(--background-primary);
-  padding: 95.918px 0 100px;
+  padding: 150px 0px;
   overflow: hidden;
 }
 
@@ -533,10 +533,10 @@ span.placeholder-text {
 }
 
 .section-indicator {
-  width: 8.837px;
-  height: 8.837px;
+  width: 10px;
+  height: 10px;
   background: #0b277c;
-  margin-bottom: 8.838px;
+  margin-bottom: 4px;
   border-radius: 2px;
 }
 
@@ -554,14 +554,14 @@ span.placeholder-text {
   font-size: 50px;
   font-weight: 400;
   line-height: 63.623px;
-  /* margin-bottom: 67.378px; */
+  margin-bottom: 50px;
   animation: fadeInUp 1s ease-out 0.4s both;
 }
 .features-main-heading2 {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 63.623px;
-  margin-bottom: 67.378px;
+  /* margin-bottom: 67.378px; */
   animation: fadeInUp 1s ease-out 0.4s both;
   text-align: center;
 }
@@ -810,7 +810,7 @@ span.placeholder-text {
 }
 .py-5 {
   padding-top: 150px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 .counter-title {
   margin-bottom: 175px;
@@ -888,7 +888,7 @@ img.grid-shape-2 {
   justify-content: center;
   align-items: stretch;
   gap: 50px;
-  margin: 100px 0px;
+  margin: 150px 0px;
 }
 .v1146_3967 {
   width: 490px;
@@ -1962,7 +1962,7 @@ img.grid-shape-2 {
   overflow: hidden;
 }
 
-.vertical-polygon-holder{
+.vertical-polygon-holder {
   /* height: 100%; */
   display: flex;
   flex-direction: column;
@@ -1970,9 +1970,164 @@ img.grid-shape-2 {
   justify-content: space-between;
 }
 
+.bring-ai-life-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.how-it-works {
+  margin-bottom: 0;
+}
+
+.ai-services-section {
+  width: 100%;
+  height: auto;
+  border: 1px solid blue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 150px 0px;
+}
+
+.ai-services-holder {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+
+  max-width: 1625px;
+
+  padding: 60px 60px 60px 100px;
+  background: #f0f2f4;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.ai-services-holder .vertical-shape-services {
+  position: absolute;
+  left: 0;
+  top: 20%;
+}
+
+.ai-services-top-holder {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-services-top-holder div h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.sticky-services-1 {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/images/home-sticky-services-1.svg");
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.sticky-service-content-holder {
+  background-color: #0a0a0c;
+  height: auto;
+  width: auto;
+  max-width: 430px;
+
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 80px;
+}
+
+.sticky-services-1 {
+  position: sticky;
+  top: 190px;
+}
+
+.sticky-services-1 img {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+}
+
+.sticky-service-content-holder h4 {
+  font-size: 30px;
+  color: #f0f0f0;
+}
+
+.sticky-service-content-holder span {
+  color: #f0f0f0;
+}
+
 /* Small tweaks for very small screens */
 @media (max-width: 360px) {
   .ft-hero-heading-gradient {
     white-space: normal;
+  }
+}
+
+@media (max-width: 972px) {
+  .cta-container {
+    width: auto;
+  }
+  .cta-container .cta-background {
+    height: auto;
+  }
+
+  .cta-content {
+    height: 75%;
+  }
+
+  .features-main-heading2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .ai-services-section {
+    padding: 0px;
+  }
+
+  .features-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .features-right .app-interface-container img {
+    position: static;
+  }
+  .v1146_4572 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vertical-polygon-holder{
+    gap: 40px;
+  }
+  .service-cards{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px !important;
+  }
+.service-card{
+    width: 100% !important;
+  }
+  .benefits-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefit-card{
+    width: 100%;
+    max-width: 696px !important;
   }
 }
