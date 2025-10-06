@@ -120,14 +120,61 @@
     </div>
   </div>
 </section>
+
+<section class="ai-services-section">
+  <div class="ai-services-holder">
+    <img src="assets/images/home-vertical-shape.svg" alt="" class="vertical-shape-services">
+    <div class="ai-services-top-holder">
+      <div>
+        <h2>Showcasing our<br>
+          <span class="heading-gradient">AI Services</span>
+        </h2>
+      </div>
+      <div>
+        <button class="cta-btn">
+          <span class="cta-text">More about us</span>
+        </button>
+      </div>
+    </div>
+    <div class="sticky-services-1" style="z-index: 30">
+      <div class="sticky-service-content-holder">
+        <h4>Remote Infrastructure Management Service (RIMS)</h4>
+        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+      </div>
+      <img src="assets/images/home-sticky-services-shape.svg" alt="">
+    </div>
+    <div class="sticky-services-1" style="z-index: 31">
+      <div class="sticky-service-content-holder">
+        <h4>Remote Infrastructure Management Service (RIMS)</h4>
+        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+      </div>
+      <img src="assets/images/home-sticky-services-shape.svg" alt="">
+    </div>
+        <div class="sticky-services-1" style="z-index: 32" >
+      <div class="sticky-service-content-holder">
+        <h4>Remote Infrastructure Management Service (RIMS)</h4>
+        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+      </div>
+      <img src="assets/images/home-sticky-services-shape.svg" alt="">
+    </div>
+        <div class="sticky-services-1" style="z-index: 33">
+      <div class="sticky-service-content-holder">
+        <h4>Remote Infrastructure Management Service (RIMS)</h4>
+        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+      </div>
+      <img src="assets/images/home-sticky-services-shape.svg" alt="">
+    </div>  
+  </div>
+</section>
 <!-- Features Section -->
 <section class="features-section">
   <div class="container">
     <div class="features-content">
       <div class="features-left">
-        <div class="section-indicator"></div>
-        <h2 class="section-title">How It works</h2>
-
+        <div class="bring-ai-life-row">
+          <div class="section-indicator"></div>
+          <h2 class="section-title how-it-works">How It works</h2>
+        </div>
         <div class="features-main-heading">
           <span class="heading-primary">How we Bring </span>
           <span class="heading-gradient">AI to life</span>
@@ -695,8 +742,8 @@
 
 <section class="hero-section-footer">
   <div class="hero-background-footer" bis_skin_checked="1">
-    <img src="https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png" alt="Hero Background"
-      class="hero-bg-image-footer">
+    <!-- <img src="https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png" alt="Hero Background"
+      class="hero-bg-image-footer"> -->
     <div class="hero-overlay" bis_skin_checked="1"></div>
   </div>
   <div class="hero-content-footer" bis_skin_checked="1">
