@@ -213,17 +213,17 @@ body {
 /* ------------------------------------cutout shape---------------------------- */
 .partner-container .shape-vertical {
   position: absolute;
-  right: -2.5px;
+  right: -1px;
 }
 
 .partner-container-3 .shape-vertical {
   position: absolute;
-  right: -2.5px;
+  right: -1px;
 }
 
-.partner-container-2 .shape-vertical-2{
+.partner-container-2 .shape-vertical-2 {
   position: absolute;
-  left: -0.5px;
+  left: -1px;
 }
 
 @media (max-width: 1140px) {
@@ -267,6 +267,10 @@ body {
     align-items: center !important;
   }
 
+  .partner-column-right input{
+    width: 100%;
+  }
+
   .partner-holder-container {
     display: grid;
     justify-items: center;
@@ -279,5 +283,16 @@ body {
 
   .partner-section {
     padding: 20px;
+  }
+
+  .shape-vertical,
+  .shape-vertical-2 {
+    height: 287px;
+  }
+}
+
+@media (max-width: 640px){
+  .partner-holder-container{
+    grid-template-columns: auto;
   }
 }
