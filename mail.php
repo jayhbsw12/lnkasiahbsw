@@ -96,7 +96,7 @@ try {
   $mail->setFrom('contactus@lnkasia.com', 'Website Contact');
 
   // For testing -> send to you
-  $mail->addAddress('jaymodihbsoftweb@gmail.com', 'Jay Modi');
+  $mail->addAddress('contactus@lnkasia.com', 'Contact Form');
 
   // Let replies go to the site visitor
   if ($email) {
