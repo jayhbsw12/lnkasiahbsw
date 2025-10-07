@@ -117,3 +117,20 @@ li.nav-item a {
 .navbar-nav .dropdown{
   padding: 0;
 }
+@media(min-width:1200px) and (max-width:1600px){
+li.nav-item a {
+    font-size: 16px !important;
+    font-weight: 500;
+}
+.nav-item {
+    padding: 8px 10px;
+}
+.segmented{
+  gap: 20px ;
+  padding: 15px 20px;
+}
+a.btn.btn-gradient.btn-pill{
+  padding: 10px 16px;
+  font-size: 16px;
+}
+}

@@ -283,22 +283,22 @@
     <div class="row text-center text-md-start g-4 g-md-5 pt-5 counter-bg">
       <div class="col-6 col-md-3">
         <div class="ft-stat">
-          <div class="ft-stat-number"><span class="count" data-count="30">0</span></div>
-          <div class="ft-stat-label">Continent</div>
+          <div class="ft-stat-number"><span class="count" data-count="04">0</span></div>
+          <div class="ft-stat-label">Continents Served</div>
         </div>
       </div>
 
       <div class="col-6 col-md-3">
         <div class="ft-stat">
-          <div class="ft-stat-number"><span class="count" data-count="21">0</span></div>
-          <div class="ft-stat-label">Projects</div>
+          <div class="ft-stat-number"><span class="count" data-count="100" data-suffix="+">0</span></div>
+          <div class="ft-stat-label">Sucessfull Projects</div>
         </div>
       </div>
 
       <div class="col-6 col-md-3">
         <div class="ft-stat">
           <div class="ft-stat-number">
-            <span class="count" data-count="22" data-suffix="TB+">0</span>
+            <span class="count" data-count="50" data-suffix="TB+">0</span>
           </div>
           <div class="ft-stat-label">Data Secured</div>
         </div>

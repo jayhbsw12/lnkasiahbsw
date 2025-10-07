@@ -780,7 +780,7 @@
  .container-sm,
  .container-xl,
  .container-xxl {
-     --bs-gutter-x: 1.5rem;
+     --bs-gutter-x: 5.5rem;
      --bs-gutter-y: 0;
      width: 100%;
      padding-right: calc(var(--bs-gutter-x) * .5);
@@ -5021,7 +5021,7 @@ li.nav-item a {
      word-wrap: break-word;
      background-color: var(--bs-card-bg);
      background-clip: border-box;
-     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+     /* border: var(--bs-card-border-width) solid var(--bs-card-border-color); */
      border-radius: var(--bs-card-border-radius)
  }
 

@@ -105,6 +105,7 @@
           </svg>
         </div>
         <h4 class="card__title">Address</h4>
+        <img class="contact-shape-1" src="../lnkasiahbsw/assets/images/contact-shape.svg" alt="contact-shape">
         <p class="card__text">
           Skywalk the element, 402, Jagatpur Rd, beside Ganesh Glory 11 Road,
           near BSNL Office, Jagatpur, Ahmedabad, Gujarat 382481
@@ -121,6 +122,7 @@
           </svg>
         </div>
         <h4 class="card__title">Contact number</h4>
+        <img class="contact-shape-2" src="../lnkasiahbsw/assets/images/contact-shape.svg" alt="contact-shape">
         <p class="card__text">Need immediate assistance? Feel free to call us at</p>
         <a href="tel:+919913063991">
           <p class="card__highlight">+91 9913063991</p>
@@ -136,6 +138,7 @@
           </svg>
         </div>
         <h4 class="card__title">Send us an email</h4>
+        <img class="contact-shape-3" src="../lnkasiahbsw/assets/images/contact-shape.svg" alt="contact-shape">
         <p class="card__text">We're committed to assisting you every step of the way.</p>
         <a href="mailto:example@gmail.com">
           <p class="card__highlight">example@gmail.com</p>
