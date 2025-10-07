@@ -182,7 +182,7 @@
     </section>
 
     <section class="pricing-section">
-        <div class="pricing-container" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="pricing-container" style="display: flex; flex-direction: column; align-items: center">
             <h2><span class="heading-gradient">Technology Consulting</span></h2>
             <div class="pricing-cards-container">
                 <div class="pricing-card">
