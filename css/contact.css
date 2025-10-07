@@ -375,3 +375,50 @@ img.hero-bottom-shape {
 }
 
 }
+
+@media screen and (max-width: 767px) {
+
+.hero-contact h1 {
+  font-size: 52px;
+}
+
+.contact-form__title {
+  text-align: center;
+}
+
+.contact-shape-1 {
+    position: absolute;
+    left: -70px;
+    top: 78px;
+    rotate: -90deg;
+    height: 26px;
+}
+
+article.card.card-1 {
+    padding: 28px;
+}
+
+article.card.card-2 {
+    padding: 28px;
+}
+
+article.card.card-3 {
+    padding: 28px;
+}
+
+.contact-shape-2 {
+    position: absolute;
+    top: -2px;
+    right: 62px;
+    height: 26px;
+}
+
+.contact-shape-3 {
+    position: absolute;
+    right: -70px;
+    rotate: 90deg;
+    top: 91px;
+    height: 28px;
+}
+
+}
