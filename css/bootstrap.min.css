@@ -3880,7 +3880,7 @@
  }
 
  .dropdown-toggle::after {
-     display: inline-block;
+     display: none;
      margin-left: .255em;
      vertical-align: .255em;
      content: "";
@@ -4191,7 +4191,7 @@
  }
 
  .dropdown-menu.show {
-     display: block
+     display: none;
  }
 
  .dropdown-header {
