@@ -270,9 +270,7 @@ body {
     align-items: flex-start;
   }
 
-  .partner-column-right {
-    align-items: center !important;
-  }
+
 
   .partner-column-right input {
     width: 100%;
@@ -289,12 +287,12 @@ body {
   }
 
   .partner-section {
-    padding: 100px 20px 20px 20px;
+    padding: 50px 20px 20px 20px;
   }
 
   .shape-vertical,
   .shape-vertical-2 {
-    height: 287px;
+    height: 185px;
   }
 
   .partner-container-2 .shape-vertical-2 {
@@ -302,6 +300,16 @@ body {
     left: -1px;
     top: 40px;
     height: 200px;
+  }
+
+  .subsection-cards{
+    flex-direction: column;
+  }
+  .hero-contact h1{
+    font-size: 40px;
+  }
+  .hero-banner h3{
+    font-size: 20px;
   }
 }
 
