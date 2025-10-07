@@ -174,3 +174,16 @@ body {
   border: 5px solid transparent;
   border-radius: 20px;
 } */
+
+@media (max-width: 972px){
+  .partner-container{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .partner-container .partner-column-left,
+  .partner-container .partner-column-right{
+    width: 100%;
+    align-items: flex-start;
+  }
+}

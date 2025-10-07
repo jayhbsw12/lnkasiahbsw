@@ -2111,23 +2111,31 @@ img.grid-shape-2 {
     flex-direction: column;
     align-items: center;
   }
-  .vertical-polygon-holder{
+  .vertical-polygon-holder {
     gap: 40px;
   }
-  .service-cards{
+  .service-cards {
     flex-direction: column;
     align-items: stretch;
     gap: 35px !important;
   }
-.service-card{
+  .service-card {
     width: 100% !important;
   }
-  .benefits-section{
+  .benefits-section {
     flex-direction: column;
     align-items: center;
   }
-  .benefit-card{
+  .benefit-card {
     width: 100%;
-    max-width: 696px !important;
+    max-width: 516px !important;
+  }
+  .detail-service-left {
+    margin-left: 0 !important;
+  }
+  .service-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
