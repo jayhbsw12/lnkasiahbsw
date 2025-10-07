@@ -13,7 +13,20 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container" style="">
+        <svg width="0" height="0">
+            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" />
+                <stop offset="1" />
+            </linearGradient>
+            <symbol id="border" overflow="visible">
+                <rect width="100%" height="100%" rx="20px" ry="20px" />
+            </symbol>
+        </svg>
+        <div class="partner-container module" style="">
+            <svg class="module-border">
+                <use href="#border" />
+            </svg>
+            <img src="assets/images/partner-shape-vertical.svg" alt="" class="shape-vertical">
             <div class="partner-column-left">
                 <div>
                     <h2 class="heading-gradient">Vigyanlabs</h2>
@@ -87,7 +100,20 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container-2">
+        <svg width="0" height="0">
+            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" />
+                <stop offset="1" />
+            </linearGradient>
+            <symbol id="border" overflow="visible">
+                <rect width="100%" height="100%" rx="20px" ry="20px" />
+            </symbol>
+        </svg>
+        <div class="partner-container-2 module">
+            <svg class="module-border">
+                <use href="#border" />
+            </svg>
+            <img src="assets/images/partner-shape-vertical-2.svg" alt="" class="shape-vertical-2">
             <div class="partner-column-right">
                 <input class="partner-column-image" type="image"
                     src="https://images.unsplash.com/flagged/photo-1553267252-d100936057c1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -135,7 +161,20 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container-3" style="height: auto">
+        <svg width="0" height="0">
+            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" />
+                <stop offset="1" />
+            </linearGradient>
+            <symbol id="border" overflow="visible">
+                <rect width="100%" height="100%" rx="20px" ry="20px" />
+            </symbol>
+        </svg>
+        <div class="partner-container-3 module" style="height: auto">
+            <svg class="module-border">
+                <use href="#border" />
+            </svg>
+            <img src="assets/images/partner-shape-vertical.svg" alt="" class="shape-vertical">
             <div class="partner-column-left">
                 <div>
                     <h2 class="heading-gradient">Simplify & Secure Your Network with Smart DDI Technology</h2>
