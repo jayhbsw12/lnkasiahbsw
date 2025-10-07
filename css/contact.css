@@ -345,3 +345,33 @@ img.hero-bottom-shape {
     font-size: 14px;
   }
 }
+
+
+
+@media screen and (max-width: 767px) {
+
+.hero-contact h1 {
+  font-size: 65px;
+}
+
+.contact-cards__grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.card-1 {
+  background-size: cover;
+}
+
+.card-2 {
+  background-size: cover;
+}
+
+.card-3 {
+  background-size: cover;
+}
+
+.col-md-6.news-left.newsletter-left {
+    justify-items: center;
+}
+
+}
