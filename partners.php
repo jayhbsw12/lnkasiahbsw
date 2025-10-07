@@ -135,7 +135,7 @@
     </section>
 
     <section class="partner-section">
-        <div class="partner-container-3" style="height: 728px;">
+        <div class="partner-container-3" style="height: auto">
             <div class="partner-column-left">
                 <div>
                     <h2 class="heading-gradient">Simplify & Secure Your Network with Smart DDI Technology</h2>
