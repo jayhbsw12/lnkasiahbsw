@@ -613,8 +613,6 @@ p.social_title-footer {
   background-size: cover;
   background-position: center;
   z-index: 1;
-
-  max-width: 1625px;
   border-radius: 20px;
 }
 
@@ -673,6 +671,11 @@ p.social_title-footer {
   text-align: center;
 }
 
+@media(min-width:1200px) and (max-width:1600px){
+  .hero-section-footer {
+ margin: 150px 50px 0px 50px !important;
+}
+}
 /* Responsive design for tablets and below */
 @media (max-width: 1024px) {
   .hero-title-footer {
