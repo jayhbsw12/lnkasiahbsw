@@ -89,6 +89,7 @@
 }
 
 .pricing-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -100,6 +101,12 @@
   border: 1px solid #6156dd;
   padding: 40px;
   border-radius: 20px;
+}
+
+.pricing-card .pricing-shape{
+    position: absolute;
+    bottom: -1.45px;
+    height: 32px;
 }
 
 .pricing-card button {
@@ -133,4 +140,7 @@
     padding: 20px;
   }
 
+  .pricing-section{
+    padding: 50px 0px 0px 0px;
+  }
 }

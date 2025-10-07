@@ -89,7 +89,6 @@
             <div class="pricing-card">
                 <h3 style="color:#352F75">One App Free</h3>
                 <span>Free Forever</span>
-
                 <hr>
                 <div style="display: flex; justify-content: start;">
                     <strong>Rs</strong>
@@ -97,6 +96,7 @@
                 </div>
                 <hr>
                 <div>For <strong>One App Only</strong>. Unlimited users Odoo Online</div>
+                <img src="assets/images/pricing-card-shape.svg" alt="" width="400px" class="pricing-shape">
             </div>
             <div class="pricing-card">
                 <h3 style="color:#352F75">One App Free</h3>
@@ -116,6 +116,7 @@
                         <span>Odoo Online</span>
                     </div>
                 </div>
+                <img src="assets/images/pricing-card-shape.svg" alt="" width="400px" class="pricing-shape">
             </div>
             <div class="pricing-card">
                 <h3 style="color:#352F75">One App Free</h3>
@@ -147,6 +148,8 @@
                         <span>External API</span>
                     </div>
                 </div>
+                <img src="assets/images/pricing-card-shape.svg" alt="" width="400px" class="pricing-shape">
+
             </div>
         </div>
         <div style="text-align: center; padding: 0px 20px;">The Standard and Custom plans include all apps for a single fee: <br> With no

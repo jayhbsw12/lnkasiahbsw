@@ -44,6 +44,10 @@ section.service-content-detail{
 .detail-service-left {
     margin-left: 40px;
 }
+
+@media (max-width: 1140px){
+  
+}
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .hero-bottom-shape {
