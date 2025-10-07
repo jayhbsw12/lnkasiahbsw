@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-        <div style="text-align: center">The Standard and Custom plans include all apps for a single fee: <br> With no
+        <div style="text-align: center; padding: 0px 20px;">The Standard and Custom plans include all apps for a single fee: <br> With no
             hidden costs, no limit on features or data: enjoy real transparency! <br> (*) The discount is valid for 12
             months, for initial users ordered.(**)Cost for Odoo.sh hosting not
             included.</div>
