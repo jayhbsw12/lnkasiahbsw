@@ -186,7 +186,7 @@ img.hero-bottom-shape {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.75);
   border-radius: 12px;
-  padding: 73px 65px;
+  padding: 58px 65px;
   color: #111;
   background-position: center;
   background-repeat: no-repeat;
@@ -198,15 +198,35 @@ img.hero-bottom-shape {
   background-repeat: no-repeat;
 }
 .card-2 {
-  background-image: url(../assets/images/top-card.webp);
+  background-image: url(../assets/images/left-card.webp);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .card-3 {
-  background-image: url(../assets/images/right-card.webp);
+  background-image: url(../assets/images/left-card.webp);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.contact-shape-1 {
+  position: absolute;
+  left: -70px;
+  top: 125px;
+  rotate: -90deg;
+}
+
+.contact-shape-2 {
+  position: absolute;
+  top: -1px;
+  right: 62px;
+}
+
+.contact-shape-3 {
+  position: absolute;
+  right: -70px;
+  rotate: 90deg;
+  top: 124px;
 }
 
 .card__icon {
