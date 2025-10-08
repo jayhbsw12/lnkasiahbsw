@@ -422,3 +422,35 @@ article.card.card-3 {
 }
 
 }
+
+@media screen and (max-width: 1440px) {
+
+.card-1 {
+  background-image: url(../assets/images/left-card.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  background-image: url(../assets/images/left-card.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-3 {
+  background-image: url(../assets/images/left-card.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media screen and (max-width: 366px) {
+.hero-contact h1 {
+        font-size: 44px;
+}
+
+.contact-content .container p {
+  text-wrap: auto;
+}
+}
