@@ -18,7 +18,23 @@
     </section>
 
     <section class="archive-section">
-        <div class="archive-holder">
+
+        <svg width="0" height="0">
+            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" />
+                <stop offset="1" />
+            </linearGradient>
+            <symbol id="border" overflow="visible">
+                <rect width="100%" height="100%" rx="20px" ry="20px" />
+            </symbol>
+        </svg>
+
+        <div class="archive-holder module">
+
+            <svg class="module-border">
+                <use href="#border" />
+            </svg>
+            <img src="assets/images/story-card-shape.svg" alt="" class="story-shape">
             <div class="left-archive-holder">
                 <div class="left-archive-upper-holder">
                     <span class="subtitle-normal">Subtitle</span>
@@ -36,7 +52,11 @@
                 <img src="assets/images/stories/story1.png" alt="" style="border-radius: 0px 27px 27px 0px;">
             </div>
         </div>
-        <div class="archive-holder">
+        <div class="archive-holder module">
+            <svg class="module-border">
+                <use href="#border" />
+            </svg>
+            <img src="assets/images/story-card-shape.svg" alt="" class="story-shape">
             <div class="left-archive-holder">
                 <div class="left-archive-upper-holder">
                     <span class="subtitle-normal">Subtitle</span>
@@ -54,7 +74,12 @@
                 <img src="assets/images/stories/story2.png" alt="" style="border-radius: 0px 27px 27px 0px;">
             </div>
         </div>
-        <div class="archive-holder">
+        <div class="archive-holder module">
+            <svg class="module-border">
+                <use href="#border" />
+            </svg>
+            <img src="assets/images/story-card-shape.svg" alt="" class="story-shape">
+
             <div class="left-archive-holder">
                 <div class="left-archive-upper-holder">
                     <span class="subtitle-normal">Subtitle</span>
@@ -75,4 +100,4 @@
     </section>
 </body>
 
-<?php include("footer.php"); ?> 
+<?php include("footer.php"); ?>

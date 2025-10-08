@@ -607,6 +607,7 @@ p.social_title-footer {
 
 .hero-background-footer {
   position: absolute;
+  max-width: 1625px;
   width: 100%;
   height: 100%;
   background-image: url('https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png'); /* Your uploaded image */

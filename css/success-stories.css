@@ -22,30 +22,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 150px 0px;
+  padding: 150px 20px;
   flex-direction: column;
   gap: 100px;
 }
 
 .archive-holder {
-    max-width: 1500px;
-    width: 100%;
-    height: auto;
-    background-image: url(../assets/images/stories/stories-section-bg.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    gap: 20px;
-    padding: 0px 0px 0px 75px;
-    position: relative;
-    overflow: hidden;
+  max-width: 1500px;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/images/stories/stories-section-bg.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 0px 0px 75px;
+  position: relative;
+  overflow: hidden;
 }
-
 
 .left-archive-holder,
 .right-archive-holder {
@@ -107,25 +106,65 @@
   justify-content: space-around;
 }
 
-@media(max-width:991px){
+
+
+.story-shape {
+  position: absolute;
+  height: 250px;
+  left: 0;
+  top: 75px;
+}
+
+.module {
+  /* max-width: 250px; */
+  position: relative;
+  /* color: white; */
+  /* padding: 2rem; */
+  border-radius: 20px;
+}
+.module-border {
+  position: absolute;
+  overflow: visible;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  fill: none;
+  stroke: url(#grad);
+  stroke-width: 2px;
+}
+#grad stop:nth-child(1) {
+  stop-color: #352f75;
+}
+#grad stop:nth-child(2) {
+  stop-color: #39a6dd;
+}
+
+
+@media (max-width: 1100px) {
   .archive-holder {
-        max-width: 1500px;
-        width: 100%;
-        height: auto;
-        border: 2px solid #352f75;
-        border-radius: 30px;
-        padding: 30px;
-        flex-direction: column-reverse;
-    }
-.archive-section{
-  padding: 50px 20px 0px 20px;
-  gap: 30px;
-}
-.right-archive-holder img {
+    max-width: 1500px;
     width: 100%;
-}
-h2.heading-gradient {
+    height: auto;
+    /* border: 2px solid #352f75; */
+    /* border-radius: 30px; */
+    padding: 30px;
+    flex-direction: column-reverse;
+  }
+  .archive-section {
+    padding: 50px 20px 0px 20px;
+    gap: 30px;
+  }
+  .right-archive-holder img {
+    width: 90%;
+  }
+  h2.heading-gradient {
     margin: 20px 0px;
     line-height: 1.3;
-}
+  }
+
+  .right-archive-holder img{
+    border-radius: 0px !important;
+  }
+
 }

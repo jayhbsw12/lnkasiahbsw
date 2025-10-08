@@ -105,7 +105,8 @@
 
 .pricing-card .pricing-shape{
     position: absolute;
-    bottom: -1.45px;
+    bottom: -1px;
+    right: 0%;
     height: 32px;
 }
 

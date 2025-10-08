@@ -52,7 +52,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle<?= $currentPage === 'service' ? ' active' : '' ?>" href="#"
+              <a class="nav-link dropdown-toggle<?= $currentPage === 'service' ? ' active' : '' ?>" href="service.php"
                 id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                 <li><a class="dropdown-item" href="#">Consulting</a></li>
