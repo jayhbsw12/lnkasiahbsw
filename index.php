@@ -280,7 +280,7 @@
     </div>
 
     <!-- Stats Section -->
-    <div class="row text-center text-md-start g-4 g-md-5 pt-5 counter-bg">
+    <div class="row text-md-start g-4 g-md-5 pt-5 counter-bg">
       <div class="col-6 col-md-3">
         <div class="ft-stat">
           <div class="ft-stat-number"><span class="count" data-count="04">0</span></div>
