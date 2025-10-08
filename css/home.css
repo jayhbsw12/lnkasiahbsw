@@ -2052,7 +2052,7 @@ img.grid-shape-2 {
 
 .sticky-services-1 img {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   right: 8%;
 }
 
@@ -2129,6 +2129,9 @@ img.grid-shape-2 {
   .position-relative .py-5 {
     padding: 50px 0px;
   }
+  .feature-graphic {
+    width: 85%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -2187,7 +2190,7 @@ img.grid-shape-2 {
     gap: 50px;
   }
   .py-5 {
-    padding: 100px;
+    padding: 45px;
   }
   .v1146_3968 {
     /* width: 390px; */
@@ -2200,6 +2203,13 @@ img.grid-shape-2 {
   }
   .v1146_3971 {
     left: 30px;
+  }
+
+  .newsletter-right-image {
+    position: absolute;
+    top: 0px;
+    right: -2%;
+    width: 36%;
   }
 }
 
@@ -2265,11 +2275,15 @@ img.grid-shape-2 {
   .ai-services-section {
     padding: 0px 0px 50px 0px;
   }
-    .cta-container .cta-content {
+  .cta-container .cta-content {
     padding-top: 0px;
   }
-    .ai-services-holder{
+  .ai-services-holder {
     margin-top: -200px;
+  }
+  .feature-graphic {
+    width: 85%;
+    height: 205.431px;
   }
 }
 /* Small tweaks for very small screens */
@@ -2298,7 +2312,25 @@ img.grid-shape-2 {
     margin-bottom: 60px;
     margin-bottom: 40px;
   }
-    .ai-services-holder{
+  .ai-services-holder {
     margin-top: 0px;
+  }
+  .feature-graphic {
+    width: 85%;
+    margin-top: -65px;
+    height: 164.431px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-graphic {
+    margin-top: -50px;
+    width: 85%;
+    height: 150.431px;
+    top: 598.243px;
+    left: 306.666px;
+  }
+  .cta-section{
+    margin-top: 40px;
   }
 }

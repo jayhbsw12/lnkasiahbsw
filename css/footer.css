@@ -735,3 +735,28 @@ p.social_title-footer {
     right: -35%;
   }
 }
+
+@media(min-width:768px) and (max-width:991px){
+.py-5 {
+ padding: 50px;
+}
+.container.newsletter-container {
+max-width: fit-content !important;
+}
+.newsletter-container{
+    padding: 98px 135px !important;
+}
+img.newsletter-left-bg{
+width: 43%;
+}
+.img-fluid {
+ max-width: 47%;
+  height: auto;
+}
+img.footer-vector {
+position: absolute;
+ top: 0px;
+ width: 38%;
+ right: 90px;
+}
+}

@@ -214,7 +214,7 @@ body {
 /* ------------------------------------cutout shape---------------------------- */
 .partner-container .shape-vertical {
   position: absolute;
-  right: -1px;
+  right: -1.5px;
 }
 
 .partner-container-3 .shape-vertical {
