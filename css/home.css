@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 1442.667px;
+  height: auto;
   background: #f8f9fb;
   overflow: hidden;
 
@@ -238,10 +238,10 @@ span.placeholder-text {
 .get-started-btn {
   position: absolute;
   top: 50%;
-  right: 40px;
+  right: 0;
   transform: translateY(-50%);
   width: 245.333px;
-  height: 72px;
+  height: 92px;
   background: #84e8f4;
   border-radius: 53.333px;
   display: flex;
@@ -269,7 +269,7 @@ span.placeholder-text {
 .arrow-icon {
   position: absolute;
   top: 45%;
-  right: 70px;
+  right: 30px;
   transform: translateY(-50%);
   width: 22px;
   height: 19.219px;
@@ -2127,7 +2127,7 @@ img.grid-shape-2 {
     margin: 50px 0px;
   }
   .position-relative .py-5 {
-    padding: 50px 0px;
+    padding: 50px 50px;
   }
   .feature-graphic {
     width: 85%;
@@ -2231,7 +2231,7 @@ img.grid-shape-2 {
   }
 
   .features-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 50px;
   }
@@ -2285,6 +2285,54 @@ img.grid-shape-2 {
     width: 85%;
     height: 205.431px;
   }
+
+  .hero-content .main-heading {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .hero-subtext {
+    font-size: 20px;
+  }
+
+  .email-signup-section {
+    max-width: 500px;
+    /* width: 100%; */
+  }
+  .email-input-wrapper {
+    width: 100%;
+    height: 100px;
+  }
+  .arrow-icon {
+    position: absolute;
+    top: 46%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 19.219px;
+  }
+  .get-started-btn {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background: #84e8f4;
+    border-radius: 53.333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .get-started-btn span {
+    display: none;
+  }
+
+  .features-content {
+    padding: 0;
+  }
 }
 /* Small tweaks for very small screens */
 @media (max-width: 360px) {
@@ -2322,7 +2370,7 @@ img.grid-shape-2 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .feature-graphic {
     margin-top: -50px;
     width: 85%;
@@ -2330,7 +2378,42 @@ img.grid-shape-2 {
     top: 598.243px;
     left: 306.666px;
   }
-  .cta-section{
+  .cta-section {
     margin-top: 40px;
   }
+
+  .hero-content .main-heading {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .hero-subtext {
+    font-size: 20px;
+  }
+
+  .email-signup-section {
+    max-width: 500px;
+    /* width: 100%; */
+  }
+  /* .email-input-wrapper {
+    width: 100%;
+    height: 130px;
+  } */
+  /* .arrow-icon {
+    display: none;
+  }
+  .get-started-btn {
+    position: absolute;
+    top: 155px;
+    right: 120px;
+    transform: translateY(-50%);
+    width: 245.333px;
+    height: 72px;
+    background: #84e8f4;
+    border-radius: 53.333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  } */
 }
