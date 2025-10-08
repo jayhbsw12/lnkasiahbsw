@@ -135,3 +135,13 @@ a.btn.btn-gradient.btn-pill{
 }
 
 }
+
+@media(max-width:768px){
+  .action-group {
+    display: block;
+    align-items: center;
+}
+a.btn.btn-gradient.btn-pill{
+  margin-top: 20px;
+}
+}
