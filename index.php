@@ -69,7 +69,7 @@
 
   <!-- Product Showcase -->
   <div class="product-showcase">
-    <img src="https://static.codia.ai/custom_image/2025-07-02/084810/product-showcase.png" alt="Product Showcase">
+    <img src="https://static.codia.ai/custom_image/2025-07-02/084810/product-showcase.png" alt="Product Showcase" width="80%">
   </div>
 </section>
 
