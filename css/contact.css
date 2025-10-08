@@ -7,7 +7,9 @@
   align-content: center;
   position: relative;
 }
-
+a {
+    text-decoration: none !important;
+}
 .hero-contact {
   justify-items: center !important;
   text-align: center;
@@ -247,6 +249,7 @@ img.hero-bottom-shape {
   /* font: 500 15px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial; */
 }
 .card__highlight {
+  color: #111;
   margin: 6px 0 0;
   /* font: 700 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial; */
 }
