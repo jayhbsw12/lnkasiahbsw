@@ -435,6 +435,7 @@
 
 
 <section class="benefits-section">
+  <div class="container">
   <article class="benefit-card benefit-card-purple">
     <div class="benefit-icon benefit-icon-1" bis_skin_checked="1">
       <img src="https://static.codia.ai/custom_image/2025-07-03/120446/benefit-icon-1.svg" alt="Benefit 1">
@@ -461,6 +462,7 @@
       <p class="feature-text">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
   </article>
+  </div>
 </section>
 
 <header class="header-section-testimonial">
