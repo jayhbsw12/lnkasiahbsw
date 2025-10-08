@@ -454,7 +454,7 @@
     <div class="benefit-icon benefit-icon-2" bis_skin_checked="1">
       <img src="https://static.codia.ai/custom_image/2025-07-03/120446/benefit-icon-2.svg" alt="Benefit 2">
     </div>
-    <h3 class="benefit-title">Focus on Core<br>Business Competencies</h3>
+    <h3 class="benefit-title" style="width: fit-content;">Focus on Core<br>Business Competencies</h3>
     <p class="benefit-description">Delegating IT infrastructure management to remote <br>service providers</p>
     <div class="benefit-feature" bis_skin_checked="1">
       <img src="https://static.codia.ai/custom_image/2025-07-03/120446/feature-icon-2.png" alt="Feature Icon"
