@@ -152,7 +152,8 @@
 
             </div>
         </div>
-        <div style="text-align: center; padding: 0px 20px;">The Standard and Custom plans include all apps for a single fee: <br> With no
+        <div style="text-align: center; padding: 0px 20px;">The Standard and Custom plans include all apps for a single
+            fee: <br> With no
             hidden costs, no limit on features or data: enjoy real transparency! <br> (*) The discount is valid for 12
             months, for initial users ordered.(**)Cost for Odoo.sh hosting not
             included.</div>
@@ -226,6 +227,7 @@
                             <span class="cta-text">Contact Us</span>
                         </button>
                     </div>
+                    <img src="assets/images/pricing-card-shape.svg" alt="" width="400px" class="pricing-shape">
                 </div>
                 <div class="pricing-card">
                     <h3 style="color:#352F75">Monthly</h3>
@@ -272,6 +274,7 @@
                             <span class="cta-text">Contact Us</span>
                         </button>
                     </div>
+                    <img src="assets/images/pricing-card-shape.svg" alt="" width="400px" class="pricing-shape">
                 </div>
                 <div class="pricing-card">
                     <h3 style="color:#352F75">Project Basis</h3>
@@ -319,6 +322,7 @@
                             <span class="cta-text">Contact Us</span>
                         </button>
                     </div>
+                    <img src="assets/images/pricing-card-shape.svg" alt="" width="400px" class="pricing-shape">
                 </div>
 
             </div>
