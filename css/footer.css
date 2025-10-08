@@ -675,9 +675,36 @@ p.social_title-footer {
   .hero-section-footer {
  margin: 150px 50px 0px 50px !important;
 }
+img.footer-vector-bottom {
+    position: absolute;
+    bottom: 0px;
+    right: 45px;
+    width: 420px;
+}
+}
+
+@media(max-width:1080px){
+.py-5 {
+    padding: 70px 30px;
+}
+.newsletter-right-image {
+    position: absolute;
+    top: 180px;
+    right: 0%;
+    width: 28%;
+}
+.col-12.col-md-5.footer-last-call {
+    padding-left: 100px;
+}
+    img.footer-vector-bottom {
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+        width: 35%;
+    }
 }
 /* Responsive design for tablets and below */
-@media (max-width: 1024px) {
+@media(max-width: 1024px) {
   .hero-title-footer {
     font-size: 32px;
   }
@@ -694,6 +721,39 @@ p.social_title-footer {
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
+  img.footer-vector-bottom {
+        position: absolute;
+        bottom: 0px;
+        right: 8px;
+        width: 95%;
+    }
+  .footer-vector-last {
+    position: absolute;
+    top: 0px;
+    width: 55%;
+}
+.footer-section .container {
+    padding: 0px;
+}
+h6.footer-text {
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    left: 23% !important;
+    top: 0px !important;
+    margin-bottom: 0px;
+}
+h6.footer-text-bottom {
+    position: absolute;
+    right: 12%;
+    z-index: 3;
+    bottom: 0px;
+}
+.footer-right-content h6 {
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
   .hero-title-footer {
     font-size: 28px;
   }
@@ -701,11 +761,22 @@ p.social_title-footer {
   .hero-description-footer {
     font-size: 16px;
   }
-
+    .col-12.col-md-5.footer-last-call {
+        padding-left: 0px;
+    }
   .hero-cta-button-footer {
     font-size: 16px;
     padding: 10px 25px;
   }
+  .footer-section{
+    padding: 120px 30px 90px 30px;
+  }
+  .footer-right-button {
+    padding-bottom: 40px;
+}
+.mb-3 {
+    margin-bottom: 0rem !important;
+}
 }
 
 /* Responsive design for very small mobile screens */
@@ -736,7 +807,8 @@ p.social_title-footer {
   }
 }
 
-@media(min-width:768px) and (max-width:991px){
+@media(max-width:991px){
+  
 .py-5 {
  padding: 50px;
 }
@@ -750,13 +822,53 @@ img.newsletter-left-bg{
 width: 43%;
 }
 .img-fluid {
- max-width: 47%;
+ max-width: 47% !important;
   height: auto;
+  display: none;
 }
 img.footer-vector {
 position: absolute;
  top: 0px;
  width: 38%;
  right: 90px;
+}
+.card{
+  padding: 50px 40px;
+}
+}
+
+@media(max-width:600px){
+      .py-5 {
+        padding: 20px;
+    }
+        .newsletter-container {
+        padding: 0px !important;
+    }
+    .newsletter-title{
+      width: auto;
+      height: auto;
+    }
+    .newsletter-description{
+      width: auto;
+      height: auto;
+    }
+    .newsletter-input{
+      padding: 20px 0px 20px 20px;
+    }
+    .newsletter-form {
+    position: relative;
+    width: max-content;
+    height: 66px;
+    margin: 30px 0 0 0;
+}
+img.newsletter-left-bg{
+  display: none;
+}
+.newsletter-submit{
+  padding: 12px 15px;
+}
+.newsletter-title{
+  font-size: 30px;
+  line-height: 43.6px;
 }
 }

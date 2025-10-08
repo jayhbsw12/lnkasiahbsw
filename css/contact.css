@@ -376,6 +376,7 @@ img.hero-bottom-shape {
 
 .col-md-6.news-left.newsletter-left {
     justify-items: center;
+    padding: 40px;
 }
 
 }
