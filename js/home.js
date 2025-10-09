@@ -78,17 +78,21 @@ function initNavigation() {
 }
 
 // Email signup functionality
+// Email signup functionality
 function initEmailSignup() {
   const emailContainer = document.querySelector(".email-input-container");
   const placeholderText = document.querySelector(".placeholder-text");
   const getStartedBtn = document.querySelector(".get-started-btn");
 
-  if (emailContainer && placeholderText && getStartedBtn) {
-    // Create hidden input field
-    const emailInput = document.createElement("input");
-    emailInput.type = "email";
-    emailInput.placeholder = "Enter your email address";
-    emailInput.style.cssText = `
+  if (!emailContainer || !placeholderText || !getStartedBtn) return;
+
+  // 1) Create the visible email input (keeps your styling/position)
+  const emailInput = document.createElement("input");
+  emailInput.type = "email";
+  emailInput.name = "email"; // name for consistency
+  emailInput.placeholder = "Enter your email address";
+  emailInput.autocomplete = "email";
+  emailInput.style.cssText = `
     position: absolute;
     top: 50%;
     left: 40px;
@@ -103,53 +107,81 @@ function initEmailSignup() {
     font-weight: 500;
     color: rgb(0, 0, 0);
     z-index: 10;
-    `;
+  `;
+  emailContainer.appendChild(emailInput);
 
-    emailContainer.appendChild(emailInput);
+  // 2) Build a real (hidden) form that posts to mail.php as newsletter
+  const form = document.createElement("form");
+  form.action = "mail.php";
+  form.method = "post";
+  form.style.display = "none";
+  form.noValidate = true;
 
-    // Handle input focus/blur
-    emailInput.addEventListener("focus", function () {
-      placeholderText.style.opacity = "0";
-    });
+  const typeField = document.createElement("input");
+  typeField.type = "hidden";
+  typeField.name = "form_type";
+  typeField.value = "newsletter";
+  form.appendChild(typeField);
 
-    emailInput.addEventListener("blur", function () {
-      if (!this.value) {
-        placeholderText.style.opacity = "1";
-      }
-    });
+  const emailHidden = document.createElement("input");
+  emailHidden.type = "hidden";
+  emailHidden.name = "email";
+  form.appendChild(emailHidden);
 
-    emailInput.addEventListener("input", function () {
-      if (this.value) {
-        placeholderText.style.opacity = "0";
-      } else {
-        placeholderText.style.opacity = "1";
-      }
-    });
+  document.body.appendChild(form);
 
-    // Handle get started button click
-    getStartedBtn.addEventListener("click", function () {
-      const email = emailInput.value.trim();
-      if (email) {
-        if (validateEmail(email)) {
-          // Simulate form submission
-          showNotification("Thank you! We'll be in touch soon.", "success");
-          emailInput.value = "";
-          placeholderText.style.opacity = "1";
-        } else {
-          showNotification("Please enter a valid email address.", "error");
-        }
-      } else {
-        showNotification("Please enter your email address.", "error");
-      }
-    });
-
-    // Handle enter key
-    emailInput.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        getStartedBtn.click();
-      }
-    });
+  // 3) UX: placeholder visibility
+  function syncPlaceholder() {
+    placeholderText.style.opacity = emailInput.value ? "0" : "1";
   }
+  emailInput.addEventListener(
+    "focus",
+    () => (placeholderText.style.opacity = "0")
+  );
+  emailInput.addEventListener("blur", syncPlaceholder);
+  emailInput.addEventListener("input", syncPlaceholder);
+  syncPlaceholder();
+
+  // 4) Submit handler
+  function submitNewsletter() {
+    const val = (emailInput.value || "").trim();
+    const ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val);
+
+    if (!ok) {
+      // light inline feedback without blocking navigation
+      emailInput.focus();
+      emailInput.setAttribute("aria-invalid", "true");
+      emailInput.style.boxShadow = "0 0 0 2px rgba(239,68,68,.6)";
+      setTimeout(() => {
+        emailInput.style.boxShadow = "";
+        emailInput.removeAttribute("aria-invalid");
+      }, 1400);
+      return;
+    }
+
+    // mirror to hidden form and submit (normal POST)
+    emailHidden.value = val;
+
+    // disable button briefly to avoid double-clicks
+    const btnText = getStartedBtn.querySelector(".btn-text");
+    const oldLabel = btnText ? btnText.textContent : "";
+    if (btnText) btnText.textContent = "Submitting…";
+    getStartedBtn.style.pointerEvents = "none";
+
+    form.submit(); // mail.php will redirect back with ?subscribed=1/0 (footer toast handles UI)
+  }
+
+  // 5) Wire click + Enter key
+  getStartedBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    submitNewsletter();
+  });
+  emailInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      submitNewsletter();
+    }
+  });
 }
 
 // Email validation

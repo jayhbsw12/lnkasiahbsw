@@ -452,4 +452,7 @@ img.linkedin-icon {
   .hero-service-left h1{
     font-size: 50px !important;
   }
+  .hero-banner-service, .technocraft, .key-features{
+    padding: 50px 0px !important;
+  }
 }
