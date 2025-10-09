@@ -2470,6 +2470,27 @@ img.grid-shape-2 {
         font-size: 35px;
         line-height: 49.623px;
   }
+    .app-interface-container{
+        height: 400px !important;
+  }
+  .features-main-heading {
+    margin-bottom: 40px;
+  }
+  .phone-mockup {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 26px;
+    z-index: 10;
+    animation: float 4s 
+ease-in-out infinite;
+}
+.experience-badge{
+  right: 145px;
+  padding: 18px;
+  border-radius: 10px;
+  bottom: 15px;
+}
 }
 
 @media (max-width: 640px) {
@@ -2527,7 +2548,7 @@ img.grid-shape-2 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .sticky-services-1{
         padding: 20px;
   }
@@ -2535,27 +2556,7 @@ img.grid-shape-2 {
     font-size: 18px;
     line-height: 1.7rem;
   }
-  .app-interface-container{
-        height: 400px;
-  }
-  .features-main-heading {
-    margin-bottom: 40px;
-  }
-  .phone-mockup {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 26px;
-    z-index: 10;
-    animation: float 4s 
-ease-in-out infinite;
-}
-.experience-badge{
-  right: 70px;
-  padding: 18px;
-  border-radius: 10px;
-  bottom: 15px;
-}
+
   .feature-item {
     flex-direction: column;
     gap: 0px;
