@@ -2416,8 +2416,21 @@ img.grid-shape-2 {
     cursor: pointer;
     transition: all 0.3s ease;
   } */
+  .features-main-heading {
+    margin-bottom: 40px;
+  }
+  .feature-item {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 
-@media (max-width: 400px){
-  
+@media (max-width: 400px) {
+  .features-main-heading {
+    margin-bottom: 40px;
+  }
+  .feature-item {
+    flex-direction: column;
+    gap: 0px;
+  }
 }
