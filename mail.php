@@ -1,5 +1,7 @@
 <?php
-// Minimal mail handler with redirects (success -> thankyou.php, errors -> contact.php?error=...)
+// Unified mail handler for Contact + Newsletter
+// - Contact form (contact.php) -> thankyou.php on success, contact.php?error=... on failure
+// - Newsletter form (footer) -> redirects back with ?subscribed=1 or ?subscribed=0
 
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -16,8 +18,90 @@ require __DIR__ . '/PHPMailer/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// --- Inputs (sanitised lightly)
+// -------------------- Helpers --------------------
 $clean = fn($k, $f = FILTER_SANITIZE_SPECIAL_CHARS) => trim(filter_input(INPUT_POST, $k, $f) ?? '');
+$e     = fn($s) => htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8');
+
+function add_qs($url, $key, $val) {
+  if (!$url) $url = 'index.php';
+  $sep = (parse_url($url, PHP_URL_QUERY) === null) ? '?' : '&';
+  return $url . $sep . rawurlencode($key) . '=' . rawurlencode($val);
+}
+
+// Determine form type
+$form_type     = strtolower($clean('form_type')); // 'newsletter' from footer; otherwise contact
+$is_newsletter = ($form_type === 'newsletter');
+
+// Capture referer for newsletter redirects
+$back = $_SERVER['HTTP_REFERER'] ?? 'index.php';
+
+// -------------------- Newsletter path (email-only) --------------------
+if ($is_newsletter) {
+  $emailRaw = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+  $email    = filter_var($emailRaw, FILTER_VALIDATE_EMAIL) ? $emailRaw : '';
+
+  if ($email === '') {
+    header('Location: ' . add_qs($back, 'subscribed', '0'));
+    exit;
+  }
+
+  // Unique subject prevents Gmail conversation threading
+  $subject   = 'Newsletter: ' . $email . ' — ' . date('Y-m-d H:i:s');
+  $preheader = 'New subscriber from the footer form.'; // controls inbox preview
+
+  $body = '
+  <!doctype html>
+  <html><head><meta charset="utf-8"></head>
+  <body style="margin:0;padding:0;background:#f7f7f7;font-family:Arial,Helvetica,sans-serif;">
+    <!-- Hidden preheader for nicer Gmail preview -->
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">'. $e($preheader) .'</div>
+
+    <div style="max-width:520px;margin:24px auto;background:#fff;border-top:4px solid #245ba8;padding:24px;color:#333;">
+      <h2 style="margin:0 0 16px;color:#245ba8;">New Newsletter Subscription</h2>
+      <p><strong>Email:</strong> '.$e($email).'</p>
+    </div>
+  </body></html>';
+
+  $alt = "Newsletter: $email\n";
+
+  // --- Send via PHPMailer
+  $mail = new PHPMailer(true);
+  try {
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.office365.com';
+    $mail->SMTPAuth   = true;
+    $mail->AuthType   = 'LOGIN'; // M365 SMTP AUTH
+    $mail->Username   = 'contactus@lnkasia.com';
+    $mail->Password   = 'rvglgsbqxslgsxws';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
+
+    $mail->CharSet    = 'UTF-8';
+    $mail->Encoding   = 'base64';
+
+    // From must be the authenticated mailbox
+    $mail->setFrom('contactus@lnkasia.com', 'LNK Newsletter');
+    // TESTING RECIPIENT (change for production)
+    $mail->addAddress('jaymodihbsoftweb@gmail.com', 'LNK Asia');
+    // Let replies go to the subscriber
+    $mail->addReplyTo($email, 'Subscriber');
+
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body    = $body;
+    $mail->AltBody = $alt;
+
+    $mail->send();
+    header('Location: ' . add_qs($back, 'subscribed', '1'));
+    exit;
+
+  } catch (Exception $ex) {
+    header('Location: ' . add_qs($back, 'subscribed', '0'));
+    exit;
+  }
+}
+
+// -------------------- Contact path (original behaviour) --------------------
 $name      = $clean('name');
 $emailRaw  = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $email     = filter_var($emailRaw, FILTER_VALIDATE_EMAIL) ? $emailRaw : '';
@@ -51,8 +135,7 @@ if (strlen(preg_replace('/\D+/', '', $phone_full)) < 7) {
 }
 
 // Build email body
-$e = fn($s) => htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8');
-$subject = $subjectIn !== '' ? $subjectIn : 'New Contact Form Submission';
+$subject = ($subjectIn !== '' ? $subjectIn : 'New Contact Form Submission');
 
 $body = '
 <!doctype html>
@@ -64,7 +147,7 @@ $body = '
     <p><strong>Email:</strong> '.$e($email).'</p>
     <p><strong>Phone:</strong> '.$e($phone_full).'</p>'.
     ($phone_country !== '' ? '<p><strong>Phone Country:</strong> '.$e($phone_country).'</p>' : '').
-    ($phone_dial !== '' ? '<p><strong>Dial Code:</strong> '.$e($phone_dial).'</p>' : '').
+    ($phone_dial    !== '' ? '<p><strong>Dial Code:</strong> '.$e($phone_dial).'</p>' : '').
     '<p><strong>Company:</strong> '.$e($company).'</p>
     <p><strong>Subject:</strong> '.$e($subjectIn).'</p>
     <p><strong>Message:</strong><br>'.nl2br($e($message)).'</p>
@@ -74,7 +157,7 @@ $body = '
 $alt  = "New Contact Form Submission\n";
 $alt .= "Name: $name\nEmail: $email\nPhone: $phone_full\n";
 if ($phone_country !== '') $alt .= "Phone Country: $phone_country\n";
-if ($phone_dial !== '')    $alt .= "Dial Code: $phone_dial\n";
+if ($phone_dial    !== '') $alt .= "Dial Code: $phone_dial\n";
 $alt .= "Company: $company\nSubject: $subjectIn\n\nMessage:\n$message\n";
 
 // --- Send via PHPMailer
@@ -83,19 +166,18 @@ try {
   $mail->isSMTP();
   $mail->Host       = 'smtp.office365.com';
   $mail->SMTPAuth   = true;
-  $mail->AuthType   = 'LOGIN'; // often safest with M365 SMTP AUTH
+  $mail->AuthType   = 'LOGIN';
   $mail->Username   = 'contactus@lnkasia.com';
-  $mail->Password   = 'rvglgsbqxslgsxws'; // avoid app passwords if possible
+  $mail->Password   = 'rvglgsbqxslgsxws';
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = 587;
 
   $mail->CharSet    = 'UTF-8';
   $mail->Encoding   = 'base64';
 
-  // From must be the authenticated mailbox (or its alias)
+  // From must be the authenticated mailbox
   $mail->setFrom('contactus@lnkasia.com', 'LNK Contact Form Submission');
-
-  // For testing -> send to you
+  // TESTING RECIPIENT (change for production)
   $mail->addAddress('jaymodihbsoftweb@gmail.com', 'LNK Asia');
 
   // Let replies go to the site visitor
@@ -108,15 +190,11 @@ try {
   $mail->Body    = $body;
   $mail->AltBody = $alt;
 
-  // Optional: stricter TLS (default is fine)
-  // $mail->SMTPOptions = ['ssl' => ['verify_peer' => true, 'verify_peer_name' => true, 'allow_self_signed' => false]];
-
   $mail->send();
   header('Location: thankyou.php');
   exit;
 
 } catch (Exception $ex) {
-  // Quick debug hook: uncomment to log PHPMailer errors
   // error_log('Mailer Error: ' . $mail->ErrorInfo);
   header('Location: contact.php?error=' . urlencode('We couldn’t send your message. Please try again.'));
   exit;
