@@ -283,15 +283,44 @@ img.linkedin-icon {
         font-size: 49px !important;
   }
   .why-choose-shape {
-    height: 25px;
+    position: absolute;
+    top: 0px;
+    right: 38px !important;
+    height: 20px !important;
   }
+.technocraft {
+    padding: 50px 0px!important;
+}
+
+.hero-banner-service {
+  padding-top: 50px!important;
+}
+.key-features {
+    padding: 50px 0px;
+}
+
+.flip-box-heading {
+  font-size: 39px;
+}
+
 } 
 
 @media (max-width: 425px) {
   .hero-service-left h1 {
-    font-size: 52px !important;
+    font-size: 52px;
+}
+
+.flip-box-heading {
+  font-size: 42px;
 }
 }
+
+@media (max-width: 1024px) {
+ .section-title-about {
+    font-size: 35px !important;
+}
+}
+
 
 @media (max-width: 768px) {
   .flip-grid {
