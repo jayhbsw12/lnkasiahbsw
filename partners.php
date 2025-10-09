@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <strong style="margin-top:20px">An ISO200001:2018,27001:2013,27017:2015,27018:2019</strong>
+                <!-- <strong style="margin-top:20px">An ISO200001:2018,27001:2013,27017:2015,27018:2019</strong> -->
                 <strong>Certified Cloud Services in JV with NSDL Protean Cloud.</strong>
             </div>
             <div class="partner-column-right">

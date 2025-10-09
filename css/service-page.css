@@ -93,3 +93,9 @@ section.service-content-detail {
     transform: scale(1);
   }
 }
+
+@media (max-width: 400px){
+  section.service-content-detail{
+    padding: 50px 0px;
+  }
+}
