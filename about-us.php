@@ -237,7 +237,7 @@
           <div class="flip-card-front">
             <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
 
-            <img src="assets\images\Parag soni.png" alt="Avatar" style="width:350px;height:350px;">
+            <img src="assets\images\Parag soni.png" alt="Avatar" style="width:100%;height:100%;">
           </div>
           <div class="flip-card-back">
             <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
@@ -262,7 +262,7 @@
           <div class="flip-card-front">
             <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
 
-            <img src="assets\images\Pallav Parekh.png" alt="Avatar" style="width:350px;height:350px;">
+            <img src="assets\images\Pallav Parekh.png" alt="Avatar" style="width:100%;height:100%;">
           </div>
           <div class="flip-card-back">
             <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
@@ -287,7 +287,7 @@
           <div class="flip-card-front">
             <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
 
-            <img src="assets\images\Dhaval Patel.png" alt="Avatar" style="width:350px;height:350px;">
+            <img src="assets\images\Dhaval Patel.png" alt="Avatar" style="width:100%;height:100%;">
           </div>
           <div class="flip-card-back">
             <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"

@@ -120,9 +120,9 @@
 
 .contact-shape-about {
   position: absolute;
-    top: -1px;
-    right: 45px;
-    height: 26px;
+  top: -1px;
+  right: 45px;
+  height: 26px;
 }
 
 .why-choose-bg {
@@ -136,7 +136,7 @@
   right: 85px;
 }
 
-.key-features{
+.key-features {
   padding: 150px 0px;
 }
 
@@ -280,7 +280,7 @@ img.linkedin-icon {
 
 @media (max-width: 375px) {
   .hero-service-left h1 {
-        font-size: 49px !important;
+    font-size: 49px !important;
   }
   .why-choose-shape {
     position: absolute;
@@ -288,39 +288,37 @@ img.linkedin-icon {
     right: 38px !important;
     height: 20px !important;
   }
-.technocraft {
-    padding: 50px 0px!important;
-}
+  .technocraft {
+    padding: 50px 0px !important;
+  }
 
-.hero-banner-service {
-  padding-top: 50px!important;
-}
-.key-features {
+  .hero-banner-service {
+    padding-top: 50px !important;
+  }
+  .key-features {
     padding: 50px 0px;
-}
+  }
 
-.flip-box-heading {
-  font-size: 39px;
+  .flip-box-heading {
+    font-size: 39px;
+  }
 }
-
-} 
 
 @media (max-width: 425px) {
   .hero-service-left h1 {
     font-size: 52px;
-}
+  }
 
-.flip-box-heading {
-  font-size: 42px;
-}
+  .flip-box-heading {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 1024px) {
- .section-title-about {
+  .section-title-about {
     font-size: 35px !important;
+  }
 }
-}
-
 
 @media (max-width: 768px) {
   .flip-grid {
@@ -330,39 +328,39 @@ img.linkedin-icon {
     background: #f0f2f4;
     padding: 70px 20px;
     position: relative;
-}
-.section-heading {
+  }
+  .section-heading {
     font-size: 30px;
     font-weight: 500;
-}
-.why-section{
-  padding: 0px;
-}
-.why-img {
+  }
+  .why-section {
+    padding: 0px;
+  }
+  .why-img {
     max-width: 100%;
     border-radius: 15px;
-}
-.flip-card-container {
+  }
+  .flip-card-container {
     display: flex;
-    flex-wrap: wrap !important;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 80px;
-}
+  }
 
-.why-choose-shape {
+  .why-choose-shape {
     position: absolute;
     top: 0px;
     right: 85px;
     height: 26px;
-}
+  }
 
-.hero-bottom-service {
-  position: absolute;
+  .hero-bottom-service {
+    position: absolute;
     bottom: -4px;
     height: 30px;
-}
+  }
 }
 
 /* Reduced motion preference */
@@ -445,43 +443,43 @@ img.linkedin-icon {
 
 /* ----------------------------------------responsive---------------------------------------- */
 
+@media (max-width: 1200px) {
+  .flip-card-container {
+  flex-wrap: wrap;  /* center each card block */
+  gap: 20px;
+  }
+}
 
 @media (max-width: 767px) {
+  .card {
+    --n: 26px; /* notch size */
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 24px;
+    background: #f7f7fb;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 
-  .flip-card-container{
-  display: grid;
-  grid-template-columns: 1fr;      /* mobile: 1 column */
-  gap: 40px;                       /* adjust as needed */
-  justify-items: center;           /* center each card block */
-  }
-
-.card{
-  --n:26px;                     /* notch size */
-  border-radius:18px;
-  border: 1px solid rgba(0, 0, 0, 0.75);
-  padding:24px;
-  background:#f7f7fb;
-  border:1px solid rgba(0,0,0,.15);
-
-  /* cut-outs on left & right */
-  /* -webkit-mask:
+    /* cut-outs on left & right */
+    /* -webkit-mask:
     radial-gradient(circle var(--n) at 0 50%, transparent 98%, #000 99%) left / 50% 100% no-repeat,
     radial-gradient(circle var(--n) at 100% 50%, transparent 98%, #000 99%) right / 50% 100% no-repeat;
           mask:
     radial-gradient(circle var(--n) at 0 50%, transparent 98%, #000 99%) left / 50% 100% no-repeat,
     radial-gradient(circle var(--n) at 100% 50%, transparent 98%, #000 99%) right / 50% 100% no-repeat; */
-}
+  }
 
   .card {
     background-image: url(../assets/images/card-bg.png);
   }
 }
 
-@media (max-width: 400px){
-  .hero-service-left h1{
+@media (max-width: 400px) {
+  .hero-service-left h1 {
     font-size: 50px !important;
   }
-  .hero-banner-service, .technocraft, .key-features{
+  .hero-banner-service,
+  .technocraft,
+  .key-features {
     padding: 50px 0px !important;
   }
 }
