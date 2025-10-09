@@ -91,7 +91,7 @@ function initEmailSignup() {
     emailInput.style.cssText = `
     position: absolute;
     top: 50%;
-    left: 54px;
+    left: 40px;
     transform: translateY(-50%);
     width: 260px;
     height: 40px;

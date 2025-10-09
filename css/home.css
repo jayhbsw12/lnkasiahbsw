@@ -2433,4 +2433,50 @@ img.grid-shape-2 {
     flex-direction: column;
     gap: 0px;
   }
+  .email-signup-section {
+    max-width: 370px;
+  }
+  .email-input-wrapper {
+    height: 80px;
+  }
+  .get-started-btn {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+  }
+  .arrow-icon {
+    right: 29px;
+  }
+  .hero-content {
+    padding: 70px 10px 0px 10px;
+}
+.whats-new-badge{
+  flex-direction: column;
+  width: 100%;
+  gap: 4px;
+}
+.hero-subtext, .features-main-heading2{
+  line-height: 30px;
+}
+.partners-title{
+  font-size: 22px;
+}
+.partners-logos{
+  gap: 40px;
+}
+.features-main-heading2{
+  font-size: 22px;
+}
+.ai-services-holder{
+  padding: 20px;
+}
+.ai-services-top-holder div h2{
+  font-size: 30px;
+  text-align: center;
+}
+.ai-services-top-holder{
+  align-items: center;
+}
 }
