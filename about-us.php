@@ -63,6 +63,7 @@
       <div class="icon-flex">
         <img src="assets/images/mission.svg" alt="mission">
         <h5>Mission</h5>
+        <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
       </div>
       <p class="icon-p">Our mission is to create sustainable value for our customers, by bringing innovative ideas
         and technologies to address their needs.</p>
@@ -75,6 +76,7 @@
       <div class="icon"><i class="fas fa-lightbulb"></i></div>
       <div class="icon-flex">
         <img src="assets/images/vision.svg" alt="vision">
+        <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
         <h5>Vision</h5>
       </div>
       <p class="icon-p">Our vision is to reduce cost with enhanced data security, effectively respond to dynamic
@@ -88,6 +90,7 @@
       <div class="icon"><i class="fas fa-handshake"></i></div>
       <div class="icon-flex">
         <img src="assets/images/core-values.svg" alt="core values">
+        <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
         <h5>Core Values</h5>
       </div>
       <p class="icon-p">Our core values are Commitment, Reliability, Loyalty, Transparency.</p>
@@ -100,6 +103,7 @@
       <div class="icon"><i class="fas fa-chart-line"></i></div>
       <div class="icon-flex">
         <img src="assets/images/goals.svg" alt="goal">
+        <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
         <h5>Goal</h5>
       </div>
       <p class="icon-p">Our goal is to achieve the most profitability, competitiveness, and sustainability through

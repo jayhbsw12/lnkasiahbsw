@@ -1,0 +1,45 @@
+.section-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+
+  margin-top: 150px;
+}
+
+.holder-404 {
+  width: 100%;
+  height: auto;
+  max-width: 1500px;
+  /* border: 1px solid blue; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.holder-404 .heading-gradient {
+  font-size: 220px;
+  font-weight: bold;
+  line-height: 170px;
+}
+
+.cta-btn {
+  line-height: 60px;
+}
+
+@media (max-width: 450px) {
+  .holder-404 .heading-gradient {
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 120px;
+  }
+  .holder-404 h1{
+    padding: 0px 20px;
+  }
+}

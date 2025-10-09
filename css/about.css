@@ -33,7 +33,7 @@
   transform: translateY(-5px);
 }
 
-.tab-card::before {
+/* .tab-card::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -43,7 +43,7 @@
   background-color: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-}
+} */
 
 /* .tab-card.active {
       border: 2px solid #0d6efd;
@@ -117,6 +117,14 @@
   height: 100%;
   transition: transform 0.3s ease;
 }
+
+.contact-shape-about {
+  position: absolute;
+    top: -1px;
+    right: 45px;
+    height: 26px;
+}
+
 .why-choose-bg {
   background: #f0f2f4;
   padding: 70px;
@@ -250,9 +258,10 @@ img.linkedin-icon {
 }
 
 .tab-card.text-center.h-100 {
-  background-image: url(../assets/images/top-card.webp);
-  background-size: contain;
+  background-image: url(../assets/images/left-card.webp);
+  background-size: cover;
   background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.75);
   background-repeat: no-repeat;
 }
 
@@ -267,6 +276,21 @@ img.linkedin-icon {
     flex-direction: column;
     gap: 20px;
   }
+}
+
+@media (max-width: 375px) {
+  .hero-service-left h1 {
+        font-size: 49px !important;
+  }
+  .why-choose-shape {
+    height: 25px;
+  }
+} 
+
+@media (max-width: 425px) {
+  .hero-service-left h1 {
+    font-size: 52px !important;
+}
 }
 
 @media (max-width: 768px) {
@@ -288,6 +312,27 @@ img.linkedin-icon {
 .why-img {
     max-width: 100%;
     border-radius: 15px;
+}
+.flip-card-container {
+    display: flex;
+    flex-wrap: wrap !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.why-choose-shape {
+    position: absolute;
+    top: 0px;
+    right: 85px;
+    height: 26px;
+}
+
+.hero-bottom-service {
+  position: absolute;
+    bottom: -4px;
+    height: 30px;
 }
 }
 
@@ -384,6 +429,7 @@ img.linkedin-icon {
 .card{
   --n:26px;                     /* notch size */
   border-radius:18px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
   padding:24px;
   background:#f7f7fb;
   border:1px solid rgba(0,0,0,.15);
@@ -399,5 +445,11 @@ img.linkedin-icon {
 
   .card {
     background-image: url(../assets/images/card-bg.png);
+  }
+}
+
+@media (max-width: 400px){
+  .hero-service-left h1{
+    font-size: 50px !important;
   }
 }

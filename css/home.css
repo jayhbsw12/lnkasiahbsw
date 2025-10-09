@@ -2005,7 +2005,7 @@ img.grid-shape-2 {
 
 .ai-services-holder .vertical-shape-services {
   position: absolute;
-  left: 0;
+  left: -1px;
   top: 20%;
 }
 
@@ -2289,7 +2289,7 @@ img.grid-shape-2 {
   }
 
   .hero-content .main-heading {
-    font-size: 40px;
+    font-size: 50px;
     line-height: normal;
   }
   .hero-subtext {
@@ -2485,7 +2485,7 @@ img.grid-shape-2 {
   }
 
   .hero-content .main-heading {
-    font-size: 40px;
+    font-size: 45px;
     line-height: normal;
   }
   .hero-subtext {
