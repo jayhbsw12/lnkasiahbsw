@@ -136,6 +136,36 @@ a.btn.btn-gradient.btn-pill{
 
 }
 
+@media(min-width:992px) and (max-width:1080px){
+  .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        margin-right: 10px !important;
+    }
+    .segmented{
+          gap: 25px !important;
+          padding: 14px 20px !important;
+    }
+   .ms-lg-4 {
+        margin-left: 0.5rem !important;
+    }
+    a.btn.btn-gradient.btn-pill{
+          font-size: 14px !important;
+    }
+    .nav-item {
+    padding: 8px 7px !important;
+}
+li.nav-item a {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+.seg-link{
+  font-size: 16px !important;
+}
+.action-group{
+  gap: 10px !important;
+}
+}
+
 @media(max-width:768px){
   .action-group {
     display: block;

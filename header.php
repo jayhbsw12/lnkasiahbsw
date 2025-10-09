@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="https://designmasters.in/lnk-asia/">
           <img class="brand-mark" src="assets/images/logo.svg" alt="LNK ASIA logo">
         </a>
 

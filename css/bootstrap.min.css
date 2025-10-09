@@ -5150,6 +5150,7 @@ li.nav-item a {
  }
 
  @media (min-width:576px) {
+    
      .card-group {
          display: flex;
          flex-flow: row wrap
@@ -6366,7 +6367,6 @@ li.nav-item a {
  }
 
  @media (min-width:992px) {
-
      .modal-lg,
      .modal-xl {
          --bs-modal-width: 800px
@@ -12076,7 +12076,7 @@ li.nav-item a {
      }
 
      .ms-lg-4 {
-         margin-left: 1.5rem !important
+         margin-left: 0.5rem !important
      }
 
      .ms-lg-5 {

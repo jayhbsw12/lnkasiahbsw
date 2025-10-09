@@ -767,8 +767,7 @@ span.placeholder-text {
 }
 
 .experience-number {
-  font-family: Inter, var(--default-font-family);
-  font-size: 82.96753692626953px;
+  font-size: 82px;
   font-weight: 400;
   line-height: 108.689px;
 }
@@ -2270,8 +2269,11 @@ img.grid-shape-2 {
     gap: 40px;
   }
   .counter-title {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
+  .position-relative .py-5 {
+        padding: 50px 30px;
+    }
   .ai-services-section {
     padding: 0px 0px 50px 0px;
   }
@@ -2333,6 +2335,96 @@ img.grid-shape-2 {
   .features-content {
     padding: 0;
   }
+      .v1146_4572 {
+        padding: 40px 20px;
+    }
+    /* box-1 */
+    .v1146_3970 {
+    width: auto;
+    left: 20px;
+    }
+    .v1146_3971{
+          top: 110px;
+    left: 18px;
+    width: 275px;
+    }
+    .v1146_3967{
+      height: auto;
+    }
+    .v1146_3968{
+          height: 380px;
+    }
+   .v1146_3969{
+    height: inherit;
+   }
+   /* box-2 */
+   img.grid-shape-2 {
+    position: relative;
+    right: -104px;
+}
+.v1146_3984{
+  width: 200px;
+  top: 140px;
+  left: 84px;
+}
+  .v1146_3985{
+    width:270px;
+      top: 195px;
+    width: auto;
+    right: 20px;
+    left: auto;
+  }
+  /* box-3 */
+  .v1146_3998{
+    width: 223px;
+        top: 37px;
+    left: 18px;
+  }
+  .v1146_3999{
+    width: 270px;
+        top: 95px;
+    left: 17px;
+  }
+  /* box-4 */
+
+  .v1146_4009{
+    height: 340px;
+  }
+  .v1146_4010{
+        height: 340px;
+  }
+    .v1146_4011{
+        height: 335px;
+  }
+  .v1146_4012{
+    width: auto;
+    top: 125px;
+    left: 15px;
+    font-size: 25px;
+  }
+  .v1146_4013{
+    width: 270px;
+    top: 178px;
+    left: 16px;
+  }
+  .main-title-testimonial{
+    font-size: 25px !important;
+    line-height: 35px !important;
+    width: auto !important;
+  }
+  .cta-button-testimonial{
+    width: auto !important; 
+    padding: 20px;
+  }
+  .cta-button-testimonial span{
+    font-size: 16px !important;
+  }
+  .header-section-testimonial{
+        margin-top: 65px !important;
+  }
+  .testimonials-section{
+        margin-top: 0px !important;
+  }
 }
 /* Small tweaks for very small screens */
 @media (max-width: 360px) {
@@ -2367,6 +2459,16 @@ img.grid-shape-2 {
     width: 85%;
     margin-top: -65px;
     height: 164.431px;
+  }
+  .partners-section{
+    padding: 60px 0px 0px 0px;
+  }
+  .experience-badge{
+    display: block;
+  }
+  .features-main-heading{
+        font-size: 35px;
+        line-height: 49.623px;
   }
 }
 
@@ -2426,15 +2528,40 @@ img.grid-shape-2 {
 }
 
 @media (max-width: 400px) {
+  .sticky-services-1{
+        padding: 20px;
+  }
+  .sticky-service-content-holder h4{
+    font-size: 18px;
+    line-height: 1.7rem;
+  }
+  .app-interface-container{
+        height: 400px;
+  }
   .features-main-heading {
     margin-bottom: 40px;
   }
+  .phone-mockup {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 26px;
+    z-index: 10;
+    animation: float 4s 
+ease-in-out infinite;
+}
+.experience-badge{
+  right: 70px;
+  padding: 18px;
+  border-radius: 10px;
+  bottom: 15px;
+}
   .feature-item {
     flex-direction: column;
     gap: 0px;
   }
   .email-signup-section {
-    max-width: 370px;
+    max-width: -webkit-fill-available;
   }
   .email-input-wrapper {
     height: 80px;
