@@ -294,6 +294,9 @@ body {
   .shape-vertical-2 {
     height: 185px;
   }
+  .partner-container .shape-vertical{
+    right: -0.5px;
+  }
 
   .partner-container-2 .shape-vertical-2 {
     position: absolute;
@@ -316,5 +319,8 @@ body {
 @media (max-width: 640px) {
   .partner-holder-container {
     grid-template-columns: auto;
+  }
+  .hero-banner{
+    padding: 50px 0px !important;
   }
 }

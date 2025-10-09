@@ -105,11 +105,39 @@
   border-radius: 20px;
 }
 
-.pricing-card .pricing-shape{
-    position: absolute;
-    bottom: -1px;
-    right: 0%;
-    height: 32px;
+.pricing-card:nth-child(1) .pricing-shape {
+  position: absolute;
+  bottom: -1px;
+  right: 100px;
+  height: 32px;
+}
+.pricing-card:nth-child(2) .pricing-shape {
+  position: absolute;
+  bottom: -1px;
+  right: 100px;
+  height: 32px;
+}
+.pricing-card:nth-child(3) .pricing-shape {
+  position: absolute;
+  bottom: -1px;
+  right: 100px;
+  height: 32px;
+}
+
+.pricing-cards-container:nth-child(2)
+  .pricing-card:nth-child(1)
+  .pricing-shape {
+  right: 86px;
+}
+.pricing-cards-container:nth-child(2)
+  .pricing-card:nth-child(2)
+  .pricing-shape {
+  right: 86px;
+}
+.pricing-cards-container:nth-child(2)
+  .pricing-card:nth-child(3)
+  .pricing-shape {
+  right: 86px;
 }
 
 .pricing-card button {
@@ -117,13 +145,13 @@
 }
 
 @media (max-width: 1540px) {
-  .pricing-cards-container{
+  .pricing-cards-container {
     padding: 20px;
   }
-    .pricing-section .pricing-container .pricing-cards-container {
+  .pricing-section .pricing-container .pricing-cards-container {
     padding: 0;
   }
-  .pricing-left-container:nth-child(2) img{
+  .pricing-left-container:nth-child(2) img {
     width: 100%;
   }
 }
@@ -143,7 +171,42 @@
     padding: 20px;
   }
 
-  .pricing-section{
+  .pricing-section {
     padding: 50px 0px 0px 0px;
+  }
+
+  .pricing-card:nth-child(1) .pricing-shape {
+    position: absolute;
+    bottom: -1px;
+    right: 62px;
+    height: 22px;
+  }
+  .pricing-card:nth-child(2) .pricing-shape {
+    position: absolute;
+    bottom: -1px;
+    right: 62px;
+    height: 22px;
+  }
+  .pricing-card:nth-child(3) .pricing-shape {
+    position: absolute;
+    bottom: -1px;
+    right: 62px;
+    height: 22px;
+  }
+
+  .pricing-cards-container:nth-child(2)
+    .pricing-card:nth-child(1)
+    .pricing-shape {
+    right: 56px;
+  }
+  .pricing-cards-container:nth-child(2)
+    .pricing-card:nth-child(2)
+    .pricing-shape {
+    right: 56px;
+  }
+  .pricing-cards-container:nth-child(2)
+    .pricing-card:nth-child(3)
+    .pricing-shape {
+    right: 56px;
   }
 }
