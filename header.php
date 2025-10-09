@@ -23,7 +23,6 @@
 <link rel="stylesheet" href="css/partners.css">
 <link rel="stylesheet" href="css/pricing.css">
 <link rel="stylesheet" href="css/thankyou.css">
-<link rel="stylesheet" href="css/404.css">
 <link rel="stylesheet" href="css/success-stories.css">
 <link rel="stylesheet" href="css/single-story.css">
 </head>
@@ -34,8 +33,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="https://designmasters.in/lnk-asia/">
-        <a class="navbar-brand d-flex align-items-center" href="index.php">
+        <a class="navbar-brand d-flex align-items-center" href="#">
           <img class="brand-mark" src="assets/images/logo.svg" alt="LNK ASIA logo">
         </a>
 

@@ -2463,9 +2463,6 @@ img.grid-shape-2 {
   .partners-section{
     padding: 60px 0px 0px 0px;
   }
-  .experience-badge{
-    display: block;
-  }
   .features-main-heading{
         font-size: 35px;
         line-height: 49.623px;
@@ -2485,11 +2482,15 @@ img.grid-shape-2 {
     animation: float 4s 
 ease-in-out infinite;
 }
+.experience-number{
+  display: flex;
+}
 .experience-badge{
   right: 145px;
   padding: 18px;
   border-radius: 10px;
   bottom: 15px;
+  display: block;
 }
 }
 
@@ -2567,6 +2568,10 @@ ease-in-out infinite;
   .email-input-wrapper {
     height: 80px;
   }
+    input::placeholder {
+        font-size: 15px; /* Change this value to your desired size */
+        color: rgb(150, 150, 150); /* Optional: Change placeholder color */
+    }
   .get-started-btn {
     position: absolute;
     top: 40px;
