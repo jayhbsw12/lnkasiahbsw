@@ -21,7 +21,7 @@
   margin-top: 150px;
 }
 
-.thank-you-holder{
+.thank-you-holder {
   width: 100%;
   height: auto;
   max-width: 1500px;
@@ -33,24 +33,30 @@
   gap: 40px;
 }
 
-.thank-you-holder h1{
-line-height: 50px;
+.thank-you-holder h1 {
+  line-height: 50px;
 }
 
-@media (max-width: 300px){
+@media (max-width: 300px) {
 
+  .thank-you-holder{
+    gap: 20px;
+  }
+  .thank-you-holder h1 {
+    line-height: 35px;
+    font-size: 25px;
+  }
 }
-
-@media (max-width: 500px){
-.thank-you-holder img{
-  width: 50%;
+@media (max-width: 500px) {
+  .thank-you-holder img {
+    width: 50%;
+  }
+  .thank-you-holder h1 {
+    text-align: center;
+  }
 }
-.thank-you-holder h1{
-  text-align: center;
-}
-}
-@media(max-width:767px){
-  .hero-banner{
+@media (max-width: 767px) {
+  .hero-banner {
     padding: 100px 20px;
   }
 }

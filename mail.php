@@ -85,7 +85,7 @@ try {
   $mail->SMTPAuth   = true;
   $mail->AuthType   = 'LOGIN'; // often safest with M365 SMTP AUTH
   $mail->Username   = 'contactus@lnkasia.com';
-  $mail->Password   = 'REPLACE_WITH_REAL_PASSWORD'; // avoid app passwords if possible
+  $mail->Password   = 'rvglgsbqxslgsxws'; // avoid app passwords if possible
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
   $mail->Port       = 587;
 
@@ -93,10 +93,10 @@ try {
   $mail->Encoding   = 'base64';
 
   // From must be the authenticated mailbox (or its alias)
-  $mail->setFrom('contactus@lnkasia.com', 'Website Contact');
+  $mail->setFrom('contactus@lnkasia.com', 'LNK Contact Form Submission');
 
   // For testing -> send to you
-  $mail->addAddress('contactus@lnkasia.com', 'Contact Form');
+  $mail->addAddress('jaymodihbsoftweb@gmail.com', 'LNK Asia');
 
   // Let replies go to the site visitor
   if ($email) {
