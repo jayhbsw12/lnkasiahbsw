@@ -352,7 +352,7 @@ img.linkedin-icon {
   .why-choose-shape {
     position: absolute;
     top: 0px;
-    right: 85px;
+    right: 44px;
     height: 26px;
   }
 
@@ -481,5 +481,16 @@ img.linkedin-icon {
   .technocraft,
   .key-features {
     padding: 50px 0px !important;
+  }
+
+  .flip-card{
+    width: 275px;
+    height: 275px;
+  }
+  .flip-card-back{
+    padding: 20px;
+  }
+  .flip-card-back p{
+    font-size: 14px;
   }
 }

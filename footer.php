@@ -45,7 +45,7 @@
           <a href="partners.php" class="footer-link">Partners</a>
           <a href="scuccess-story.php" class="footer-link">Success stories</a>
           <a href="pricing.php" class="footer-link">Prices</a>
-          <a href="contact-us.php" class="footer-link">Contact Us</a>
+          <a href="contact.php" class="footer-link">Contact Us</a>
         </nav>
       </div>
 
@@ -108,7 +108,7 @@
 <!-- Include the JS for intl-tel-input -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script src="js/home.js"></script>
-<script src="js/testimonial.js"></script>
+<script src="js/testimonials.js"></script>
 
 <!-- Newsletter toast logic -->
 <script>
