@@ -37,13 +37,13 @@
         <h6 class="footer-text">LNK ASIA</h6>
         <h4 class="footer-title">Useful Links</h4>
         <nav class="footer-nav d-flex flex-column">
-          <a href="#" class="footer-link">Home</a>
-          <a href="#" class="footer-link">About Us</a>
-          <a href="#" class="footer-link">Services</a>
-          <a href="#" class="footer-link">Partners</a>
-          <a href="#" class="footer-link">Success stories</a>
-          <a href="#" class="footer-link">Prices</a>
-          <a href="#" class="footer-link">Contact Us</a>
+          <a href="index.php" class="footer-link">Home</a>
+          <a href="about-us.php" class="footer-link">About Us</a>
+          <a href="service.php" class="footer-link">Services</a>
+          <a href="partners.php" class="footer-link">Partners</a>
+          <a href="scuccess-story.php" class="footer-link">Success stories</a>
+          <a href="pricing.php" class="footer-link">Prices</a>
+          <a href="contact-us.php" class="footer-link">Contact Us</a>
         </nav>
       </div>
 
