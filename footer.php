@@ -119,7 +119,7 @@
 
     var ok = params.get('subscribed') === '1';
     var msg = params.get('msg') ? decodeURIComponent(params.get('msg')) : (ok
-      ? 'Subscribed successfully! Please check your inbox.'
+      ? 'Subscribed successfully! We will contact you soon!'
       : 'Subscription failed. Please try again.');
 
     var box = document.getElementById('nl-toast');

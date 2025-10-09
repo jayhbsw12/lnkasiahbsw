@@ -2006,7 +2006,7 @@ img.grid-shape-2 {
 
 .ai-services-holder .vertical-shape-services {
   position: absolute;
-  left: 0;
+  left: -1px;
   top: 20%;
 }
 
