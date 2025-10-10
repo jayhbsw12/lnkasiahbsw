@@ -67,7 +67,7 @@
 
 
 <section class="services-section">
-  <div class="container">
+  <div class="container" style="padding: 0px 20px 0px 20px">
     <div class="features-main-heading" bis_skin_checked="1">
       <span class="heading-primary">Features </span>
     </div>

@@ -2264,7 +2264,7 @@ img.grid-shape-2 {
 
 @media (max-width: 1480px) {
   .feature-box {
-        max-width: 240px;
+        /* max-width: 240px; */
     }
     
     .feature-1 .connector-dot {
