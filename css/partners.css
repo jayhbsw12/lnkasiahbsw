@@ -47,12 +47,15 @@ body {
   /* border: 1px solid blue; */
   gap: 20px;
 
-  padding-top: 150px;
+  padding: 150px 30px 0px 30px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.last-section {
+  padding: 150px 30px 105px 30px;
 }
 
 .partner-container,
@@ -220,6 +223,7 @@ body {
 .partner-container-3 .shape-vertical {
   position: absolute;
   right: -1px;
+  top: 20%;
 }
 
 .partner-container-2 .shape-vertical-2 {
@@ -227,9 +231,86 @@ body {
   left: -1px;
 }
 
-@media(max-width: 1600px){
-  .partner-section{
+@media (max-width: 1600px) {
+  /* .partner-section{
     padding: 150px 30px 0px 30px;
+    } */
+}
+
+@media (max-width: 1290px) {
+  .partner-holder-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .partner-container .shape-vertical {
+    position: absolute;
+    right: -1.5px;
+    height: 400px;
+    top: 18%;
+  }
+  .partner-container-2 .shape-vertical-2 {
+    position: absolute;
+    left: -1px;
+    height: 400px;
+    top: 16%;
+  }
+  .partner-container-3 .shape-vertical {
+    position: absolute;
+    right: -1px;
+    top: 20%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .partner-container .shape-vertical {
+    position: absolute;
+    right: -1.5px;
+    height: 350px;
+    top: 18%;
+  }
+  .partner-container-2 .shape-vertical-2 {
+    position: absolute;
+    left: -1px;
+    height: 350px;
+    top: 16%;
+  }
+  .partner-container-3 .shape-vertical {
+    position: absolute;
+    right: -1px;
+    top: 20%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .last-section {
+    padding: 150px 30px 0px 30px;
+  }
+  .partner-container .shape-vertical {
+    position: absolute;
+    right: -1.5px;
+    height: 300px;
+    top: 18%;
+  }
+  .partner-container-2 .shape-vertical-2 {
+    position: absolute;
+    left: -1px;
+    height: 300px;
+    top: 16%;
+  }
+  .partner-container-3 .shape-vertical {
+    position: absolute;
+    right: -1px;
+    top: 20%;
+    height: 300px;
   }
 }
 
@@ -237,14 +318,9 @@ body {
   .partner-container,
   .partner-container-2,
   .partner-container-3 {
-    padding: 35px;
+    padding: 50px;
   }
 
-  .partner-container {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
   .partner-container .partner-column-left,
   .partner-container .partner-column-right {
     width: 100%;
@@ -260,8 +336,10 @@ body {
     align-items: flex-start;
   }
 
+  .partner-container,
   .partner-container-3 {
     flex-direction: column;
+    height: auto;
   }
 
   .partner-container-3 .partner-column-left,
@@ -269,8 +347,6 @@ body {
     width: 100%;
     align-items: flex-start;
   }
-
-
 
   .partner-column-right input {
     width: 100%;
@@ -287,40 +363,60 @@ body {
   }
 
   .partner-section {
-    padding: 50px 20px 20px 20px;
+    padding: 50px 30px 0px 30px;
   }
 
   .shape-vertical,
   .shape-vertical-2 {
     height: 185px;
   }
-  .partner-container .shape-vertical{
-    right: -0.5px;
+  .partner-container .shape-vertical {
+    right: -1px;
+    top: 10%;
+  }
+  .partner-container-3 .shape-vertical {
+    position: absolute;
+    right: -1px;
+    top: 10%;
+    height: 300px;
   }
 
   .partner-container-2 .shape-vertical-2 {
     position: absolute;
     left: -1px;
-    top: 40px;
-    height: 200px;
+    top: 10%;
+    height: 300px;
   }
 
-  .subsection-cards{
-    flex-direction: column;
+  .subsection-cards {
+    /* flex-direction: column; */
   }
   /* .hero-contact h1{
     font-size: 40px;
   } */
-  .hero-banner h3{
+  .hero-banner h3 {
     font-size: 20px;
   }
 }
 
+@media (max-width: 970px) {
+  .partner-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
 @media (max-width: 640px) {
   .partner-holder-container {
     grid-template-columns: auto;
   }
-  .hero-banner{
+  .hero-banner {
     padding: 50px 0px !important;
   }
+  .subsection-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
 }

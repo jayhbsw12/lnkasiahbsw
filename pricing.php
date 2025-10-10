@@ -152,7 +152,8 @@
 
             </div>
         </div>
-        <div style="text-align: center" class="pricing-info-text">The Standard and Custom plans include all apps for a single
+        <div style="text-align: center" class="pricing-info-text">The Standard and Custom plans include all apps for a
+            single
             fee: <br> With no
             hidden costs, no limit on features or data: enjoy real transparency! <br> (*) The discount is valid for 12
             months, for initial users ordered.(**)Cost for Odoo.sh hosting not
@@ -280,9 +281,9 @@
                     <h3 style="color:#352F75">Project Basis</h3>
                     <!-- <span>Free Forever</span> -->
                     <hr>
-                    <div style="">
+                    <div style="height: 60px; align-content: center;">
                         <!-- <strong></strong> -->
-                        <span style="font-size:30px; font-weight: 500; color: #352F75;">Get In Touch</span>
+                        <span style="font-size:30px; font-weight: 500; color: #352F75; ">Get In Touch</span>
                         <!-- <strong></strong> -->
                     </div>
                     <hr>
@@ -313,8 +314,7 @@
                     <div class="subsection-list" style="margin-bottom: 10px">
                         <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
-                            <span>* 30% Advance, 60% Upon Document / Solution  submission, 10% Upon Project
-                                Implementation</span>
+                            <span>* 50% Advance, 50% Upon completion of month</span>
                         </div>
                     </div>
                     <div class="card-button-container">

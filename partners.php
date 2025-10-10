@@ -12,16 +12,16 @@
         <img src="assets/images/hero-bottom.svg" class="hero-bottom-shape">
     </section>
 
+    <svg width="0" height="0">
+        <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" />
+            <stop offset="1" />
+        </linearGradient>
+        <symbol id="border" overflow="visible">
+            <rect width="100%" height="100%" rx="20px" ry="20px" />
+        </symbol>
+    </svg>
     <section class="partner-section">
-        <svg width="0" height="0">
-            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0" />
-                <stop offset="1" />
-            </linearGradient>
-            <symbol id="border" overflow="visible">
-                <rect width="100%" height="100%" rx="20px" ry="20px" />
-            </symbol>
-        </svg>
         <div class="partner-container module" style="">
             <svg class="module-border">
                 <use href="#border" />
@@ -91,7 +91,7 @@
             <div class="partner-column-right">
                 <input class="partner-column-image" type="image"
                     src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" width="540px">
+                    alt="" width="100%">
                 <button class="cta-btn">
                     <span class="cta-text">More about us</span>
                 </button>
@@ -100,15 +100,7 @@
     </section>
 
     <section class="partner-section">
-        <svg width="0" height="0">
-            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0" />
-                <stop offset="1" />
-            </linearGradient>
-            <symbol id="border" overflow="visible">
-                <rect width="100%" height="100%" rx="20px" ry="20px" />
-            </symbol>
-        </svg>
+
         <div class="partner-container-2 module">
             <svg class="module-border">
                 <use href="#border" />
@@ -117,7 +109,7 @@
             <div class="partner-column-right">
                 <input class="partner-column-image" type="image"
                     src="https://images.unsplash.com/flagged/photo-1553267252-d100936057c1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="" width="550px">
+                    alt="" width="100%px">
                 <button class="cta-btn">
                     <span class="cta-text">More about us</span>
                 </button>
@@ -161,15 +153,7 @@
     </section>
 
     <section class="partner-section">
-        <svg width="0" height="0">
-            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0" />
-                <stop offset="1" />
-            </linearGradient>
-            <symbol id="border" overflow="visible">
-                <rect width="100%" height="100%" rx="20px" ry="20px" />
-            </symbol>
-        </svg>
+        
         <div class="partner-container-3 module" style="height: auto">
             <svg class="module-border">
                 <use href="#border" />
@@ -202,7 +186,7 @@
                                 DHCP servers, to scale your business and maximize your ROI.</span>
                         </div>
 
-                        <div class="subsection-list-item">
+                        <!-- <div class="subsection-list-item">
                             <input type="image" src="./assets/images/partners/checklist-icon.svg" alt="">
                             <span>Protect better your data, users, and service continuity with our unique DNS security
                                 solution. It combines threat intelligence and real-time behavioral attack
@@ -221,7 +205,7 @@
                             <span>Protect better your data, users, and service continuity with our unique DNS security
                                 solution. It combines threat intelligence and real-time behavioral attack
                                 detection.</span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <strong style="margin-top:20px">DDI & SOC Solutions is trusted by customers around the world in all
@@ -229,7 +213,7 @@
             </div>
             <div class="partner-column-right">
                 <input class="partner-column-image" type="image" src="assets\images\partners\demoimage-1.png" alt=""
-                    width="550px">
+                    width="100%">
                 <button class="cta-btn">
                     <span class="cta-text">More about us</span>
                 </button>
@@ -237,7 +221,7 @@
         </div>
     </section>
 
-    <section class="partner-section">
+    <section class="partner-section last-section">
         <h2 class="heading-gradient">Our Partners</h2>
         <div class="partner-holder-container">
             <div class="partner-holder">
