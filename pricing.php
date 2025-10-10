@@ -152,7 +152,7 @@
 
             </div>
         </div>
-        <div style="text-align: center; padding: 0px 20px;">The Standard and Custom plans include all apps for a single
+        <div style="text-align: center" class="pricing-info-text">The Standard and Custom plans include all apps for a single
             fee: <br> With no
             hidden costs, no limit on features or data: enjoy real transparency! <br> (*) The discount is valid for 12
             months, for initial users ordered.(**)Cost for Odoo.sh hosting not
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="pricing-section">
+    <section class="pricing-section last-section">
         <div class="pricing-container" style="display: flex; flex-direction: column; align-items: center">
             <h2><span class="heading-gradient">Technology Consulting</span></h2>
             <div class="pricing-cards-container">

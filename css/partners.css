@@ -308,9 +308,9 @@ body {
   .subsection-cards{
     flex-direction: column;
   }
-  .hero-contact h1{
+  /* .hero-contact h1{
     font-size: 40px;
-  }
+  } */
   .hero-banner h3{
     font-size: 20px;
   }
