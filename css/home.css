@@ -2212,6 +2212,44 @@ img.grid-shape-2 {
   }
 }
 
+@media(min-width:991px) and (max-width:1080px){
+  .main-heading{
+        font-size: 60px;
+            line-height: 83px;
+  }
+  .ai-services-section{
+        padding: 100px 10px;
+  }
+  .feature-item{
+        gap: 30px;
+    margin-bottom: 30px;
+  }
+  .experience-number{
+    display: flex;
+  }
+  .experience-badge{
+    padding: 20px;
+    right: 20px;
+  }
+  .features-content{
+    padding: 0px;
+    gap:20px;
+  }
+  .v1146_4572{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  }
+  .v1146_3985{
+        right: 28px;
+    top: 210px;
+    left: auto;
+  }
+  .v1146_3984{
+        top: 155px;
+    left: 270px;
+    width: auto;
+  }
+}
 @media (max-width: 972px) {
   .cta-container {
     width: auto;
@@ -2433,7 +2471,7 @@ img.grid-shape-2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .ai-services-top-holder {
     flex-direction: column;
     align-items: flex-start;

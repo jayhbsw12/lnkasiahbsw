@@ -704,7 +704,10 @@ img.footer-vector-bottom {
     }
 }
 /* Responsive design for tablets and below */
-@media(max-width: 1024px) {
+@media(max-width: 1080px) {
+  .hero-content{
+    padding-top: 60px;
+  }
   .hero-title-footer {
     font-size: 32px;
   }
@@ -771,6 +774,7 @@ h6.footer-text-bottom {
   }
   .footer-section{
     padding: 70px 30px 90px 30px;
+    margin-top: 50px;
   }
   .footer-right-button {
     padding-bottom: 40px;
