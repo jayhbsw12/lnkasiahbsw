@@ -152,8 +152,8 @@ img.pricing-shape {
 }
 .pricing-cards-container:nth-child(2) img.pricing-shape {
   bottom: -1.5px;
-  width: 40%;
-  left: 29%;
+  width: 60%;
+  left: 20%;
 }
 
 .pricing-card button {
@@ -235,20 +235,26 @@ img.pricing-shape {
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 972px) {
   .pricing-container {
     flex-direction: column;
   }
-
-  .pricing-cards-container:nth-child(2) {
-    flex-direction: column;
-  }
+  
   /* .pricing-cards-container:nth-child(2) img.pricing-shape {
     bottom: -1.5px;
     position: absolute;
     width: 30%;
     left: 30%;
   } */
+  .pricing-cards-container:nth-child(2) {
+    flex-direction: column;
+  }
+  .pricing-cards-container:nth-child(2) img.pricing-shape {
+    bottom: -1.5px;
+    position: absolute;
+    width: 40%;
+    left: 27%;
+  }
 }
 
 @media (max-width: 900px) {
