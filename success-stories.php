@@ -17,17 +17,17 @@
         <img src="assets/images/hero-bottom.svg" class="hero-bottom-shape">
     </section>
 
+    <svg width="0" height="0">
+        <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" />
+            <stop offset="1" />
+        </linearGradient>
+        <symbol id="border" overflow="visible">
+            <rect width="100%" height="100%" rx="20px" ry="20px" />
+        </symbol>
+    </svg>
     <section class="archive-section">
 
-        <svg width="0" height="0">
-            <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0" />
-                <stop offset="1" />
-            </linearGradient>
-            <symbol id="border" overflow="visible">
-                <rect width="100%" height="100%" rx="20px" ry="20px" />
-            </symbol>
-        </svg>
 
         <div class="archive-holder module">
 
