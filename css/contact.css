@@ -318,6 +318,10 @@ img.hero-bottom-shape {
   background-repeat: no-repeat;
 }
 
+.btn {
+  padding: 8px 25px !important; 
+}
+
 }
 
 
@@ -326,6 +330,10 @@ img.hero-bottom-shape {
   .contact-cards__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .btn {
+  padding: 8px 25px !important; 
+}
 
 }
 
@@ -345,6 +353,10 @@ img.hero-bottom-shape {
     gap: 24px;
     align-items: stretch;
   }
+
+  .btn {
+  padding: 8px 25px !important; 
+}
 
 }
 
@@ -376,6 +388,10 @@ img.hero-bottom-shape {
     rotate: 90deg;
     top: 102px;
   }
+
+  .btn {
+  padding: 8px 25px !important; 
+}
 
 }
 
@@ -526,6 +542,10 @@ img.hero-bottom-shape {
   section.contact-cards {
     padding: 50px 20px;
 } */
+
+.btn {
+  padding: 8px 25px !important; 
+}
 
 }
 
