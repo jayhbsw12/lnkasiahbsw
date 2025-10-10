@@ -338,6 +338,54 @@
 
 </section>
 
+<!-- Process section -->
+
+<div class="container">
+        <header class="process-section-feature">
+            <h1>DevOps Excellence</h1>
+        </header>
+
+        <div class="features-section-process">
+            <div class="decorative-circle circle-1"></div>
+            <div class="decorative-circle circle-2"></div>
+            <div class="decorative-circle circle-3"></div>
+
+            <div class="feature-box-process feature-1">
+                <div class="connector-dot"></div>
+                <h3>Plan</h3>
+                <p>Strategic planning and requirement analysis for optimal workflows</p>
+            </div>
+
+            <div class="feature-box-process feature-2">
+                <div class="connector-dot"></div>
+                <h3>Code</h3>
+                <p>Development with best practices and version control systems</p>
+            </div>
+
+            <div class="feature-box-process feature-3">
+                <div class="connector-dot"></div>
+                <h3>Build</h3>
+                <p>Automated building and continuous integration processes</p>
+            </div>
+
+            <div class="feature-box-process feature-4">
+                <div class="connector-dot"></div>
+                <h3>Test</h3>
+                <p>Comprehensive testing and quality assurance protocols</p>
+            </div>
+
+            <div class="feature-box-process feature-5">
+                <div class="connector-dot"></div>
+                <h3>Deploy Monitor</h3>
+                <p>Deployment automation and continuous monitoring systems</p>
+            </div>
+
+            <div class="center-image">
+                <img src="assets/images/key-features.webp" alt="ERP Software Demo">
+            </div>
+        </div>
+    </div>
+
 <!-- ====== Showcase Grid Section ====== -->
 <div class="v1146_4572">
   <div class="v1146_3967">
