@@ -584,10 +584,13 @@ img.footer-vector-bottom {
   }
 
   .footer-text-bottom {
-    font-size: 13px; /* Slightly smaller text size for tablet */
+    font-size: 18px; /* Slightly smaller text size for tablet */
     bottom: 0px;
     margin-bottom: 0px;
   }
+.hero-section-footer{
+  height: 300px;
+}
 }
 @media(max-width:1080px){
 .py-5 {
