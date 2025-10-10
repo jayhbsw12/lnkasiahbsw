@@ -16,29 +16,30 @@
       <div class="hero-text-section">
         <!-- What's New Badge -->
         <div class="whats-new-badge">
-          <div class="badge-inner">
+          <!-- <div class="badge-inner">
             <div class="status-indicator">
               <div class="status-dot"></div>
             </div>
             <span class="badge-text">What's new?</span>
-          </div>
+          </div> -->
           <div class="badge-info">
-            <span class="info-text">Instantly issue virtual cards</span>
-            <div class="info-icon">
+             <div class="info-icon">
               <img src="https://static.codia.ai/custom_image/2025-07-02/084810/info-icon.svg" alt="Info">
             </div>
+            <span class="info-text">Technology - Innovation - Excellence</span>
+           
           </div>
         </div>
 
         <!-- Main Heading -->
         <div class="main-heading">
-          <span class="heading-primary">An AI Powered Dashboard</span><br>
-          <span class="heading-gradient">For Your Online Store</span>
+          <span class="heading-primary">Creating Technology </span><br>
+          <span class="heading-gradient">For a Better Tomorrow</span>
         </div>
 
         <!-- Subheading -->
         <p class="hero-subtext">
-          Hire virtual assistant without headache support powered with AI Technology
+          Your trusted partner for comprehensive IT solutions
         </p>
       </div>
 
@@ -78,7 +79,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="partners-title">Trusted By Over 100+ Startups and freelance business</h2>
+        <h2 class="partners-title">Recognized and supported by leading technology companies <br> and government initiatives for excellence in 
+          innovation and business growth</h2>
         <div class="partners-logos">
           <div class="partner-logo">
             <img src="https://static.codia.ai/custom_image/2025-07-02/070258/partner-logo-1.svg" alt="Partner 1">
@@ -111,9 +113,10 @@
           </div>
           <div class="cta-content">
             <div class="features-main-heading2">
-              <span class="heading-primary">Innovations in the Field of ecommerce <br>that </span>
-              <span class="heading-gradient-cta">Transform the Industry</span>
+              <span class="heading-primary">Ready to</span>
+              <span class="heading-gradient-cta">Transform Your Technology Infrastructure?</span>
             </div>
+            <a href="contact.php" class="btn btn-gradient btn-pill" bis_skin_checked="1">Contact Us</a>
           </div>
         </div>
       </div>
@@ -126,44 +129,75 @@
     <img src="assets/images/home-vertical-shape.svg" alt="" class="vertical-shape-services">
     <div class="ai-services-top-holder">
       <div>
-        <h2>Showcasing our<br>
-          <span class="heading-gradient">AI Services</span>
+        <h2>Our Comprehensive<br>
+          <span class="heading-gradient">Service Universe</span>
         </h2>
       </div>
       <div>
         <button class="cta-btn">
-          <span class="cta-text">More about us</span>
+          <a href="service.php"><span class="cta-text">More about us</span></a>
         </button>
       </div>
     </div>
     <div class="sticky-services-1" style="z-index: 30">
       <div class="sticky-service-content-holder">
-        <h4>Remote Infrastructure Management Service (RIMS)</h4>
-        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+        <h4>Infrastructure Management Service</h4>
+        <span>RIMS Remote Infrastructure Management</span><br>
+        <span>PIE Backup Data Protection</span><br>
+        <span>Server and Network Management</span><br>
+        <span>24/7 Help Desk Support</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
     <div class="sticky-services-1" style="z-index: 31">
       <div class="sticky-service-content-holder">
-        <h4>Remote Infrastructure Management Service (RIMS)</h4>
-        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+        <h4>Development Solutions</h4>
+        <span>DevOps and Cloud Engineering</span><br>
+        <span>Custom Application Development</span><br>
+        <span>Technology Consulting Services</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
         <div class="sticky-services-1" style="z-index: 32" >
       <div class="sticky-service-content-holder">
-        <h4>Remote Infrastructure Management Service (RIMS)</h4>
-        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+        <h4>Digital Experience</h4>
+        <span>CXaaS Customer Experience Solutions</span><br>
+        <span>PicCloud Secure Storage Platform</span><br>
+        <span>Digital Workspace Collaboration</span><br>
+        <span>Regulatory Compliance Solutions</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
-        <div class="sticky-services-1" style="z-index: 33">
+      <div class="sticky-services-1" style="z-index: 33">
       <div class="sticky-service-content-holder">
-        <h4>Remote Infrastructure Management Service (RIMS)</h4>
-        <span>We have top talents from the industry to plan, migrate and manage your infrastructure remotely.</span>
+        <h4>Security Operations</h4>
+        <span>Advanced threat detection and response systems</span><br>
+        <span>Continuous security monitoring and compliance</span><br>
+        <span>Incident response and recovery procedures</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>  
+
+     <div class="sticky-services-1" style="z-index: 34">
+      <div class="sticky-service-content-holder">
+        <h4>Infrastructure Management</h4>
+        <span>Network optimization and performance tuning</span><br>
+        <span>Server maintenance and capacity planning</span><br>
+        <span>Storage management and backup solutions</span>
+      </div>
+      <img src="assets/images/home-sticky-services-shape.svg" alt="">
+    </div> 
+
+    <div class="sticky-services-1" style="z-index: 34">
+      <div class="sticky-service-content-holder">
+        <h4>Support Services</h4>
+        <span>24/7 technical support and troubleshooting</span><br>
+        <span>User training and documentation services</span><br>
+        <span>Remote assistance and problem resolution</span>
+      </div>
+      <img src="assets/images/home-sticky-services-shape.svg" alt="">
+    </div>
+
   </div>
 </section>
 <!-- Features Section -->
@@ -176,40 +210,30 @@
           <h2 class="section-title how-it-works">How It works</h2>
         </div>
         <div class="features-main-heading">
-          <span class="heading-primary">How we Bring </span>
-          <span class="heading-gradient">AI to life</span>
+          <span class="heading-primary">About </span>
+          <span class="heading-gradient">LNK Asia Techsol</span>
         </div>
 
         <!-- Feature Items -->
         <div class="feature-item">
-          <div class="feature-number">01</div>
           <div class="feature-content">
-            <h3 class="feature-title">Consultation & strategy</h3>
             <p class="feature-description">
-              Our team of AI experts then crafts a tailored strategy that aligns
-              with your objectives.
+              <b>LNK Asia Techsol LLP </b> is a technology consulting company 
+              incorporated in July 2022 in India. We focus on <b> creating 
+              technology solutions for a better tomorrow,</b> specializing in <b>ERP 
+              implementation, digital transformation,</b> and <b> IT consulting </b> services
+              across Asia Pacific region.
             </p>
           </div>
         </div>
 
         <div class="feature-item">
-          <div class="feature-number">02</div>
           <div class="feature-content">
-            <h3 class="feature-title">Development & installation</h3>
             <p class="feature-description">
-              Our developers and data scientists bring your AI solution to life,
-              leveraging cutting-edge technologies.
-            </p>
-          </div>
-        </div>
-
-        <div class="feature-item">
-          <div class="feature-number">03</div>
-          <div class="feature-content">
-            <h3 class="feature-title">Optimization & support</h3>
-            <p class="feature-description">
-              Post-launch, we continuously monitor and refine your AI solution,
-              ensuring it adapts to evolving needs.
+              We are MSME startup established in 2022, specializing in 
+              <b> IT/ITES services.</b> Our emerging digital technologies build
+               stronger capabilities and seize growth opportunities in
+                today's digital economy.
             </p>
           </div>
         </div>
@@ -217,7 +241,7 @@
         <!-- CTA Button -->
         <div class="features-cta">
           <button class="cta-btn">
-            <span class="cta-text">More about us</span>
+            <a href="about-us.php"><span class="cta-text">More about us</span></a>
           </button>
         </div>
       </div>
@@ -242,11 +266,11 @@
           <!-- Experience Badge -->
           <div class="experience-badge">
             <div class="experience-number">
-              <span class="number-white">16</span>
+              <span class="number-white">20</span>
               <span class="number-red">+</span>
             </div>
             <div class="experience-text">
-              Years of<br>experience
+              Years combined <br> industry experience.
             </div>
           </div>
         </div>
@@ -263,57 +287,55 @@
       <!-- Left Title -->
       <div class="col-12 col-lg-6 mb-4 mb-lg-0">
         <h1 class="ft-hero-heading mb-3">
-          <span class="ft-hero-heading-normal">See how </span>
-          <span class="ft-hero-heading-gradient">Fintech helps</span><br>
-          <span class="ft-hero-heading-normal">in your daily life</span>
+          <span class="ft-hero-heading-normal">Every business </span><br>
+          <span class="ft-hero-heading-normal">is more productive with</span><br>
+          <span class="ft-hero-heading-gradient">LNK Asia Solutions</span>
         </h1>
       </div>
 
       <!-- Right Description -->
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 right-description-counters">
         <p class="ft-hero-description mb-0">
-          Discover how fintech simplifies everyday tasks, from managing finances
-          to making secure, instant payments. With easy-to-use apps, you can
-          budget, invest, and track spending with just a few taps.
+          Our dedicated team of ERP experts provides end-to-end support, ensuring seamless implementation
+           and ongoing maintenance. With qualified IT experts, we digitize businesses, delivering innovative
+            solutions that drive digital transformation.
         </p>
       </div>
     </div>
 
     <!-- Stats Section -->
-    <div class="row text-md-start g-4 g-md-5 pt-5 counter-bg">
-      <div class="col-6 col-md-3">
-        <div class="ft-stat">
-          <div class="ft-stat-number"><span class="count" data-count="04">0</span></div>
-          <div class="ft-stat-label">Continents Served</div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="ft-stat">
-          <div class="ft-stat-number"><span class="count" data-count="100" data-suffix="+">0</span></div>
-          <div class="ft-stat-label">Sucessfull Projects</div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="ft-stat">
-          <div class="ft-stat-number">
-            <span class="count" data-count="50" data-suffix="TB+">0</span>
-          </div>
-          <div class="ft-stat-label">Data Secured</div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="ft-stat">
-          <div class="ft-stat-number">
-            <span class="count" data-count="100" data-suffix="+">0</span>
-          </div>
-          <div class="ft-stat-label">Secured Users</div>
-        </div>
-      </div>
-    </div>
+    <div class="row text-md-start g-4 g-md-5 pt-5 counter-bg" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin: 0;">
+  <!-- Counter 1 -->
+  <div class="ft-stat">
+    <div class="ft-stat-number"><span class="count" data-count="20" data-suffix="+" data-done="1">20+</span></div>
+    <div class="ft-stat-label">Years Combined Industry Experience</div>
   </div>
+
+  <!-- Counter 2 -->
+  <div class="ft-stat">
+    <div class="ft-stat-number"><span class="count" data-count="04" data-suffix="0" data-done="1">40</span></div>
+    <div class="ft-stat-label">Continents Served</div>
+  </div>
+
+  <!-- Counter 3 -->
+  <div class="ft-stat">
+    <div class="ft-stat-number"><span class="count" data-count="100" data-suffix="+" data-done="1">100+</span></div>
+    <div class="ft-stat-label">Successful Projects Delivered Globally</div>
+  </div>
+
+  <!-- Counter 4 -->
+  <div class="ft-stat">
+    <div class="ft-stat-number"><span class="count" data-count="50" data-suffix="TB+" data-done="1">50TB+</span></div>
+    <div class="ft-stat-label">Data Secured</div>
+  </div>
+
+  <!-- Counter 5 -->
+  <div class="ft-stat">
+    <div class="ft-stat-number"><span class="count" data-count="100" data-suffix="+" data-done="1">100+</span></div>
+    <div class="ft-stat-label">Users Protected Worldwide</div>
+  </div>
+</div>
+
 </section>
 
 <!-- ====== Showcase Grid Section ====== -->

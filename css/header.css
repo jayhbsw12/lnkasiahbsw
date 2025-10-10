@@ -136,7 +136,10 @@ a.btn.btn-gradient.btn-pill{
 
 }
 
-@media(min-width:992px) and (max-width:1080px){
+@media(min-width:992px) and (max-width:1180px){
+  .ai-services-section{
+    padding: auto 30px
+  }
   .navbar-expand-lg .navbar-nav {
         flex-direction: row;
         margin-right: 10px !important;

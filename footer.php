@@ -80,8 +80,12 @@
           <a href="#" class="social-icon"><img
               src="https://static.codia.ai/custom_image/2025-07-04/063005/social-icon-5.svg" alt="Social Icon 5"></a>
         </div>
-        <h6 class="footer-text-bottom">Made with ❤️ by <a href="https://hbsoftweb.com/">HB Softweb Pvt. Ltd.</a></h6>
-        <img src="assets/images/footer-vector-bottom.svg" class="footer-vector-bottom">
+       
+           <div class="footer-bottom-section">
+          <h6 class="footer-text-bottom">Made with ❤️ by <a href="https://hbsoftweb.com/">HB Softweb Pvt. Ltd.</a></h6>
+          <img src="assets/images/footer-vector-bottom.svg" class="footer-vector-bottom">
+        </div>
+
       </div>
     </div>
   </div>
@@ -150,6 +154,51 @@
     // no-op
   }
 })();
+</script>
+
+<script>
+  $(document).ready(function() {
+  // Function to check if the counter is in the viewport
+  function isElementInViewport(el) {
+    var rect = el[0].getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to animate counters
+  function animateCounters() {
+    $('.count').each(function () {
+      if (isElementInViewport($(this)) && !$(this).hasClass('done')) {
+        $(this).addClass('done');
+        var countTo = $(this).data('count');
+        var suffix = $(this).data('suffix') || '';
+
+        $(this).prop('Counter', 0).animate({
+          Counter: countTo
+        }, {
+          duration: 2000, // Duration of animation in ms
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now) + suffix);
+          }
+        });
+      }
+    });
+  }
+
+  // Trigger the animation on scroll
+  $(window).on('scroll', function () {
+    animateCounters();
+  });
+
+  // Initial check if already in the viewport on page load
+  animateCounters();
+});
+
 </script>
 
 </body>
