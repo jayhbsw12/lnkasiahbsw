@@ -270,6 +270,10 @@ img.linkedin-icon {
   margin-bottom: 0px;
 }
 
+.row.align-items-start.mb-4 {
+    margin-bottom: 70px !important;
+}
+
 
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
@@ -353,7 +357,7 @@ img.linkedin-icon {
 
 @media (max-width: 1024px) {
   .section-title-about {
-    font-size: 35px !important;
+    font-size: 32px !important;
   }
 
   .flip-card-container {
@@ -365,6 +369,44 @@ img.linkedin-icon {
     width: 100%;
     flex-wrap: wrap;
   }
+
+  .why-img {
+    max-width: 80%;
+  }
+
+  .hero-banner-service {
+    padding: 50px 0px !important;
+  }
+
+  .hero-bottom-service {
+    width: 25%;
+  }
+
+  .hero-service-left h1 {
+    font-size: 50px !important;
+  }
+
+  .technocraft {
+    padding: 80px 0px;
+  }
+
+  .section-heading {
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .why-choose-shape {
+    width: 30%;
+  }
+
+  .flip-box-heading {
+    font-size: 40px;
+  }
+ 
+  .key-features {
+    padding: 80px 0px;
+  }
+
 }
 
 @media(min-width:1100px) and (max-width:1280px){
