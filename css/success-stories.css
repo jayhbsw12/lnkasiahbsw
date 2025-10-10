@@ -120,7 +120,7 @@
   /* padding: 2rem; */
   border-radius: 20px;
 }
-.module-border {
+.module-border-2 {
   position: absolute;
   overflow: visible;
   left: 0;
@@ -129,7 +129,7 @@
   height: 100%;
   fill: none;
   stroke: url(#grad);
-  stroke-width: 2px !important;
+  stroke-width: 3px;
 }
 #grad stop:nth-child(1) {
   stop-color: #352f75;

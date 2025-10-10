@@ -204,7 +204,7 @@ body {
   height: 100%;
   fill: none;
   stroke: url(#grad);
-  stroke-width: 2px !important;
+  stroke-width: 1px ;
 }
 #grad stop:nth-child(1) {
   stop-color: #365798;

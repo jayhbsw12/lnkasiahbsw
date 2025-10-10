@@ -31,7 +31,7 @@
 
         <div class="archive-holder module">
 
-            <svg class="module-border">
+            <svg class="module-border-2">
                 <use href="#border" />
             </svg>
             <img src="assets/images/story-card-shape.svg" alt="" class="story-shape">
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="archive-holder module">
-            <svg class="module-border">
+            <svg class="module-border-2">
                 <use href="#border" />
             </svg>
             <img src="assets/images/story-card-shape.svg" alt="" class="story-shape">
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="archive-holder module">
-            <svg class="module-border">
+            <svg class="module-border-2">
                 <use href="#border" />
             </svg>
             <img src="assets/images/story-card-shape.svg" alt="" class="story-shape">
