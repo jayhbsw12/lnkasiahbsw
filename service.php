@@ -133,7 +133,7 @@
 
 <section class="benefits-section">
 
-  <div class="container">
+  <div class="container" style="padding: 0px 20px 0px 20px">
     <article class="benefit-card benefit-card-purple">
       <div class="benefit-icon benefit-icon-1" bis_skin_checked="1">
         <img src="https://static.codia.ai/custom_image/2025-07-03/120446/benefit-icon-1.svg" alt="Benefit 1">

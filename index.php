@@ -202,7 +202,7 @@
 </section>
 <!-- Features Section -->
 <section class="features-section">
-  <div class="container">
+  <div class="container" style="padding: 0px 20px 0px 20px">
     <div class="features-content">
       <div class="features-left">
         <div class="bring-ai-life-row">
@@ -440,7 +440,7 @@
 </div>
 
 <section class="services-section">
-  <div class="container">
+  <div class="container" style="padding: 0px 20px 0px 20px">
     <div class="features-main-heading" bis_skin_checked="1">
       <span class="heading-primary">Features </span>
     </div>
@@ -505,7 +505,7 @@
 
 
 <section class="benefits-section">
-  <div class="container">
+  <div class="container" style="padding: 0px 20px 0px 20px">
   <article class="benefit-card benefit-card-purple">
     <div class="benefit-icon benefit-icon-1" bis_skin_checked="1">
       <img src="https://static.codia.ai/custom_image/2025-07-03/120446/benefit-icon-1.svg" alt="Benefit 1">
@@ -536,7 +536,7 @@
 </section>
 
 <header class="header-section-testimonial">
-  <div class="container">
+  <div class="container" style="padding: 0px 20px 0px 20px">
     <div class="header-content-testimonial">
       <h1 class="main-title-testimonial">
         <span class="gradient-text">Our Clients</span>
