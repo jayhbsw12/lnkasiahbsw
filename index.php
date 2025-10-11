@@ -342,7 +342,7 @@
 
 <div class="container">
         <header class="process-section-feature">
-            <h1>DevOps Excellence</h1>
+            <h1  class="heading-shade">DevOps Excellence</h1>
         </header>
 
         <div class="features-section-process">
@@ -352,37 +352,37 @@
 
             <div class="feature-box-process feature-1">
                 <div class="connector-dot"></div>
-                <h3>Plan</h3>
+                <h3 class="heading-shade">Plan</h3>
                 <p>Strategic planning and requirement analysis for optimal workflows</p>
             </div>
 
             <div class="feature-box-process feature-2">
                 <div class="connector-dot"></div>
-                <h3>Code</h3>
+                <h3 class="heading-shade">Code</h3>
                 <p>Development with best practices and version control systems</p>
             </div>
 
             <div class="feature-box-process feature-3">
                 <div class="connector-dot"></div>
-                <h3>Build</h3>
+                <h3 class="heading-shade">Build</h3>
                 <p>Automated building and continuous integration processes</p>
             </div>
 
             <div class="feature-box-process feature-4">
                 <div class="connector-dot"></div>
-                <h3>Test</h3>
+                <h3 class="heading-shade">Test</h3>
                 <p>Comprehensive testing and quality assurance protocols</p>
             </div>
 
             <div class="feature-box-process feature-5">
                 <div class="connector-dot"></div>
-                <h3>Deploy Monitor</h3>
+                <h3 class="heading-shade">Deploy Monitor</h3>
                 <p>Deployment automation and continuous monitoring systems</p>
             </div>
 
             <div class="center-image">
                 <img src="assets/images/key-features.webp" alt="ERP Software Demo">
-                <img class="ani" src="../lnkasiahbsw/assets/images/key-features-circle.webp" alt="">
+                <img class="arrow" src="../lnkasiahbsw/assets/images/key-features-circle.webp" alt="">
             </div>
         </div>
     </div>
