@@ -2914,6 +2914,12 @@ h6.footer-text{
   .testimonials-section{
         margin-top: 0px !important;
   }
+
+  .feature-box-process.feature-1 {
+    position: absolute !important;
+    top: -47px !important;
+  }
+
 }
 /* Small tweaks for very small screens */
 @media (max-width: 360px) {
