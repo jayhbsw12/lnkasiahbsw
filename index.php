@@ -387,6 +387,230 @@
         </div>
     </div>
 
+
+
+<!-- ===== Feature Cards Carousel Section ===== -->
+<section class="features-carousel" aria-label="Development lifecycle carousel">
+  <div class="features-carousel__header">
+    <h2 class="heading-shade">Our Process</h2>
+    <div class="features-carousel__controls" aria-label="Carousel controls">
+      <button class="fc-btn fc-btn--prev" type="button" aria-label="Scroll previous">
+        &#10094;
+      </button>
+      <button class="fc-btn fc-btn--next" type="button" aria-label="Scroll next">
+        &#10095;
+      </button>
+    </div>
+  </div>
+
+  <div class="features-carousel__viewport" id="featuresTrack" tabindex="0" role="list" aria-roledescription="carousel">
+    
+    <!-- Card 1 -->
+    <article class="feature-box-process feature-1 feature-card" role="listitem" aria-label="Plans">
+      <div class="connector-dot" aria-hidden="true"></div>
+      <header class="feature-card__head">
+        <h3 class="heading-shade">Plans</h3>
+      </header>
+      <p class="feature-card__text">Strategic planning and requirement analysis for optimal workflows</p>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="feature-box-process feature-2 feature-card" role="listitem" aria-label="Code">
+      <div class="connector-dot" aria-hidden="true"></div>
+      <header class="feature-card__head">
+        <h3 class="heading-shade">Code</h3>
+      </header>
+      <p class="feature-card__text">Development with best practices and version control systems</p>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="feature-box-process feature-3 feature-card" role="listitem" aria-label="Build">
+      <div class="connector-dot" aria-hidden="true"></div>
+      <header class="feature-card__head">
+        <h3 class="heading-shade">Build</h3>
+      </header>
+      <p class="feature-card__text">Automated building and continuous integration processes</p>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="feature-box-process feature-4 feature-card" role="listitem" aria-label="Test">
+      <div class="connector-dot" aria-hidden="true"></div>
+      <header class="feature-card__head">
+        <h3 class="heading-shade">Test</h3>
+      </header>
+      <p class="feature-card__text">Comprehensive testing and quality assurance protocols</p>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="feature-box-process feature-5 feature-card" role="listitem" aria-label="Deploy Monitor">
+      <div class="connector-dot" aria-hidden="true"></div>
+      <header class="feature-card__head">
+        <h3 class="heading-shade">Deploy Monitor</h3>
+      </header>
+      <p class="feature-card__text">Deployment automation and continuous monitoring systems</p>
+    </article>
+
+  </div>
+</section>
+
+<style>
+/* ===== Base / Reset bits (safe in Elementor) ===== */
+.features-carousel {
+  width: min(1200px, 95vw);
+  margin: clamp(16px, 3vw, 40px) auto;
+}
+.features-carousel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Controls */
+.fc-btn {
+  appearance: none;
+  border: 0;
+  background: #111;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform .15s ease, opacity .15s ease;
+}
+.fc-btn:hover { transform: scale(1.05); }
+.fc-btn:disabled { opacity: .4; cursor: not-allowed; }
+.features-carousel__controls { display: flex; gap: 8px; }
+
+/* ===== Scroll-snap viewport ===== */
+.features-carousel__viewport {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(75%, 46vw, 360px); /* card width */
+  gap: 16px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 8px;
+  padding: 8px 2px 2px;
+  -ms-overflow-style: none;          /* IE/Edge */
+  scrollbar-width: none;             /* Firefox */
+}
+.features-carousel__viewport::-webkit-scrollbar { display: none; }
+
+/* ===== Cards (reuse your classes) ===== */
+.feature-card {
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px 16px 20px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+  position: relative;
+  min-height: 160px;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+.feature-card .heading-shade { margin: 0; font-size: 1.15rem; }
+.feature-card__text { margin: 0; color: #444; line-height: 1.5; }
+
+/* Optional: tiny accent for your connector dot if you already style it */
+.connector-dot {
+  position: absolute;
+  inset: 12px auto auto 12px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #00d0ff, #0072ff);
+}
+
+/* ===== Responsive tweaks ===== */
+@media (min-width: 768px) {
+  .features-carousel__viewport {
+    grid-auto-columns: minmax(320px, 36%);
+    gap: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .features-carousel__viewport {
+    grid-auto-columns: minmax(320px, 30%); /* ~3 cards visible */
+    gap: 20px;
+  }
+}
+</style>
+
+<script>
+(function () {
+  const track = document.getElementById('featuresTrack');
+  const prev = document.querySelector('.fc-btn--prev');
+  const next = document.querySelector('.fc-btn--next');
+
+  if (!track || !prev || !next) return;
+
+  // Scroll by one card width each click
+  function cardWidth() {
+    const firstCard = track.querySelector('.feature-card');
+    return firstCard ? firstCard.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || 16) : 320;
+  }
+
+  function snapUpdate() {
+    // Disable prev/next at extremes
+    const maxScroll = track.scrollWidth - track.clientWidth - 2;
+    prev.disabled = track.scrollLeft <= 1;
+    next.disabled = track.scrollLeft >= maxScroll;
+  }
+
+  prev.addEventListener('click', () => {
+    track.scrollBy({ left: -cardWidth(), behavior: 'smooth' });
+  });
+  next.addEventListener('click', () => {
+    track.scrollBy({ left: cardWidth(), behavior: 'smooth' });
+  });
+
+  // Keyboard: allow arrow keys when viewport is focused
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); track.scrollBy({ left: cardWidth(), behavior: 'smooth' }); }
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); track.scrollBy({ left: -cardWidth(), behavior: 'smooth' }); }
+  });
+
+  // Drag to scroll (desktop)
+  let isDown = false, startX = 0, scrollStart = 0;
+  track.addEventListener('pointerdown', (e) => {
+    isDown = true;
+    track.setPointerCapture(e.pointerId);
+    startX = e.clientX;
+    scrollStart = track.scrollLeft;
+  });
+  track.addEventListener('pointermove', (e) => {
+    if (!isDown) return;
+    const dx = e.clientX - startX;
+    track.scrollLeft = scrollStart - dx;
+  });
+  ['pointerup','pointercancel','pointerleave'].forEach(evt => {
+    track.addEventListener(evt, () => { isDown = false; }, { passive: true });
+  });
+
+  // Wheel (shift+wheel horizontally for mice that don’t)
+  track.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) return; // natural horizontal only
+    e.preventDefault();
+    track.scrollBy({ left: e.deltaX, behavior: 'auto' });
+  }, { passive: false });
+
+  // Update button states
+  snapUpdate();
+  track.addEventListener('scroll', () => requestAnimationFrame(snapUpdate));
+  window.addEventListener('resize', () => requestAnimationFrame(snapUpdate));
+})();
+</script>
+
+
+
+
 <!-- ====== Showcase Grid Section ====== -->
 <div class="v1146_4572">
   <div class="v1146_3967">
