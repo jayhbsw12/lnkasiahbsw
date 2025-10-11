@@ -49,10 +49,31 @@ header.process-section-feature {
     transform: translate(-50%, -50%);
     z-index: 10;
     /* background-image: url(../assets/images/key-features-circle.webp); */
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: 25s linear 0s infinite normal none running ani;
+    /* background-repeat: no-repeat;
+    background-size: contain; */
 }
+
+  .arrow {
+        animation: 25s linear 0s infinite normal none running ani;
+            position: absolute;
+            top: -3%;
+            left: 2%;
+            animation: ani 25s linear infinite;
+            width: 85%;
+            z-index: -1;
+  }
+
+  .heading-shade {
+     font-weight: 600;
+    background: linear-gradient(90deg, #352f75, #7b37a9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    white-space: nowrap;
+    margin-bottom: 8px;
+  }
+
     @keyframes ani {
     from {
         transform: rotate(0deg)
@@ -61,7 +82,6 @@ header.process-section-feature {
     to {
         transform: rotate(360deg)
     }
-
 }
 
 .center-image img {
