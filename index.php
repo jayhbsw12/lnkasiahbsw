@@ -352,7 +352,7 @@
 
             <div class="feature-box-process feature-1">
                 <div class="connector-dot"></div>
-                <h3 class="heading-shade">Plan</h3>
+                <h3 class="heading-shade">Plans</h3>
                 <p>Strategic planning and requirement analysis for optimal workflows</p>
             </div>
 
