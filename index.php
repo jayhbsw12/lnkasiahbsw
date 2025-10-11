@@ -142,38 +142,38 @@
     <div class="sticky-services-1" style="z-index: 30">
       <div class="sticky-service-content-holder">
         <h4>Infrastructure Management Service</h4>
-        <span>RIMS Remote Infrastructure Management</span><br>
-        <span>PIE Backup Data Protection</span><br>
-        <span>Server and Network Management</span><br>
-        <span>24/7 Help Desk Support</span>
+        <span><i class="fa-solid fa-check"></i> &nbsp; RIMS Remote Infrastructure Management</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; PIE Backup Data Protection</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Server and Network Management</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; 24/7 Help Desk Support</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
     <div class="sticky-services-1" style="z-index: 31">
       <div class="sticky-service-content-holder">
         <h4>Development Solutions</h4>
-        <span>DevOps and Cloud Engineering</span><br>
-        <span>Custom Application Development</span><br>
-        <span>Technology Consulting Services</span>
+        <span><i class="fa-solid fa-check"></i> &nbsp; DevOps and Cloud Engineering</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Custom Application Development</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Technology Consulting Services</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
         <div class="sticky-services-1" style="z-index: 32" >
       <div class="sticky-service-content-holder">
         <h4>Digital Experience</h4>
-        <span>CXaaS Customer Experience Solutions</span><br>
-        <span>PicCloud Secure Storage Platform</span><br>
-        <span>Digital Workspace Collaboration</span><br>
-        <span>Regulatory Compliance Solutions</span>
+        <span><i class="fa-solid fa-check"></i> &nbsp; CXaaS Customer Experience Solutions</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; PicCloud Secure Storage Platform</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Digital Workspace Collaboration</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Regulatory Compliance Solutions</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
       <div class="sticky-services-1" style="z-index: 33">
       <div class="sticky-service-content-holder">
         <h4>Security Operations</h4>
-        <span>Advanced threat detection and response systems</span><br>
-        <span>Continuous security monitoring and compliance</span><br>
-        <span>Incident response and recovery procedures</span>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Advanced threat detection and response systems</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Continuous security monitoring and compliance</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Incident response and recovery procedures</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>  
@@ -181,9 +181,9 @@
      <div class="sticky-services-1" style="z-index: 34">
       <div class="sticky-service-content-holder">
         <h4>Infrastructure Management</h4>
-        <span>Network optimization and performance tuning</span><br>
-        <span>Server maintenance and capacity planning</span><br>
-        <span>Storage management and backup solutions</span>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Network optimization and performance tuning</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Server maintenance and capacity planning</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Storage management and backup solutions</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div> 
@@ -191,9 +191,9 @@
     <div class="sticky-services-1" style="z-index: 34">
       <div class="sticky-service-content-holder">
         <h4>Support Services</h4>
-        <span>24/7 technical support and troubleshooting</span><br>
-        <span>User training and documentation services</span><br>
-        <span>Remote assistance and problem resolution</span>
+        <span><i class="fa-solid fa-check"></i> &nbsp; 24/7 technical support and troubleshooting</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; User training and documentation services</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp;Remote assistance and problem resolution</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
@@ -382,6 +382,7 @@
 
             <div class="center-image">
                 <img src="assets/images/key-features.webp" alt="ERP Software Demo">
+                <img class="ani" src="../lnkasiahbsw/assets/images/key-features-circle.webp" alt="">
             </div>
         </div>
     </div>

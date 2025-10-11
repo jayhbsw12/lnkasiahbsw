@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="css/thankyou.css">
 <link rel="stylesheet" href="css/success-stories.css">
 <link rel="stylesheet" href="css/single-story.css">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 
 <body>
