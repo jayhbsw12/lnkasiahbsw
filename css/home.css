@@ -64,14 +64,26 @@ header.process-section-feature {
   }
 
   .heading-shade {
-     font-weight: 600;
-    background: linear-gradient(90deg, #352f75, #7b37a9);
+     /* font-weight: 600;
+     background: linear-gradient(90deg, #352f75, #7b37a9, #39a6dd);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     white-space: nowrap;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
+
+
+
+     background-image: linear-gradient(90deg, #6a11cb 0%, #8e49e8 45%, #1fa2ff 100%) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+
+  /* the two lines below are the usual reason it "doesn't work" */
+  -webkit-text-fill-color: transparent !important;  /* Chrome/Safari */
+          color: transparent !important;            /* Firefox */
+
+  display: inline-block; /* ensures the background paints to the text box only */ 
   }
 
     @keyframes ani {
@@ -2261,13 +2273,14 @@ img.grid-shape-2 {
 
 .sticky-service-content-holder {
   background-color: #0a0a0c;
-  height: auto;
+  /* height: auto; */
+  height: 204px;
   width: auto;
-  max-width: 430px;
-
+  max-width: 525px;
   padding: 20px;
   border-radius: 12px;
   margin-top: 80px;
+  align-content: center;
 }
 
 .sticky-services-1 {
