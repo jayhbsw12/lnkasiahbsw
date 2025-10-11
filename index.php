@@ -382,7 +382,7 @@
 
             <div class="center-image">
                 <img src="assets/images/key-features.webp" alt="ERP Software Demo">
-                <img class="arrow" src="lnkasiahbsw/assets/images/key-features-circle.webp" alt="">
+                <img class="arrow" src="assets/images/key-features-circle.webp" alt="">
             </div>
         </div>
     </div>
