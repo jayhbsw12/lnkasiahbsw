@@ -109,7 +109,7 @@
       <div class="col-12">
         <div class="cta-container">
           <div class="cta-background">
-            <img src="assets/images/cta-background.png" alt="CTA Background">
+            <img src="assets/images/cta-background.webp" alt="CTA Background">
           </div>
           <div class="cta-content">
             <div class="features-main-heading2">
