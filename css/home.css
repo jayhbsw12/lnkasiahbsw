@@ -142,8 +142,8 @@ header.process-section-feature {
 }
 
 .feature-1 .connector-dot {
-    right: -180px;
-    top: 5px;
+    top: 7px;
+    left: 464px;
 }
 
 .feature-1::after {
@@ -163,8 +163,8 @@ header.process-section-feature {
 }
 
 .feature-2 .connector-dot {
-    left: -200px;
-    top: 5px;
+    left: -213px;
+    top: 7px;
 }
 
 .feature-2::after {
@@ -184,8 +184,8 @@ header.process-section-feature {
 }
 
 .feature-3 .connector-dot {
-    right: -170px;
-    top: 5px;
+    top: 7px;
+    left: 454px;
 }
 
 .feature-3::after {
@@ -206,8 +206,8 @@ header.process-section-feature {
 }
 
 .feature-4 .connector-dot {
-    left: -200px;
-    top: 5px;
+    left: -213px;
+    top: 7px;
 }
 
 .feature-4::after {
@@ -228,7 +228,7 @@ header.process-section-feature {
 }
 
 .feature-5 .connector-dot {
-    top: -120px;
+    top: -134px;
     left: 50%;
     transform: translateX(-50%);
 }
