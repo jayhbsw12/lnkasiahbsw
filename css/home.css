@@ -137,7 +137,7 @@ header.process-section-feature {
 
 .feature-1 {
    top: 28%;
-    left: 8%;
+    left: 13%;
     text-align: right;
 }
 
@@ -158,7 +158,7 @@ header.process-section-feature {
 
 .feature-2 {
     top: 23%;
-    right: 8%;
+    right: 13%;
     text-align: left;
 }
 
@@ -179,7 +179,7 @@ header.process-section-feature {
 
 .feature-3 {
     bottom: 20%;
-    left: 8%;
+    left: 12%;
     text-align: right;
 }
 
@@ -200,7 +200,7 @@ header.process-section-feature {
 
 .feature-4 {
    top: 65%;
-    right: 6%;
+    right: 8%;
     transform: translateY(-50%);
     text-align: left;
 }
