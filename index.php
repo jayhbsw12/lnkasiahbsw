@@ -2,6 +2,10 @@
 <?php $currentPage = 'index';   // set to 'index', 'about', 'services', 'contact' per page ?>
 <title>LNK Asia</title>
 <meta name="description" content="">
+<style>
+  /* -------- Grid skeleton (3 columns) -------- */
+
+</style>
 <?php include("header.php"); ?>
 <section class="hero-section">
   <div class="hero-background">
@@ -83,19 +87,19 @@
           innovation and business growth</h2>
         <div class="partners-logos">
           <div class="partner-logo">
-            <img src="https://static.codia.ai/custom_image/2025-07-02/070258/partner-logo-1.svg" alt="Partner 1">
+            <img src="assets/images/partners/alendei from india logo.webp" alt="Partner 1">
           </div>
           <div class="partner-logo">
-            <img src="assets/images/morpheus.svg" alt="Partner 2 Icon" class="partner-icon">
+            <img src="assets/images/partners/AWS logo.webp" alt="Partner 2 Icon" class="partner-icon">
           </div>
           <div class="partner-logo">
-            <img src="https://static.codia.ai/custom_image/2025-07-02/070258/partner-logo-3.svg" alt="Partner 3">
+            <img src="assets/images/partners/Microsoft partner logo.webp" alt="Partner 3">
           </div>
           <div class="partner-logo">
-            <img src="https://static.codia.ai/custom_image/2025-07-02/070258/partner-logo-4.png" alt="Partner 4">
+            <img src="assets/images/partners/odoo.png" alt="Partner 4">
           </div>
           <div class="partner-logo">
-            <img src="https://static.codia.ai/custom_image/2025-07-02/070258/partner-logo-5.svg" alt="Partner 5">
+            <img src="assets/images/partners/Vagyanlabs logo.webp" alt="Partner 5">
           </div>
         </div>
       </div>
@@ -303,9 +307,9 @@
       </div>
     </div>
 
-    <!-- Stats Section -->
+      <!-- Stats Section -->
     <div class="row text-md-start g-4 g-md-5 pt-5 counter-bg" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin: 0;">
-  <!-- Counter 1 -->
+      <!-- Counter 1 -->
   <div class="ft-stat">
     <div class="ft-stat-number"><span class="count" data-count="20" data-suffix="+" data-done="1">20+</span></div>
     <div class="ft-stat-label">Years Combined Industry Experience</div>
@@ -453,7 +457,7 @@
   </div>
 </section>
 
-<style>
+<!-- <style>
 /* ===== Base / Reset bits (safe in Elementor) ===== */
 .features-carousel {
   width: min(1200px, 95vw);
@@ -606,13 +610,13 @@
   track.addEventListener('scroll', () => requestAnimationFrame(snapUpdate));
   window.addEventListener('resize', () => requestAnimationFrame(snapUpdate));
 })();
-</script>
+</script> -->
 
 
 
 
 <!-- ====== Showcase Grid Section ====== -->
-<div class="v1146_4572">
+<!-- <div class="v1146_4572">
   <div class="v1146_3967">
     <div class="v1146_3968">
       <div class="v1146_3969">
@@ -662,9 +666,96 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<section class="services-section">
+<section class="container text-center about-flip-box home-flip-box">
+  <div class="flip-card-container home-section">
+    <div class="team-people">
+      <div class="flip-card flip-left flip-home">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon">
+
+            <img src="assets/images/Link.png" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <a href="#"><img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon"
+                href="#"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <div class="flip-card flip-home center-card-home">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon">
+
+            <img src="assets/images/Link-2.png" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <a href="#"><img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon"
+                href="#"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card card-3 flip-home center-card-home">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon">
+
+            <img src="assets/images/Link-3.png" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <a href="#"><img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon"
+                href="#"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div>
+      <div class="flip-card flip-left flip-home">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon">
+
+            <img src="assets/images/Link-4.png" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <a href="#"><img src="assets/images/vigya.png" alt="LinkedIn" class="arrow-link-icon"
+                href="#"></a>
+            <p>Our team of experts is dedicated to providing top-notch services to our clients. We strive to exceed
+              expectations and deliver exceptional results.</p>
+
+            <p>His background in IT and system management makes him a pro at company operations. He also handles the
+              advisory team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="services-section">
   <div class="container" style="padding: 0px 20px 0px 20px">
     <div class="features-main-heading" bis_skin_checked="1">
       <span class="heading-primary">Features </span>
@@ -726,9 +817,8 @@
       </div>
     </div>
   </div>
-</section>
-
-
+</section> -->
+<!-- 
 <section class="benefits-section">
   <div class="container" style="padding: 0px 20px 0px 20px">
   <article class="benefit-card benefit-card-purple">
@@ -758,7 +848,7 @@
     </div>
   </article>
   </div>
-</section>
+</section> -->
 
 <header class="header-section-testimonial">
   <div class="container" style="padding: 0px 20px 0px 20px">
@@ -1038,12 +1128,22 @@
 </section>
 
 <section class="hero-section-footer">
-  <div class="hero-background-footer" bis_skin_checked="1">
-    <!-- <img src="https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png" alt="Hero Background"
-      class="hero-bg-image-footer"> -->
-    <div class="hero-overlay" bis_skin_checked="1"></div>
+  <!-- Background Video -->
+  <div class="hero-background-footer">
+    <div class="video-bg">
+      <iframe
+        src="https://www.youtube.com/embed/pY668OsMP5M?rel=0&autoplay=1&mute=1&loop=1&playlist=pY668OsMP5M&controls=0&fs=0&modestbranding=1&playsinline=1&iv_load_policy=3"
+        title="Background video"
+        frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="hero-overlay-footer"></div>
   </div>
-  <div class="hero-content-footer" bis_skin_checked="1">
+
+  <!-- Hero Content -->
+  <div class="hero-content-footer">
     <h2 class="hero-title-footer">Creating Technology For a Better Tomorrow</h2>
     <p class="hero-description-footer">
       We offer full-cycle technology solutions that streamline your digital transformation journey.
@@ -1053,5 +1153,6 @@
     </button>
   </div>
 </section>
+
 
 <?php include("footer.php"); ?>

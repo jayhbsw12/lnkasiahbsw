@@ -219,6 +219,16 @@ img.linkedin-icon {
   object-fit: contain;
 }
 
+img.arrow-link-icon {
+  width: 155px;
+    height: 70px;
+    position: absolute;
+    right: 27px;
+    top: -16px;
+    object-fit: contain;
+}
+
+
 /* Front = image only */
 .flip-front img {
   display: block;
@@ -282,14 +292,32 @@ img.linkedin-icon {
   }
 }
 
+.flip-card.card-3 {
+    margin-top: 30px;
+}
+.flip-home {
+    width: 450px !important;
+}
+
 .flip-card-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 80px;
 }
-
+.home-section{
+  gap: 20px;
+}
+.home-flip-box {
+    margin-top: 100px;
+}
+.flip-left {
+    height: 700px !important; 
+}
+.center-card-home {
+    height: 330px !important;
+}
 .flip-card {
   background-color: transparent;
   width: 350px;

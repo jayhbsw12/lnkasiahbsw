@@ -487,39 +487,58 @@ p.social_title-footer {
 }
 
 .hero-section-footer {
-  position: relative;
-  height: 500px; /* Adjust height for the section */
-  margin: 150px 50px 0px 50px;
-  overflow: hidden;
-  /* border-radius: 16px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ position: relative;
+    height: 500px;
+    margin: 150px 150px 0px 150px;
+    overflow: hidden;
+    /* border-radius: 16px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-background-footer {
-  position: absolute;
-  max-width: 1625px;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://static.codia.ai/custom_image/2025-07-04/063005/hero-background.png'); /* Your uploaded image */
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  border-radius: 20px;
-}
-
-.hero-overlay-footer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(37, 30, 52, 0.5); /* Adjust opacity */
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+/* ✅ FIX: Remove scroll and fill section precisely */
+.video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;           /* exact viewport width */
+  height: 56.25vw;        /* maintain 16:9 ratio (100 / 16 * 9) */
+  max-height: 100vh;      /* never exceed viewport height */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border: none;
+}
+
+/* Overlay tint */
+.hero-overlay-footer {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 30, 52, 0.4);
   z-index: 2;
 }
 
+/* Content styling */
 .hero-content-footer {
+  position: relative;
   z-index: 3;
   color: white;
   text-align: center;
@@ -527,12 +546,11 @@ p.social_title-footer {
 }
 
 .hero-title-footer {
-  font-family: Roboto, var(--default-font-family);
+  font-family: "Roboto", var(--default-font-family);
   font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 20px;
-  white-space: normal;
 }
 
 .hero-description-footer {
@@ -552,16 +570,10 @@ p.social_title-footer {
   font-size: 20px;
   font-weight: 400;
   transition: transform 0.2s ease;
-  display: inline-block;
 }
 
 .hero-cta-button-footer:hover {
   transform: translateY(-2px);
-}
-
-.hero-cta-button-footer span {
-  display: block;
-  text-align: center;
 }
 
 @media(min-width:1200px) and (max-width:1600px){

@@ -68,15 +68,14 @@
             <li class="nav-item"><a class="" href="service.php">Services</a></li>
             <li class="nav-item"><a class="" href="partners.php">Partners</a></li>
             <li class="nav-item"><a class="" href="success-stories.php">Success Stories</a></li>
-            <li class="nav-item"><a class="" href="pricing.php">Pricing</a>
             </li>
           </ul>
 
           <!-- Right side: segmented + CTA -->
           <div class="ms-auto action-group">
             <div class="segmented">
-              <a href="#" class="seg-link is-current">Sign-in</a>
-              <a href="#" class="seg-link">Free Trial</a>
+              <a href="pricing.php" class="seg-link is-current">Pricing</a>
+              <a href="#" class="seg-link">Sign-in</a>
             </div>
             <a href="contact.php" class="btn btn-gradient btn-pill">Contact Us</a>
           </div>

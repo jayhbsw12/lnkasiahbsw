@@ -1,3 +1,78 @@
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.col { display: grid; gap: 24px; }
+
+/* Perspective for 3D flip */
+.flip { perspective: 1000px; }
+
+/* Card container */
+.card {
+  position: relative;
+  height: 520px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card.tall { height: 560px; }
+.card.half { height: calc((560px - 24px) / 2); }
+
+/* Flip animation */
+.flip:hover .card { transform: rotateY(180deg); }
+
+/* Common face styles */
+.side {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  backface-visibility: hidden; /* 🔥 hides back when front is visible */
+  border-radius: 20px;
+}
+
+/* FRONT (Image only) */
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BACK (Text + Background only) */
+.back {
+  transform: rotateY(180deg);
+  background: #1554FF;
+  color: #fff;
+  padding: 24px;
+  text-align: left;
+  align-content: end;
+  border-radius: 20px;
+}
+
+/* Typography */
+.back h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.back p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .case-grid { grid-template-columns: 1fr; }
+  .card, .card.tall, .card.half { height: 420px; }
+}
+
 header.process-section-feature {
     text-align: center;
     padding-top: 100px;
@@ -49,9 +124,6 @@ header.process-section-feature {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    /* background-image: url(../assets/images/key-features-circle.webp); */
-    /* background-repeat: no-repeat;
-    background-size: contain; */
 }
 
   .arrow {
@@ -76,8 +148,6 @@ header.process-section-feature {
      background-image: linear-gradient(90deg, #6a11cb 0%, #8e49e8 45%, #1fa2ff 100%) !important;
   -webkit-background-clip: text !important;
           background-clip: text !important;
-
-  /* the two lines below are the usual reason it "doesn't work" */
   -webkit-text-fill-color: transparent !important;  /* Chrome/Safari */
           color: transparent !important;            /* Firefox */
 
@@ -601,8 +671,8 @@ span.placeholder-text {
 
 .partner-logo {
   position: relative;
-  width: 182.864px;
-  height: 37.767px;
+  width: 235px;
+  height: 50px;
   transition: all 0.3s ease;
 }
 
@@ -622,19 +692,19 @@ span.placeholder-text {
 }
 
 .partner-logo:nth-child(1) {
-  height: 23.772px;
+  height: 60px;
 }
 
 .partner-logo:nth-child(3) {
-  height: 28.008px;
+  height: 40px;
 }
 
 .partner-logo:nth-child(4) {
-  height: 33.283px;
+  height: 40px;
 }
 
 .partner-logo:nth-child(5) {
-  height: 37.433px;
+  height: 40px;
 }
 
 .partner-logo-2 {

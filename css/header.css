@@ -26,12 +26,17 @@
 }
 
 .nav-item a:hover {
-  color: #7b61ff !important;
+  -webkit-text-fill-color: transparent; /* reveal gradient */
+  background-size: 100% 100%;
+  transition: all 0.4s ease;
 }
 
+/* Active State - keep gradient */
 .nav-item a.active {
-  color: #7b61ff !important;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
 }
+
 
 
 .sticky-nav {
@@ -108,10 +113,13 @@ a.btn.btn-gradient.btn-pill {
   padding: 8px 24px;
 }
 li.nav-item a {
-  font-size: 20px;
-  font-weight: 500;
+   color: #000; /* Default black text */
   text-decoration: none;
-  color: #555555;
+  transition: all 0.4s ease;
+  background: linear-gradient(95deg, #2d68b6 0%, #6f86ff 45%, #2ad6c6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000; /* show black by default */
 }
 
 .navbar-nav .dropdown{
