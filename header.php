@@ -55,17 +55,19 @@
             <li class="nav-item"><a class="" href="about-us.php">About Us</a>
             </li>
 
-            <!-- <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link" href="service.php"
                 id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
               <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                <li><a class="dropdown-item" href="#">Consulting</a></li>
-                <li><a class="dropdown-item" href="#">Implementation</a></li>
-                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">RIMS</a></li>
+                <li><a class="dropdown-item" href="#">ERP</a></li>
+                <li><a class="dropdown-item" href="#">PIE - DPaas & STaas</a></li>
+                <li><a class="dropdown-item" href="#">Technology Consulting</a></li>
+                 <li><a class="dropdown-item" href="#">Customer Experience As A Service</a></li>
               </ul>
-            </li> -->
+            </li>
 
-            <li class="nav-item"><a class="" href="service.php">Services</a></li>
+            <!-- <li class="nav-item"><a class="" href="service.php">Services</a></li> -->
             <li class="nav-item"><a class="" href="partners.php">Partners</a></li>
             <li class="nav-item"><a class="" href="success-stories.php">Success Stories</a></li>
             </li>
