@@ -7,6 +7,12 @@
   position: relative;
 }
 
+p.oddo {
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-top: 25px;
+}
+
 /* Hero Section */
 
 .hero-service-left h1 {

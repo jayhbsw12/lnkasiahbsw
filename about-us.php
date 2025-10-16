@@ -59,48 +59,49 @@
   <!-- Mission -->
   <div class="col-12 col-md-6 col-lg-3">
     <div class="tab-card text-center h-100">
-      <div class="icon"><i class="fas fa-bullseye"></i></div>
+      <!-- <div class="icon"><i class="fas fa-bullseye"></i></div> -->
       <div class="icon-flex">
         <img src="assets/images/mission.svg" alt="mission">
         <h5>Mission</h5>
         <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
       </div>
-      <p class="icon-p">Our mission is to create sustainable value for our customers, by bringing innovative ideas
-        and technologies to address their needs.</p>
+      <p class="icon-p">To create sustainable value for our customers by bringing innovative ideas and technologies to address their needs. We focus on customer delight and exceeding customer expectations.
+</p>
     </div>
   </div>
 
   <!-- Vision -->
   <div class="col-12 col-md-6 col-lg-3">
     <div class="tab-card text-center h-100 active">
-      <div class="icon"><i class="fas fa-lightbulb"></i></div>
+      <!-- <div class="icon"><i class="fas fa-lightbulb"></i></div> -->
       <div class="icon-flex">
         <img src="assets/images/vision.svg" alt="vision">
         <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
         <h5>Vision</h5>
       </div>
-      <p class="icon-p">Our vision is to reduce cost with enhanced data security, effectively respond to dynamic
-        market conditions and growing demands.</p>
+      <p class="icon-p">Reduce cost with enhanced data security, effectively respond to dynamic market conditions and growing business demands through technology.
+</p>
     </div>
   </div>
 
   <!-- Core Values -->
   <div class="col-12 col-md-6 col-lg-3">
     <div class="tab-card text-center h-100">
-      <div class="icon"><i class="fas fa-handshake"></i></div>
+      <!-- <div class="icon"><i class="fas fa-handshake"></i></div> -->
       <div class="icon-flex">
         <img src="assets/images/core-values.svg" alt="core values">
         <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
         <h5>Core Values</h5>
       </div>
-      <p class="icon-p">Our core values are Commitment, Reliability, Loyalty, Transparency.</p>
+      <p class="icon-p">Commitment, Reliability, Loyalty, and Transparency guide every client relationship and project delivery we undertake.
+</p>
     </div>
   </div>
 
   <!-- Goal -->
   <div class="col-12 col-md-6 col-lg-3">
     <div class="tab-card text-center h-100">
-      <div class="icon"><i class="fas fa-chart-line"></i></div>
+      <!-- <div class="icon"><i class="fas fa-chart-line"></i></div> -->
       <div class="icon-flex">
         <img src="assets/images/goals.svg" alt="goal">
         <img class="contact-shape-about" src="assets/images/contact-shape.svg" alt="contact-shape">
@@ -253,7 +254,7 @@
       </div>
       <div class="flip-details">
         <h4>Parag Soni</h4>
-        <span>ERP Expert</span>
+        <span>Director</span>
       </div>
     </div>
     <div>
@@ -262,7 +263,7 @@
           <div class="flip-card-front">
             <img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon">
 
-            <img src="assets\images\Pallav Parekh.png" alt="Avatar" style="width:100%;height:100%;">
+            <img src="assets\images\kinnari.webp" alt="Avatar" style="width:100%;height:100%;">
           </div>
           <div class="flip-card-back">
             <a href="https://linkedin.com"><img src="assets\images\LinkedIn.svg" alt="LinkedIn" class="linkedin-icon"
@@ -277,11 +278,11 @@
 
       </div>
       <div class="flip-details">
-        <h4>Pallav Parekh</h4>
-        <span>ERP Expert</span>
+        <h4>Kinnari Soni</h4>
+        <span>Director</span>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
@@ -305,7 +306,7 @@
         <h4>Dhaval Patel</h4>
         <span>ERP Expert</span>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 

@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="https://designmasters.in/lnk-asia/">
           <img class="brand-mark" src="assets/images/logo.svg" alt="LNK ASIA logo">
         </a>
 
@@ -75,7 +75,7 @@
           <div class="ms-auto action-group">
             <div class="segmented">
               <a href="pricing.php" class="seg-link is-current">Pricing</a>
-              <a href="#" class="seg-link">Sign-in</a>
+              <a href="https://www.lnkasia.com/web/login" class="seg-link">Sign-in</a>
             </div>
             <a href="contact.php" class="btn btn-gradient btn-pill">Contact Us</a>
           </div>
