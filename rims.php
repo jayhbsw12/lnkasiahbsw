@@ -11,9 +11,9 @@
       <!-- Left Column -->
       <div class="col-lg-6">
         <div class="hero-service-left">
-          <h1>LNK Asia<span class="heading-gradient"> <br>ERP Solutions</span></h1>
-          <p>Comprehensive Enterprise Resource Planning capabilities and digital transformation solutions 
-            for modern businesses across Asia Pacific region.</p>
+          <h1>LNK Asia<span class="heading-gradient"> <br>RIMS Solutions</span></h1>
+          <p>Remote Infrastructure Management Services for seamless IT operations and enhanced business productivity
+            across enterprises.​</p>
           <img src="assets/images/hero-bottom-service.svg" class="hero-bottom-service">
         </div>
       </div>
@@ -278,7 +278,7 @@
     <div class="ai-services-top-holder">
       <div>
         <h2>LNK Asia <br>
-          <span class="heading-gradient">ERP Service Portfolio</span>
+          <span class="heading-gradient">RIMS Service Portfolio</span>
         </h2>
       </div>
       <div>
@@ -289,28 +289,34 @@
     </div>
     <div class="sticky-services-1" style="z-index: 30">
       <div class="sticky-service-content-holder">
-        <h4>ERP Implementation Services</h4>
-        <span><i class="fa-solid fa-check"></i> &nbsp; End-to-end ERP system implementation and deployment.</span><br>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Customization and configuration for business needs.</span><br>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Data migration and system integration services.</span><br>
+        <h4>Infrastructure Monitoring​</h4>
+        <p style="color: #ffffff; padding:0px;">Comprehensive real-time monitoring of all critical IT infrastructure components to ensure optimal performance.​</p>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Server and network performance monitoring continuously.​</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Database and application health tracking systems.​</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Storage capacity and performance optimization services.​</span><br>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
     <div class="sticky-services-1" style="z-index: 31">
       <div class="sticky-service-content-holder">
-        <h4>Support and Training</h4>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Comprehensive user training and knowledge transfer.</span><br>
-        <span><i class="fa-solid fa-check"></i> &nbsp; 24/7 technical support and system monitoring.</span><br>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Regular system updates and maintenance services.</span>
+        <h4>System Management​</h4>
+        <p style="color: #ffffff; padding:0px;">Expert administration and maintenance services ensuring your systems operate at peak efficiency and reliability.​​</p>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Operating system updates and patch management.​</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Security configuration and vulnerability assessments regularly.​</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Backup management and disaster recovery planning.​</span>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
         <div class="sticky-services-1" style="z-index: 32" >
       <div class="sticky-service-content-holder">
-        <h4>Digital Transformation</h4>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Cloud migration and infrastructure modernization strategies.</span><br>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Business process optimization and automation solutions.</span><br>
-        <span><i class="fa-solid fa-check"></i> &nbsp; Technology roadmap development and strategic planning.</span><br>
+        <h4>Technical Support​</h4>
+                <p style="color: #ffffff; padding:0px;">Round-the-clock expert support with rapid response times to resolve issues and maintain business continuity.​​​</p>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Incident response and resolution
+services available.​</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Performance optimization and
+capacity planning expertise.​</span><br>
+        <span><i class="fa-solid fa-check"></i> &nbsp; Preventive maintenance and system
+health checks.​</span><br>
       </div>
       <img src="assets/images/home-sticky-services-shape.svg" alt="">
     </div>
